@@ -66,7 +66,9 @@ function mapList(): string {
 }
 
 /** On phones these sit too close to label legibly; their values are in the list under the map. */
-const CROWDED = new Set(['kota-bekasi', 'phnom-penh', 'kuala-lumpur', 'vientiane', 'bangkok']);
+const CROWDED = new Set(['kota-bekasi', 'phnom-penh', 'kuala-lumpur', 'vientiane', 'bangkok', 'bandung', 'surabaya', 'denpasar', 'medan', 'makassar']);
+/** Java is too dense to label every Indonesian city even on desktop; these keep their circle and list entry. */
+const CROWDED_WIDE = new Set(['bandung', 'kota-bekasi', 'surabaya']);
 
 function mapSvg(): string {
   const { d3, countries } = geo!;
@@ -98,10 +100,14 @@ function mapSvg(): string {
     'kota-bekasi': [1, 1, 'start'],
     vientiane: [1, -1, 'start'],
     bangkok: [-1, 0, 'end'],
-    'kuala-lumpur': [-1, 0, 'end'],
+    'kuala-lumpur': [-1, 2, 'end'],
     singapore: [1, 1, 'start'],
     'phnom-penh': [-1, 2.2, 'end'],
     'ho-chi-minh-city': [1, 0, 'start'],
+    surabaya: [-1, -1.8, 'end'],
+    denpasar: [1, 0.2, 'start'],
+    medan: [-1, 0, 'end'],
+    makassar: [1, 0, 'start'],
   };
   const bubbles = ms
     .sort((a, b) => (b.m.d.value ?? 0) - (a.m.d.value ?? 0))
@@ -120,7 +126,7 @@ function mapSvg(): string {
       const lx = x + dx * (r + 4);
       const ly = y + dy * (r * 0.6) + 4;
       const label =
-        (ui.mapView === 'asia' && (!n || !CROWDED.has(p.id))) || (isId && p.id === 'jakarta')
+        (ui.mapView === 'asia' && (n ? !CROWDED.has(p.id) : !CROWDED_WIDE.has(p.id))) || (isId && p.id === 'jakarta')
           ? `<text x="${lx.toFixed(1)}" y="${(ly - 6).toFixed(1)}" text-anchor="${anchor}">${esc(L(p.city))}</text><text class="v" x="${lx.toFixed(1)}" y="${(ly + 7).toFixed(1)}" text-anchor="${anchor}">${esc(m.text)}</text>`
           : '';
       const cls = `bub ${isId ? 'b-id' : 'b-other'}${v === null || isWeak(m.d.status) ? ' open' : ''}`;

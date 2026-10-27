@@ -629,6 +629,58 @@
         "status": "official",
         "note": "Lowest UMK in Jawa Barat."
       }
+    },
+    {
+      "id": "kota-denpasar",
+      "name": "Kota Denpasar",
+      "province": "Bali",
+      "level": "UMK",
+      "wage": {
+        "value": 3499878.78,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "bali-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-medan",
+      "name": "Kota Medan",
+      "province": "Sumatera Utara",
+      "level": "UMK",
+      "wage": {
+        "value": 4335198,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "detik-umk-sumut-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-bandung",
+      "name": "Kota Bandung",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 4737678,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "metrotv-umk-jabar-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-makassar",
+      "name": "Kota Makassar",
+      "province": "Sulawesi Selatan",
+      "level": "UMK",
+      "wage": {
+        "value": 4148179,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-sulsel-2026",
+        "status": "official"
+      }
     }
   ],
   "nationalPrices": {

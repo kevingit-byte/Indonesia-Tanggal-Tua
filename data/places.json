@@ -727,6 +727,311 @@
         "status": "estimate",
         "note": "Shanghai Metro starting fare."
       }
+    },
+    {
+      "id": "denpasar",
+      "city": {
+        "id": "Denpasar",
+        "en": "Denpasar"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -8.6705,
+      "lon": 115.2126,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Denpasar 2026",
+        "en": "Denpasar city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 3499878.78,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "bali-umk-2026",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 1300000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 4400,
+        "unit": "IDR/ride",
+        "asOf": "2026-08-01",
+        "sourceId": "antara-transmetrodewata-2026",
+        "status": "official",
+        "note": "Trans Metro Dewata normal fare."
+      }
+    },
+    {
+      "id": "surabaya",
+      "city": {
+        "id": "Surabaya",
+        "en": "Surabaya"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -7.2575,
+      "lon": 112.7521,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Surabaya 2026",
+        "en": "Surabaya city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 5288796,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 1100000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 5000,
+        "unit": "IDR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "suarasurabaya-suroboyobus",
+        "status": "official",
+        "note": "Suroboyo Bus general fare."
+      }
+    },
+    {
+      "id": "medan",
+      "city": {
+        "id": "Medan",
+        "en": "Medan"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": 3.5952,
+      "lon": 98.6722,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Medan 2026",
+        "en": "Medan city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 4335198,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "detik-umk-sumut-2026",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 900000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 5000,
+        "unit": "IDR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "No published Trans Metro Deli fare found; typical angkot fare."
+      }
+    },
+    {
+      "id": "bandung",
+      "city": {
+        "id": "Bandung",
+        "en": "Bandung"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -6.9175,
+      "lon": 107.6191,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Bandung 2026",
+        "en": "Bandung city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 4737678,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "metrotv-umk-jabar-2026",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 1200000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 4900,
+        "unit": "IDR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "wiki-metro-jabar-trans",
+        "status": "official",
+        "note": "Metro Jabar Trans fare."
+      }
+    },
+    {
+      "id": "makassar",
+      "city": {
+        "id": "Makassar",
+        "en": "Makassar"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -5.1477,
+      "lon": 119.4327,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Makassar 2026",
+        "en": "Makassar city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 4148179,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-sulsel-2026",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 900000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 4600,
+        "unit": "IDR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "detik-temanbus-makassar",
+        "status": "official",
+        "note": "Teman Bus fare; several routes have stopped running."
+      }
     }
   ]
 }

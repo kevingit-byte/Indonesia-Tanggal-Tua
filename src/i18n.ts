@@ -63,7 +63,7 @@ const dict = {
   'map.aria': { id: 'Peta kota dengan lingkaran sesuai waktu kerja', en: 'Map of cities sized by work time' },
   'map.loading': { id: 'Memuat peta…', en: 'Loading map…' },
 
-  'item.eyebrow': { id: '2 · Satu barang, dua belas kota', en: '2 · One item, twelve cities' },
+  'item.eyebrow': { id: '2 · Satu barang, semua kota', en: '2 · One item, every city' },
   'item.title': { id: 'Harga satu barang, diukur dengan kerja', en: 'The price of one thing, measured in work' },
   'item.lede': {
     id: 'Pilih barang. Batang menunjukkan waktu kerja upah minimum per satuan. Ganti ke dolar untuk melihat kenapa "Indonesia murah" bisa terasa tidak benar.',
