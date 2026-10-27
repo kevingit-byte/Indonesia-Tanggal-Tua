@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "dataset": "places",
+  "updated": "2026-10-27",
+  "places": [
+    {
+      "id": "jakarta",
+      "city": {
+        "id": "Jakarta",
+        "en": "Jakarta"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -6.2088,
+      "lon": 106.8456,
+      "currency": "IDR",
+      "wageType": "UMP",
+      "wageLabel": {
+        "id": "UMP DKI Jakarta 2026",
+        "en": "Jakarta provincial minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 5729876,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "kemnaker-ump-2026",
+        "status": "official",
+        "note": "GoodStats prints Rp5.726.876 once, but its stated rise (Rp333 ribu, 6,17% over Rp5.396.761) gives Rp5.729.876."
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      }
+    },
+    {
+      "id": "kota-bekasi",
+      "city": {
+        "id": "Kota Bekasi",
+        "en": "Kota Bekasi"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -6.2383,
+      "lon": 106.9756,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Bekasi 2026",
+        "en": "Bekasi city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 5999443,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official",
+        "note": "Highest UMK in Indonesia for 2026."
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173."
+      }
+    },
+    {
+      "id": "kuala-lumpur",
+      "city": {
+        "id": "Kuala Lumpur",
+        "en": "Kuala Lumpur"
+      },
+      "country": {
+        "id": "Malaysia",
+        "en": "Malaysia"
+      },
+      "iso2": "MY",
+      "iso3": "MYS",
+      "isoNumeric": "458",
+      "lat": 3.139,
+      "lon": 101.6869,
+      "currency": "MYR",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum nasional",
+        "en": "National minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 4.078,
+        "unit": "MYR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 1700,
+        "unit": "MYR/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Minimum Wages Order 2024 (RM1.700 from February 2025)."
+      },
+      "monthlyHours": {
+        "value": 195,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "45 h/week × 52 ÷ 12 (Employment Act normal week)."
+      }
+    },
+    {
+      "id": "singapore",
+      "city": {
+        "id": "Singapura",
+        "en": "Singapore"
+      },
+      "country": {
+        "id": "Singapura",
+        "en": "Singapore"
+      },
+      "iso2": "SG",
+      "iso3": "SGP",
+      "isoNumeric": "702",
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "currency": "SGD",
+      "wageType": "reference",
+      "wageLabel": {
+        "id": "Local Qualifying Salary (bukan upah minimum)",
+        "en": "Local Qualifying Salary (not a minimum wage)"
+      },
+      "fxPerUsd": {
+        "value": 1.29005,
+        "unit": "SGD/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 1800,
+        "unit": "SGD/month",
+        "asOf": "2026-10-27",
+        "sourceId": "mom-lqs",
+        "status": "official",
+        "note": "Singapore has no general minimum wage. The LQS is the pay a local worker must earn to count toward a firm's foreign-worker quota."
+      },
+      "monthlyHours": {
+        "value": 191,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "44 h/week × 52 ÷ 12 (Employment Act normal week)."
+      }
+    },
+    {
+      "id": "bangkok",
+      "city": {
+        "id": "Bangkok",
+        "en": "Bangkok"
+      },
+      "country": {
+        "id": "Thailand",
+        "en": "Thailand"
+      },
+      "iso2": "TH",
+      "iso3": "THA",
+      "isoNumeric": "764",
+      "lat": 13.7563,
+      "lon": 100.5018,
+      "currency": "THB",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum harian Bangkok",
+        "en": "Bangkok daily minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 33.62,
+        "unit": "THB/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 400,
+        "unit": "THB/day",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Wage Committee announcement, ฿400/day for Bangkok."
+      },
+      "monthlyHours": {
+        "value": 208,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+      }
+    },
+    {
+      "id": "ho-chi-minh-city",
+      "city": {
+        "id": "Ho Chi Minh City",
+        "en": "Ho Chi Minh City"
+      },
+      "country": {
+        "id": "Vietnam",
+        "en": "Vietnam"
+      },
+      "iso2": "VN",
+      "iso3": "VNM",
+      "isoNumeric": "704",
+      "lat": 10.8231,
+      "lon": 106.6297,
+      "currency": "VND",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum Wilayah I",
+        "en": "Region I minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 26255.5,
+        "unit": "VND/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 5310000,
+        "unit": "VND/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Region I monthly minimum from 1 January 2026."
+      },
+      "monthlyHours": {
+        "value": 208,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+      }
+    },
+    {
+      "id": "manila",
+      "city": {
+        "id": "Manila",
+        "en": "Manila"
+      },
+      "country": {
+        "id": "Filipina",
+        "en": "Philippines"
+      },
+      "iso2": "PH",
+      "iso3": "PHL",
+      "isoNumeric": "608",
+      "lat": 14.5995,
+      "lon": 120.9842,
+      "currency": "PHP",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum harian NCR",
+        "en": "NCR daily minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 61.685,
+        "unit": "PHP/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 755,
+        "unit": "PHP/day",
+        "asOf": "2026-10-27",
+        "sourceId": "nwpc-wage-orders",
+        "status": "official",
+        "note": "Non-agriculture rate. NWPC lists ₱755 under Wage Order NCR-28 (effective 26 September 2026); Wage Order NCR-27 (25 July 2026) is awaiting court decisions."
+      },
+      "monthlyHours": {
+        "value": 208,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+      }
+    },
+    {
+      "id": "phnom-penh",
+      "city": {
+        "id": "Phnom Penh",
+        "en": "Phnom Penh"
+      },
+      "country": {
+        "id": "Kamboja",
+        "en": "Cambodia"
+      },
+      "iso2": "KH",
+      "iso3": "KHM",
+      "isoNumeric": "116",
+      "lat": 11.5564,
+      "lon": 104.9282,
+      "currency": "USD",
+      "wageType": "sector",
+      "wageLabel": {
+        "id": "Upah minimum sektor garmen",
+        "en": "Garment-sector minimum wage"
+      },
+      "wage": {
+        "value": 210,
+        "unit": "USD/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Cambodia sets a minimum only for garment, footwear and travel-goods workers. Prices are kept in US dollars, which circulate alongside the riel."
+      },
+      "monthlyHours": {
+        "value": 208,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+      }
+    },
+    {
+      "id": "vientiane",
+      "city": {
+        "id": "Vientiane",
+        "en": "Vientiane"
+      },
+      "country": {
+        "id": "Laos",
+        "en": "Laos"
+      },
+      "iso2": "LA",
+      "iso3": "LAO",
+      "isoNumeric": "418",
+      "lat": 17.9757,
+      "lon": 102.6331,
+      "currency": "LAK",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum nasional",
+        "en": "National minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 21800,
+        "unit": "LAK/USD",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "Approximate. The kip has had a wide gap between official and market rates."
+      },
+      "wage": {
+        "value": 2500000,
+        "unit": "LAK/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 208,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+      }
+    },
+    {
+      "id": "seoul",
+      "city": {
+        "id": "Seoul",
+        "en": "Seoul"
+      },
+      "country": {
+        "id": "Korea Selatan",
+        "en": "South Korea"
+      },
+      "iso2": "KR",
+      "iso3": "KOR",
+      "isoNumeric": "410",
+      "lat": 37.5665,
+      "lon": 126.978,
+      "currency": "KRW",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum per jam",
+        "en": "Hourly minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 1485.9,
+        "unit": "KRW/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 10320,
+        "unit": "KRW/hour",
+        "asOf": "2026-01-01",
+        "sourceId": "kr-minimum-wage-commission",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 209,
+        "unit": "h/month",
+        "asOf": "2026-01-01",
+        "sourceId": "kr-minimum-wage-commission",
+        "status": "official",
+        "note": "Korea's official monthly conversion: 40 h/week plus paid weekly holiday (주휴수당)."
+      }
+    },
+    {
+      "id": "tokyo",
+      "city": {
+        "id": "Tokyo",
+        "en": "Tokyo"
+      },
+      "country": {
+        "id": "Jepang",
+        "en": "Japan"
+      },
+      "iso2": "JP",
+      "iso3": "JPN",
+      "isoNumeric": "392",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "currency": "JPY",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum per jam Tokyo",
+        "en": "Tokyo hourly minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 162.135,
+        "unit": "JPY/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 1280,
+        "unit": "JPY/hour",
+        "asOf": "2026-10-01",
+        "sourceId": "mhlw-minimum-wage",
+        "status": "official",
+        "note": "Tokyo regional minimum from 1 October 2026 (per prototype)."
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "estimate",
+        "note": "40 h/week × 52 ÷ 12."
+      }
+    }
+  ]
+}

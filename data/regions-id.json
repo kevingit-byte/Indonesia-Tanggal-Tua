@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "dataset": "regions-id",
+  "updated": "2026-10-27",
+  "year": 2026,
+  "regions": [
+    {
+      "id": "dki-jakarta",
+      "name": "DKI Jakarta",
+      "province": "DKI Jakarta",
+      "level": "UMP",
+      "wage": {
+        "value": 5729876,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "kemnaker-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-bekasi",
+      "name": "Kota Bekasi",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 5999443,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kab-bekasi",
+      "name": "Kabupaten Bekasi",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 5938885,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kab-karawang",
+      "name": "Kabupaten Karawang",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 5886853,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-depok",
+      "name": "Kota Depok",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 5522662,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-cilegon",
+      "name": "Kota Cilegon",
+      "province": "Banten",
+      "level": "UMK",
+      "wage": {
+        "value": 5469923,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-bogor",
+      "name": "Kota Bogor",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 5437203,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-tangerang",
+      "name": "Kota Tangerang",
+      "province": "Banten",
+      "level": "UMK",
+      "wage": {
+        "value": 5399406,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-batam",
+      "name": "Kota Batam",
+      "province": "Kepulauan Riau",
+      "level": "UMK",
+      "wage": {
+        "value": 5357982,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kota-surabaya",
+      "name": "Kota Surabaya",
+      "province": "Jawa Timur",
+      "level": "UMK",
+      "wage": {
+        "value": 5288796,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "kab-pangandaran",
+      "name": "Kabupaten Pangandaran",
+      "province": "Jawa Barat",
+      "level": "UMK",
+      "wage": {
+        "value": 2351250,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Lowest UMK in Jawa Barat."
+      }
+    }
+  ]
+}

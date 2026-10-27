@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "dataset": "sources",
+  "updated": "2026-10-27",
+  "sources": [
+    {
+      "id": "bjk-prototype-2026-10",
+      "title": "Berapa Jam Kerja single-file prototype (berapa-jam-kerja.html)",
+      "publisher": "Berapa Jam Kerja",
+      "url": null,
+      "accessed": null,
+      "note": "Values carried over from the prototype. Its footer names the original references (official wage orders, Pertamina, PLN, typical retail prices) but not per-value links. Every value citing this source is a re-verification target."
+    },
+    {
+      "id": "kemnaker-ump-2026",
+      "title": "Lengkap! Ini Daftar UMP 2026 di 38 Provinsi Versi Kemnaker",
+      "publisher": "Bisnis.com (Kemnaker data)",
+      "url": "https://ekonomi.bisnis.com/read/20260108/12/1942811/lengkap-ini-daftar-ump-2026-di-38-provinsi-versi-kemnaker",
+      "accessed": null,
+      "note": "Cited by the prototype. The page blocks automated fetching, so it was not re-opened on 2026-10-27."
+    },
+    {
+      "id": "goodstats-umk-2026",
+      "title": "10 Kabupaten/Kota dengan UMK Tertinggi di Indonesia Tahun 2026",
+      "publisher": "GoodStats",
+      "url": "https://goodstats.id/article/10-kabupaten-kota-dengan-umk-tertinggi-2026-SOdU7",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "idntimes-ump-jakarta",
+      "title": "Daftar Kenaikan UMP Jakarta dari Tahun ke Tahun sejak 1999",
+      "publisher": "IDN Times (citing BPS)",
+      "url": "https://www.idntimes.com/business/economy/daftar-kenaikan-ump-jakarta-dari-tahun-ke-tahun-sejak-1999-00-2hm81-k5wc5w",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "bisnis-iphone17-id",
+      "title": "Resmi! Ini Harga iPhone 17 Series di Indonesia, Mulai Rp17 Jutaan",
+      "publisher": "Bisnis.com",
+      "url": "https://teknologi.bisnis.com/read/20251008/280/1918463/resmi-ini-harga-iphone-17-series-di-indonesia-mulai-rp17-jutaan",
+      "accessed": "2026-10-27",
+      "note": "Launch price at iBox, 8 October 2025. Apple has no online store for Indonesia."
+    },
+    {
+      "id": "economist-bigmac-2026-07",
+      "title": "The Big Mac index, raw data (big-mac-raw-index.csv), July 2026 release",
+      "publisher": "The Economist",
+      "url": "https://github.com/TheEconomist/big-mac-data/blob/master/output-data/big-mac-raw-index.csv",
+      "accessed": "2026-10-27",
+      "note": "local_price and dollar_ex columns for 2026-07-01. Cambodia and Laos are not in the index (no McDonald's)."
+    },
+    {
+      "id": "nwpc-wage-orders",
+      "title": "Current Real Minimum Wage Rates (regional wage orders)",
+      "publisher": "National Wages and Productivity Commission, DOLE Philippines",
+      "url": "https://nwpc.dole.gov.ph/",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "mom-lqs",
+      "title": "Local Qualifying Salary",
+      "publisher": "Ministry of Manpower Singapore",
+      "url": "https://www.mom.gov.sg/employment-practices/progressive-wage-model/local-qualifying-salary",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "mhlw-minimum-wage",
+      "title": "地域別最低賃金の全国一覧 (regional minimum wages)",
+      "publisher": "Ministry of Health, Labour and Welfare, Japan",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/",
+      "accessed": null,
+      "note": "Page reachable on 2026-10-27 but the Tokyo figure was not read from it; value carried from the prototype."
+    },
+    {
+      "id": "kr-minimum-wage-commission",
+      "title": "Minimum Wage Commission, Republic of Korea",
+      "publisher": "최저임금위원회",
+      "url": "https://www.minimumwage.go.kr",
+      "accessed": null,
+      "note": "Value carried from the prototype; the 2026 rate and the 209-hour monthly conversion are to be confirmed on the commission's page."
+    },
+    {
+      "id": "jakpost-wb-rice-2022",
+      "title": "Rice import may harm local farmers as price gap widens, warns Kadin",
+      "publisher": "The Jakarta Post",
+      "url": "https://www.thejakartapost.com/business/2022/12/30/rice-import-may-harm-local-farmers-as-price-gap-widens-warns-kadin",
+      "accessed": "2026-10-27",
+      "note": "Context section: World Bank comparison of Indonesian and ASEAN rice prices."
+    },
+    {
+      "id": "bi-pihps",
+      "title": "Pusat Informasi Harga Pangan Strategis Nasional (PIHPS)",
+      "publisher": "Bank Indonesia",
+      "url": "https://www.bi.go.id/hargapangan",
+      "accessed": null,
+      "note": "Prototype used national averages for 6 and 21 October 2026. Re-read before using new values."
+    },
+    {
+      "id": "wcol-bigmac-2026",
+      "title": "Big Mac Index 2026: 150 Cities Ranked by Price",
+      "publisher": "WorldCostOfLiving",
+      "url": "https://www.worldcostofliving.com/big-mac-index-2026",
+      "accessed": "2026-10-27",
+      "note": "Used by the prototype. Not used for values any more: it lists 'estimated' Big Mac prices for Phnom Penh and Vientiane, where McDonald's does not operate. Kept for the record."
+    },
+    {
+      "id": "apple-store-sg",
+      "title": "Buy iPhone 17 – Apple (Singapore)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/sg/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "apple-store-my",
+      "title": "Buy iPhone 17 – Apple (Malaysia)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/my/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "apple-store-th",
+      "title": "Buy iPhone 17 – Apple (Thailand)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/th/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "apple-store-vn",
+      "title": "Buy iPhone 17 – Apple (Vietnam)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/vn/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "apple-store-ph",
+      "title": "Buy iPhone 17 – Apple (Philippines)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/ph/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "apple-store-kr",
+      "title": "Buy iPhone 17 – Apple (South Korea)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/kr/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "apple-store-jp",
+      "title": "Buy iPhone 17 – Apple (Japan)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/jp/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    }
+  ]
+}

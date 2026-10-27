@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "dataset": "prices",
+  "updated": "2026-10-27",
+  "items": [
+    {
+      "id": "rice",
+      "label": {
+        "id": "Beras",
+        "en": "Rice"
+      },
+      "per": "kg"
+    },
+    {
+      "id": "eggs",
+      "label": {
+        "id": "Telur ayam",
+        "en": "Eggs"
+      },
+      "per": "kg"
+    },
+    {
+      "id": "chicken",
+      "label": {
+        "id": "Daging ayam",
+        "en": "Chicken"
+      },
+      "per": "kg"
+    },
+    {
+      "id": "beef",
+      "label": {
+        "id": "Daging sapi",
+        "en": "Beef"
+      },
+      "per": "kg"
+    },
+    {
+      "id": "oil",
+      "label": {
+        "id": "Minyak goreng",
+        "en": "Cooking oil"
+      },
+      "per": "L"
+    },
+    {
+      "id": "petrol",
+      "label": {
+        "id": "Bensin",
+        "en": "Petrol"
+      },
+      "per": "L"
+    },
+    {
+      "id": "electricity",
+      "label": {
+        "id": "Listrik",
+        "en": "Electricity"
+      },
+      "per": "kWh"
+    }
+  ],
+  "prices": {
+    "jakarta": {
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      }
+    },
+    "kota-bekasi": {
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      }
+    },
+    "kuala-lumpur": {},
+    "singapore": {},
+    "bangkok": {},
+    "ho-chi-minh-city": {},
+    "manila": {},
+    "phnom-penh": {},
+    "vientiane": {},
+    "seoul": {},
+    "tokyo": {}
+  }
+}

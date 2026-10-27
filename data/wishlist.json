@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "dataset": "wishlist",
+  "updated": "2026-10-27",
+  "items": [
+    {
+      "id": "iphone",
+      "label": {
+        "id": "iPhone 17 256 GB",
+        "en": "iPhone 17 256 GB"
+      },
+      "per": "item",
+      "prices": {
+        "ID": {
+          "value": 17249000,
+          "unit": "IDR/item",
+          "asOf": "2025-10-08",
+          "sourceId": "bisnis-iphone17-id",
+          "status": "official",
+          "note": "Launch price at iBox; not re-checked for 2026 price changes."
+        },
+        "SG": {
+          "value": 1449,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-sg",
+          "status": "official"
+        },
+        "MY": {
+          "value": 4299,
+          "unit": "MYR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-my",
+          "status": "official"
+        },
+        "TH": {
+          "value": 34900,
+          "unit": "THB/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-th",
+          "status": "official"
+        },
+        "VN": {
+          "value": 28999000,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-vn",
+          "status": "official"
+        },
+        "PH": {
+          "value": 69990,
+          "unit": "PHP/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-ph",
+          "status": "official"
+        },
+        "KR": {
+          "value": 1450000,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-kr",
+          "status": "official"
+        },
+        "JP": {
+          "value": 159800,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-jp",
+          "status": "official"
+        }
+      }
+    },
+    {
+      "id": "switch2",
+      "label": {
+        "id": "Nintendo Switch 2",
+        "en": "Nintendo Switch 2"
+      },
+      "per": "item",
+      "prices": {}
+    },
+    {
+      "id": "stanley",
+      "label": {
+        "id": "Stanley Quencher 40 oz",
+        "en": "Stanley Quencher 40 oz"
+      },
+      "per": "item",
+      "prices": {}
+    },
+    {
+      "id": "latte",
+      "label": {
+        "id": "Starbucks latte grande",
+        "en": "Starbucks grande latte"
+      },
+      "per": "item",
+      "prices": {}
+    },
+    {
+      "id": "bigmac",
+      "label": {
+        "id": "Big Mac",
+        "en": "Big Mac"
+      },
+      "per": "item",
+      "prices": {
+        "ID": {
+          "value": 43000,
+          "unit": "IDR/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "MY": {
+          "value": 14.55,
+          "unit": "MYR/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "SG": {
+          "value": 7.45,
+          "unit": "SGD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "TH": {
+          "value": 135,
+          "unit": "THB/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "VN": {
+          "value": 76000,
+          "unit": "VND/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "PH": {
+          "value": 169,
+          "unit": "PHP/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "KR": {
+          "value": 5700,
+          "unit": "KRW/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "JP": {
+          "value": 500,
+          "unit": "JPY/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
+        },
+        "KH": {
+          "value": null,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot",
+          "note": "Not sold: McDonald's does not operate in Cambodia."
+        },
+        "LA": {
+          "value": null,
+          "unit": "LAK/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot",
+          "note": "Not sold: McDonald's does not operate in Laos."
+        }
+      }
+    },
+    {
+      "id": "netflix",
+      "label": {
+        "id": "Netflix Standard",
+        "en": "Netflix Standard"
+      },
+      "per": "month",
+      "prices": {}
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "dataset": "method",
+  "updated": "2026-10-27",
+  "workdayHours": 8,
+  "indexBaseYear": 2002,
+  "basket": [
+    {
+      "item": "rent",
+      "qty": 1,
+      "per": "month"
+    },
+    {
+      "item": "rice",
+      "qty": 8,
+      "per": "kg"
+    },
+    {
+      "item": "eggs",
+      "qty": 3,
+      "per": "kg"
+    },
+    {
+      "item": "chicken",
+      "qty": 4,
+      "per": "kg"
+    },
+    {
+      "item": "beef",
+      "qty": 1,
+      "per": "kg"
+    },
+    {
+      "item": "oil",
+      "qty": 2,
+      "per": "L"
+    },
+    {
+      "item": "electricity",
+      "qty": 90,
+      "per": "kWh"
+    },
+    {
+      "item": "transit",
+      "qty": 44,
+      "per": "ride"
+    }
+  ]
+}

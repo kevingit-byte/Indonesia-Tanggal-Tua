@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "dataset": "timeseries-jakarta",
+  "updated": "2026-10-27",
+  "place": "jakarta",
+  "series": [
+    {
+      "id": "ump",
+      "label": {
+        "id": "UMP DKI Jakarta",
+        "en": "Jakarta minimum wage"
+      },
+      "unit": "IDR/month",
+      "points": [
+        {
+          "year": 2000,
+          "value": 344257,
+          "unit": "IDR/month",
+          "asOf": "2000-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2001,
+          "value": 426250,
+          "unit": "IDR/month",
+          "asOf": "2001-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2002,
+          "value": 591266,
+          "unit": "IDR/month",
+          "asOf": "2002-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2003,
+          "value": 631554,
+          "unit": "IDR/month",
+          "asOf": "2003-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2004,
+          "value": 671550,
+          "unit": "IDR/month",
+          "asOf": "2004-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2005,
+          "value": 711843,
+          "unit": "IDR/month",
+          "asOf": "2005-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2006,
+          "value": 819100,
+          "unit": "IDR/month",
+          "asOf": "2006-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2007,
+          "value": 900560,
+          "unit": "IDR/month",
+          "asOf": "2007-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2008,
+          "value": 972605,
+          "unit": "IDR/month",
+          "asOf": "2008-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2009,
+          "value": 1069865,
+          "unit": "IDR/month",
+          "asOf": "2009-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2010,
+          "value": 1118000,
+          "unit": "IDR/month",
+          "asOf": "2010-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2011,
+          "value": 1290000,
+          "unit": "IDR/month",
+          "asOf": "2011-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2012,
+          "value": 1529150,
+          "unit": "IDR/month",
+          "asOf": "2012-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2013,
+          "value": 2200000,
+          "unit": "IDR/month",
+          "asOf": "2013-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2014,
+          "value": 2441000,
+          "unit": "IDR/month",
+          "asOf": "2014-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2015,
+          "value": 2700000,
+          "unit": "IDR/month",
+          "asOf": "2015-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2016,
+          "value": 3100000,
+          "unit": "IDR/month",
+          "asOf": "2016-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2017,
+          "value": 3355750,
+          "unit": "IDR/month",
+          "asOf": "2017-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2018,
+          "value": 3648036,
+          "unit": "IDR/month",
+          "asOf": "2018-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2019,
+          "value": 3940973,
+          "unit": "IDR/month",
+          "asOf": "2019-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2020,
+          "value": 4276349,
+          "unit": "IDR/month",
+          "asOf": "2020-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official",
+          "note": "IDN Times prints Rp4.267.349 (digits transposed). Rp4.276.349 is the decree figure: +8,51% on 2019, the national 2020 formula rate."
+        },
+        {
+          "year": 2021,
+          "value": 4416186,
+          "unit": "IDR/month",
+          "asOf": "2021-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2022,
+          "value": 4573845,
+          "unit": "IDR/month",
+          "asOf": "2022-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official",
+          "note": "Court-revised figure. The governor first set Rp4.641.854; PTUN Jakarta ordered the lower Rp4.573.845."
+        },
+        {
+          "year": 2023,
+          "value": 4901798,
+          "unit": "IDR/month",
+          "asOf": "2023-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2024,
+          "value": 5067381,
+          "unit": "IDR/month",
+          "asOf": "2024-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2025,
+          "value": 5396761,
+          "unit": "IDR/month",
+          "asOf": "2025-01-01",
+          "sourceId": "idntimes-ump-jakarta",
+          "status": "official"
+        },
+        {
+          "year": 2026,
+          "value": 5729876,
+          "unit": "IDR/month",
+          "asOf": "2026-01-01",
+          "sourceId": "kemnaker-ump-2026",
+          "status": "official"
+        }
+      ]
+    },
+    {
+      "id": "rice",
+      "label": {
+        "id": "Harga beras medium (rata-rata nasional)",
+        "en": "Medium rice, national average retail"
+      },
+      "unit": "IDR/kg",
+      "points": []
+    }
+  ]
+}
