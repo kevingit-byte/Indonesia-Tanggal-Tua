@@ -18,6 +18,7 @@ const views: Record<string, string> = {
   home: 'Berapa jam kerja untuk hidup pas-pasan?',
   'item-rice': 'Satu kilo beras, diukur dengan menit kerja upah minimum',
   'wishlist-iphone': 'iPhone 17: berapa hari kerja upah minimum?',
+  'wishlist-iphone18pro': 'iPhone 18 Pro: berapa hari kerja upah minimum?',
   'wishlist-switch2': 'Nintendo Switch 2: berapa hari kerja upah minimum?',
   'wishlist-bigmac': 'Big Mac: berapa menit kerja upah minimum?',
   'wishlist-latte': 'Starbucks latte: berapa jam kerja upah minimum?',

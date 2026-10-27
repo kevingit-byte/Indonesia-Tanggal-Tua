@@ -78,6 +78,8 @@ export interface BarRow {
   derived: Derived;
   /** Shown instead of a bar when value is null. */
   emptyText?: string;
+  /** Second line under the value, e.g. "≈ 3,0 bulan gaji". */
+  extra?: string;
 }
 
 /** Horizontal bars, Indonesia in rupiah red, others slate. Estimates are hatched. */
@@ -91,7 +93,7 @@ export function barRows(rows: BarRow[], max?: number): string {
       const val =
         r.value === null
           ? `<span class="na">${esc(r.emptyText ?? t('nodata'))}</span>`
-          : `${statusTag(r.derived)}${provBtn(r.display, r.provLabel, r.derived.inputs)}`;
+          : `${statusTag(r.derived)}${provBtn(r.display, r.provLabel, r.derived.inputs)}${r.extra ? `<small>${esc(r.extra)}</small>` : ''}`;
       return `<div class="row${isId ? ' is-id' : ''}">${cityLabel(r.place, r.sub)}<div class="track">${
         r.value === null ? '' : `<i class="fill${weak ? ' weak' : ''}" style="width:${w.toFixed(2)}%"></i>`
       }</div><div class="val">${val}</div></div>`;

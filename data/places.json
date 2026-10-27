@@ -59,10 +59,10 @@
       "transitFare": {
         "value": 3500,
         "unit": "IDR/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "TransJakarta flat fare."
+        "asOf": "2026-06-10",
+        "sourceId": "bisnis-transjakarta-2026-06",
+        "status": "official",
+        "note": "TransJakarta flat fare, all routes."
       }
     },
     {
@@ -120,10 +120,10 @@
       "transitFare": {
         "value": 3500,
         "unit": "IDR/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "TransJakarta / Trans Patriot flat fare."
+        "asOf": "2026-06-10",
+        "sourceId": "bisnis-transjakarta-2026-06",
+        "status": "official",
+        "note": "TransJakarta flat fare, including routes to Bekasi."
       }
     },
     {
@@ -301,12 +301,12 @@
         "note": "A small studio or room outside the centre."
       },
       "transitFare": {
-        "value": 20,
+        "value": 8,
         "unit": "THB/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Mix of BMTA bus and BTS/MRT fares."
+        "asOf": "2026-09-01",
+        "sourceId": "thairath-bmta-2026",
+        "status": "official",
+        "note": "BMTA ordinary bus."
       }
     },
     {
@@ -362,12 +362,12 @@
         "note": "A phòng trọ (rented room)."
       },
       "transitFare": {
-        "value": 7000,
+        "value": 0,
         "unit": "VND/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "City bus fare."
+        "asOf": "2026-07-01",
+        "sourceId": "tienphong-hcmc-bus-free",
+        "status": "official",
+        "note": "City buses are free until 31 December 2026 (normal fare ₫5.000–7.000)."
       }
     },
     {
@@ -423,12 +423,12 @@
         "note": "A small room or bedspace in Metro Manila."
       },
       "transitFare": {
-        "value": 13,
+        "value": 14,
         "unit": "PHP/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Jeepney minimum fare."
+        "asOf": "2026-09-26",
+        "sourceId": "tribune-jeepney-2026-09",
+        "status": "official",
+        "note": "Traditional jeepney minimum fare."
       }
     },
     {
@@ -479,10 +479,10 @@
       "transitFare": {
         "value": 0.37,
         "unit": "USD/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "City bus, 1.500 riel."
+        "asOf": "2024-01-01",
+        "sourceId": "wiki-pp-city-bus",
+        "status": "official",
+        "note": "City bus flat fare, 1.500 riel."
       }
     },
     {
@@ -507,12 +507,12 @@
         "en": "National minimum wage"
       },
       "fxPerUsd": {
-        "value": 21800,
+        "value": 21949,
         "unit": "LAK/USD",
-        "asOf": "2026-10-01",
-        "sourceId": "bjk-prototype-2026-10",
-        "status": "estimate",
-        "note": "Approximate. The kip has had a wide gap between official and market rates."
+        "asOf": "2026-06-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Rate implied by WFP's US-dollar conversion of Vientiane market prices, June 2026."
       },
       "wage": {
         "value": 2500000,
@@ -600,10 +600,10 @@
       "transitFare": {
         "value": 1550,
         "unit": "KRW/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Basic subway fare with a transit card."
+        "asOf": "2025-06-28",
+        "sourceId": "kb-seoul-metro-fare",
+        "status": "official",
+        "note": "Subway base fare, adult transport card."
       }
     },
     {
@@ -651,20 +651,20 @@
         "note": "Statutory normal week, 40 h/week (Labour Standards Act), × 52 ÷ 12."
       },
       "rent": {
-        "value": 55000,
+        "value": 60444,
         "unit": "JPY/month",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "A room in a share house, inside the 23 wards."
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "snapshot",
+        "note": "Private rent ¥10.074 per 3,3 m² per month, × 6 for a 20 m² room."
       },
       "transitFare": {
-        "value": 180,
+        "value": 230,
         "unit": "JPY/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Shortest Tokyo Metro fare."
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "official",
+        "note": "Ordinary bus fare (7 km)."
       }
     },
     {

@@ -12,12 +12,12 @@
       "per": "item",
       "prices": {
         "ID": {
-          "value": 17249000,
+          "value": 20499000,
           "unit": "IDR/item",
-          "asOf": "2025-10-08",
-          "sourceId": "bisnis-iphone17-id",
+          "asOf": "2026-10-01",
+          "sourceId": "bisnis-ibox-2026-10-01",
           "status": "official",
-          "note": "Launch price at iBox; not re-checked for 2026 price changes."
+          "note": "iBox price list, 1 October 2026 (launch price Rp17.249.000 in October 2025)."
         },
         "SG": {
           "value": 1449,
@@ -89,6 +89,80 @@
           "unit": "CNY/item",
           "asOf": "2026-10-27",
           "sourceId": "apple-store-cn",
+          "status": "official"
+        }
+      }
+    },
+    {
+      "id": "iphone18pro",
+      "label": {
+        "id": "iPhone 18 Pro 256 GB",
+        "en": "iPhone 18 Pro 256 GB"
+      },
+      "per": "item",
+      "prices": {
+        "ID": {
+          "value": 27499000,
+          "unit": "IDR/item",
+          "asOf": "2026-10-07",
+          "sourceId": "selular-iphone18-id",
+          "status": "official",
+          "note": "Official price at launch of pre-orders, 7 October 2026."
+        },
+        "SG": {
+          "value": 1899,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-sg",
+          "status": "official"
+        },
+        "MY": {
+          "value": 5499,
+          "unit": "MYR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-my",
+          "status": "official"
+        },
+        "TH": {
+          "value": 48900,
+          "unit": "THB/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-th",
+          "status": "official"
+        },
+        "VN": {
+          "value": 38999000,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-vn",
+          "status": "official"
+        },
+        "PH": {
+          "value": 94990,
+          "unit": "PHP/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-ph",
+          "status": "official"
+        },
+        "KR": {
+          "value": 1990000,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-kr",
+          "status": "official"
+        },
+        "JP": {
+          "value": 219800,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-jp",
+          "status": "official"
+        },
+        "CN": {
+          "value": 9999,
+          "unit": "CNY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-18pro-cn",
           "status": "official"
         }
       }

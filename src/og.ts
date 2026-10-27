@@ -8,6 +8,7 @@ export const OG_VIEWS: Record<string, () => string> = {
   home: hero,
   'item-rice': () => (setUi({ item: 'rice' }), itemsSection()),
   'wishlist-iphone': () => (setUi({ wish: 'iphone' }), wishSection()),
+  'wishlist-iphone18pro': () => (setUi({ wish: 'iphone18pro' }), wishSection()),
   'wishlist-switch2': () => (setUi({ wish: 'switch2' }), wishSection()),
   'wishlist-bigmac': () => (setUi({ wish: 'bigmac' }), wishSection()),
   'wishlist-latte': () => (setUi({ wish: 'latte' }), wishSection()),
