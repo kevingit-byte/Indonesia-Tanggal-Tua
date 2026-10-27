@@ -26,6 +26,14 @@ const stripes = (colors: [string, number][]) => {
 
 const BODY: Record<string, string> = {
   ID: stripes([['#CE1126', 1], ['#FFFFFF', 1]]),
+  CN: `<rect width="30" height="20" fill="#EE1C25"/>${star(5, 5, 3, '#FFFF00')}${[
+    [10, 2],
+    [12, 4],
+    [12, 7],
+    [10, 9],
+  ]
+    .map(([x, y]) => star(x!, y!, 1, '#FFFF00'))
+    .join('')}`,
   JP: `<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#BC002D"/>`,
   VN: `<rect width="30" height="20" fill="#DA251D"/>${star(15, 10.4, 6, '#FFFF00')}`,
   TH: stripes([['#A51931', 1], ['#F4F5F8', 1], ['#2D2A4A', 2], ['#F4F5F8', 1], ['#A51931', 1]]),

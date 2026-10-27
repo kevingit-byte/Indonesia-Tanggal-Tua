@@ -23,3 +23,4 @@ Do this once a month, plus the dated items below. After editing, run `npm run ch
 - Not sold in a country → `value: null` with a `note`. Not found yet → leave the field out.
 - Don't add interpolated points to the time series; add published anchors only.
 - Add every new source to `sources.json` with the date you read it.
+- Write notes in English and add the Indonesian version to `notes-id.json` (key = the English note). `check-data` lists notes without one.

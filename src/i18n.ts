@@ -9,8 +9,8 @@ const dict = {
   'hero.title.b': { id: 'hidup pas-pasan', en: 'live basic' },
   'hero.title.c': { id: '?', en: '?' },
   'hero.lede': {
-    id: 'Harga dalam rupiah terlihat murah kalau dihitung dalam dolar. Ukuran yang lebih adil: berapa lama pekerja bergaji upah minimum harus bekerja untuk membayar beras, kamar kos, ongkos bus, atau iPhone. Situs ini mengubah setiap harga menjadi waktu kerja di Indonesia, Asia Tenggara, Korea, dan Jepang.',
-    en: 'Rupiah prices look cheap in dollars. The fairer test is how long a minimum-wage worker has to work to pay for rice, a room, a bus ride or an iPhone. This site converts every price into work time across Indonesia, Southeast Asia, Korea and Japan.',
+    id: 'Harga dalam rupiah terlihat murah kalau dihitung dalam dolar. Ukuran yang lebih adil: berapa lama pekerja bergaji upah minimum harus bekerja untuk membayar beras, kamar kos, ongkos bus, atau iPhone. Situs ini mengubah setiap harga menjadi waktu kerja di Indonesia, Asia Tenggara, Tiongkok, Korea, dan Jepang.',
+    en: 'Rupiah prices look cheap in dollars. The fairer test is how long a minimum-wage worker has to work to pay for rice, a room, a bus ride or an iPhone. This site converts every price into work time across Indonesia, Southeast Asia, China, Korea and Japan.',
   },
   'hero.v.iphone': { id: 'iPhone 17 di Jakarta', en: 'iPhone 17 in Jakarta' },
   'hero.v.iphoneVs': { id: 'hari kerja · Tokyo {x} · Singapura {y}', en: 'workdays · Tokyo {x} · Singapore {y}' },
@@ -41,7 +41,7 @@ const dict = {
   'map.aria': { id: 'Peta kota dengan lingkaran sesuai waktu kerja', en: 'Map of cities sized by work time' },
   'map.loading': { id: 'Memuat peta…', en: 'Loading map…' },
 
-  'item.eyebrow': { id: '2 · Satu barang, sebelas kota', en: '2 · One item, eleven cities' },
+  'item.eyebrow': { id: '2 · Satu barang, dua belas kota', en: '2 · One item, twelve cities' },
   'item.title': { id: 'Harga satu barang, diukur dengan kerja', en: 'The price of one thing, measured in work' },
   'item.lede': {
     id: 'Pilih barang. Batang menunjukkan waktu kerja upah minimum per satuan. Ganti ke dolar untuk melihat kenapa "Indonesia murah" bisa terasa tidak benar.',
@@ -178,8 +178,8 @@ const dict = {
     en: 'Pay per minute = monthly wage ÷ (monthly hours × 60). Work time = price ÷ pay per minute. Small items show minutes or hours, big ones 8-hour workdays.',
   },
   'method.p2': {
-    id: 'Jam kerja sebulan: 173 (ID, JP), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR). Upah harian dikalikan jam sebulan ÷ 8. Setiap angka hasil hitungan ikut status terlemah dari masukannya, jadi apa pun yang dibangun dari perkiraan ditandai perkiraan. Myanmar tidak dimasukkan karena data kurs dan harganya tidak andal.',
-    en: 'Monthly hours: 173 (ID, JP), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR). Daily wages count monthly hours ÷ 8 days. Every computed figure takes the weakest status of its inputs, so anything built on an estimate is marked as one. Myanmar is left out because its exchange-rate and price data are unreliable.',
+    id: 'Jam kerja sebulan: 173 (ID, JP), 174 (CN), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR). Upah harian dikalikan jam sebulan ÷ 8. Setiap angka hasil hitungan ikut status terlemah dari masukannya, jadi apa pun yang dibangun dari perkiraan ditandai perkiraan. Myanmar tidak dimasukkan karena data kurs dan harganya tidak andal.',
+    en: 'Monthly hours: 173 (ID, JP), 174 (CN), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR). Daily wages count monthly hours ÷ 8 days. Every computed figure takes the weakest status of its inputs, so anything built on an estimate is marked as one. Myanmar is left out because its exchange-rate and price data are unreliable.',
   },
 
   'status.official': { id: 'resmi', en: 'official' },
@@ -195,6 +195,12 @@ const dict = {
   'unit.min': { id: 'mnt', en: 'min' },
   'unit.h': { id: 'jam', en: 'h' },
   'unit.day': { id: 'hari', en: 'days' },
+  'prov.asof': { id: 'berlaku', en: 'as of' },
+  'per.month': { id: 'bulan', en: 'month' },
+  'per.day': { id: 'hari', en: 'day' },
+  'per.hour': { id: 'jam', en: 'hour' },
+  'per.item': { id: 'buah', en: 'item' },
+  'per.ride': { id: 'sekali naik', en: 'ride' },
   'prov.title': { id: 'Dari mana angka ini', en: 'Where this number comes from' },
   'prov.close': { id: 'Tutup', en: 'Close' },
   'prov.computed': { id: 'Dihitung dari:', en: 'Computed from:' },

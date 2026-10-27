@@ -666,6 +666,67 @@
         "status": "estimate",
         "note": "Shortest Tokyo Metro fare."
       }
+    },
+    {
+      "id": "shanghai",
+      "city": {
+        "id": "Shanghai",
+        "en": "Shanghai"
+      },
+      "country": {
+        "id": "Tiongkok",
+        "en": "China"
+      },
+      "iso2": "CN",
+      "iso3": "CHN",
+      "isoNumeric": "156",
+      "lat": 31.2304,
+      "lon": 121.4737,
+      "currency": "CNY",
+      "wageType": "statutory",
+      "wageLabel": {
+        "id": "Upah minimum bulanan Shanghai",
+        "en": "Shanghai monthly minimum wage"
+      },
+      "fxPerUsd": {
+        "value": 6.7708,
+        "unit": "CNY/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot"
+      },
+      "wage": {
+        "value": 2740,
+        "unit": "CNY/month",
+        "asOf": "2025-07-01",
+        "sourceId": "cna-china-min-wage-2026",
+        "status": "official",
+        "note": "Highest monthly minimum in mainland China, in force since 1 July 2025. Shanghai's minimum excludes the worker's own social-insurance and housing-fund contributions, so gross pay at the minimum is higher."
+      },
+      "monthlyHours": {
+        "value": 174,
+        "unit": "h/month",
+        "asOf": "2008-01-03",
+        "sourceId": "mohrss-workdays-2008",
+        "status": "official",
+        "note": "Official monthly basis: 21,75 working days × 8 hours."
+      },
+      "rent": {
+        "value": 1800,
+        "unit": "CNY/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A room in a shared flat, outer districts."
+      },
+      "transitFare": {
+        "value": 3,
+        "unit": "CNY/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Shanghai Metro starting fare."
+      }
     }
   ]
 }

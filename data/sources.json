@@ -252,6 +252,30 @@
       "publisher": "Netflix Help Center",
       "url": "https://help.netflix.com/en/node/24926/jp",
       "accessed": "2026-10-27"
+    },
+    {
+      "id": "cna-china-min-wage-2026",
+      "title": "中國最低工資標準 上海月薪居首 (China minimum wage standards by province)",
+      "publisher": "Central News Agency (CNA), citing China's Ministry of Human Resources and Social Security",
+      "url": "https://cna.com.tw/news/acn/202610120041.aspx",
+      "accessed": "2026-10-27",
+      "note": "Article of 12 October 2026 on the ministry's latest provincial table: Shanghai ¥2.740 per month, ¥25 per hour."
+    },
+    {
+      "id": "mohrss-workdays-2008",
+      "title": "关于职工全年月平均工作时间和工资折算问题的通知 (人社部发〔2008〕3号)",
+      "publisher": "Ministry of Human Resources and Social Security, China",
+      "url": null,
+      "accessed": null,
+      "note": "Sets the monthly pay-calculation basis at 21,75 days, i.e. 174 hours of 8 hours."
+    },
+    {
+      "id": "apple-store-cn",
+      "title": "购买 iPhone 17 – Apple (中国大陆)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com.cn/shop/buy-iphone/iphone-17",
+      "accessed": "2026-10-27",
+      "note": "Current list price for iPhone 17 256GB read from the store page."
     }
   ]
 }

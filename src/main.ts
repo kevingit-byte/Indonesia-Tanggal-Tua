@@ -13,7 +13,7 @@ import {
   regionsSection,
   wishSection,
 } from './sections';
-import { readHash, resetEdits, setEdit, setUi, source, subscribe, ui, writeHash, type EditedDatum, type UiState } from './store';
+import { noteText, readHash, resetEdits, setEdit, setUi, source, subscribe, ui, writeHash, type EditedDatum, type UiState } from './store';
 import { getProv, resetProv } from './ui';
 
 const SECTIONS: [string, () => string][] = [
@@ -129,7 +129,12 @@ document.addEventListener('click', (e) => {
   if (set) {
     const key = set.dataset.set as keyof UiState;
     const value = set.dataset.value!;
-    if (key === 'lang') setLang(value as Lang);
+    if (key === 'lang') {
+      setLang(value as Lang);
+      const url = new URL(location.href);
+      url.searchParams.set('lang', value);
+      history.replaceState(null, '', url);
+    }
     setUi({ [key]: value } as Partial<UiState>);
     const section = HASH_OF[key];
     if (section) writeHash(section, value.toLowerCase());
@@ -162,6 +167,13 @@ document.addEventListener('input', (e) => {
 
 // ---- provenance dialog
 const dialog = document.getElementById('prov') as HTMLDialogElement;
+/** "kg", "L", "kWh" stay as they are; words get translated. */
+function perLabel(per: string): string {
+  const k = `per.${per}`;
+  return k in PER ? t(k as keyof typeof PER) : per;
+}
+const PER = { 'per.month': 1, 'per.day': 1, 'per.hour': 1, 'per.item': 1, 'per.ride': 1 } as const;
+
 function openProv(id: number) {
   const p = getProv(id);
   if (!p) return;
@@ -169,13 +181,18 @@ function openProv(id: number) {
     .map((d: EditedDatum) => {
       const s = source(d.sourceId);
       const [cur, per] = d.unit.split('/');
-      const val = d.value === null ? t('notsold') : /^[A-Z]{3}$/.test(cur!) ? `${money(d.value, cur!)} / ${per}` : `${num(d.value, 2)} ${d.unit}`;
+      const val =
+        d.value === null
+          ? t('notsold')
+          : /^[A-Z]{3}$/.test(cur!)
+            ? `${money(d.value, cur!)} / ${perLabel(per!)}`
+            : `${num(d.value, 2)} ${cur === 'h' ? t('unit.h') : cur} / ${perLabel(per!)}`;
       const orig = d.edited ? `<div class="pv-edit">${t('status.edited')} · ${d.edited.original === null ? '–' : num(d.edited.original, 2)}</div>` : '';
       const link = s?.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s?.title ?? d.sourceId);
       return `<li><div class="pv-val"><b>${esc(val)}</b><span class="tag tag-${d.status}">${t(`status.${d.status}`)}</span></div>${orig}
-        <div>${link}</div><div class="pv-meta">${esc(s?.publisher ?? '')} · asOf ${esc(d.asOf)}${
+        <div>${link}</div><div class="pv-meta">${esc(s?.publisher ?? '')} · ${t('prov.asof')} ${esc(d.asOf)}${
           s?.accessed ? ` · ${t('data.accessed')} ${s.accessed}` : ''
-        }</div>${d.note ? `<div class="pv-note">${esc(d.note)}</div>` : ''}</li>`;
+        }</div>${d.note ? `<div class="pv-note">${esc(noteText(d.note))}</div>` : ''}</li>`;
     })
     .join('');
   dialog.innerHTML = `<form method="dialog"><div class="pv-head"><div><div class="eyebrow">${t('prov.title')}</div><h3>${esc(p.label)}</h3><div class="pv-value">${p.value}</div></div><button class="btn" autofocus>${t(

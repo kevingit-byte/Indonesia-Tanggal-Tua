@@ -653,6 +653,60 @@
         "status": "estimate",
         "note": "Average household rate including taxes."
       }
+    },
+    "shanghai": {
+      "rice": {
+        "value": 6,
+        "unit": "CNY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 12,
+        "unit": "CNY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 24,
+        "unit": "CNY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 80,
+        "unit": "CNY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 14,
+        "unit": "CNY/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 7.6,
+        "unit": "CNY/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Grade 92 petrol."
+      },
+      "electricity": {
+        "value": 0.62,
+        "unit": "CNY/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Residential first-tier rate."
+      }
     }
   }
 }
