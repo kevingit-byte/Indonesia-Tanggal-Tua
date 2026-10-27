@@ -2,7 +2,7 @@
 
 How many hours of minimum-wage work do rice, a room, a bus ride or an iPhone cost in Indonesia, compared with Southeast Asia, Korea and Japan? Every price on the site is converted into work time.
 
-Status: **all nine sections built**: map, one item across cities, wishlist, monthly basket, regions inside Indonesia, Jakarta since 2018, salary calculator, context, editable data table. Bahasa Indonesia by default, English toggle, light/dark theme. Lighthouse mobile (local build): performance 92–93, accessibility 100, best practices 100, SEO 100.
+Status: **all sections built**: compare two cities, map, one item across cities, wishlist, monthly basket, regions inside Indonesia, Jakarta since 2018, salary calculator, "Kamu di persentil berapa?" (income percentile, see [METHOD.md](METHOD.md)), context, editable data table. Plus `/status.html`, which shows whether every number is still current. Bahasa Indonesia by default, English toggle, light/dark theme. Lighthouse mobile (local build): performance 92–93, accessibility 100, best practices 100, SEO 100.
 
 ## Run it
 
@@ -36,11 +36,20 @@ data/                     all numbers, versioned; nothing numeric lives in code
   sources.json            every source: title, publisher, URL, access date
   notes-id.json           Indonesian version of every English note (shown when the page is in Indonesian)
   method.json             basket quantities, workday length, index base year
+  wid-indonesia.json      WID income distribution, Indonesia 2024 (127 percentile groups) + conversion factors
+  wid-world.json          WID income distribution, world at PPP, 2024
+  bps-wages.json          BPS average take-home pay (Sakernas), national / sex / sector
+  freshness.json          how often each indicator is published (drives /status.html)
 scripts/check-data.ts     validator (npm run check-data)
 scripts/og.ts             share images and share pages (npm run og)
 src/main.ts               page shell, events, source dialog, URL hash
 src/sections.ts           one renderer per section (HTML strings)
 src/map.ts                bubble map (d3-geo + world-atlas 110m, loaded on demand)
+src/compare.ts            two cities side by side
+src/rank.ts               "Kamu di persentil berapa?" (income percentile; inputs never stored or sent)
+src/status.ts             /status.html: is every number current?
+src/lib/percentile.ts     percentile lookup and conversions (METHOD.md)
+src/lib/freshness.ts      freshness rules shared by /status.html and check-data
 src/art/                  hand-drawn SVG flags and city landmarks
 src/i18n.ts               Indonesian / English strings
 src/store.ts              data + reader's edits (localStorage) + UI state
@@ -48,6 +57,7 @@ src/data/types.ts         TypeScript shapes of the data files
 src/data/units.ts         unit parsing shared by the model and the validator
 src/lib/model.ts          the method: pay per minute, work time, basket, interpolation
 DATA_UPDATE.md            monthly update checklist
+METHOD.md                 how the income percentile is calculated, and the freshness rules
 ```
 
 ## Data rules
@@ -95,7 +105,9 @@ Every number is a **Datum**:
 - Cities: Jakarta, Kota Bekasi, Bandung, Yogyakarta, Surabaya, Denpasar, Medan and Makassar in Indonesia (each on its own 2026 UMK and provincial PIHPS prices), plus Kuala Lumpur, Singapore, Bangkok, Ho Chi Minh City, Manila, Phnom Penh, Vientiane, Shanghai, Seoul and Tokyo.
 - **Bandingkan (compare):** pick any two cities; every basic, want and experience is shown in each city's own work time, with the ratio. Shareable as `#compare-jakarta_vs_tokyo`.
 - Wishlist includes experiences: the cheapest official BTS ARIRANG World Tour ticket in each city on the tour (cities without a show say so), and a trip to Europe = return economy flight to Paris + Schengen visa. A bundle item (`"bundle": [...]` in `wishlist.json`) has no prices of its own; the site adds up its parts and keeps every part's source.
-- URL hash keeps the view: `#wishlist-iphone`, `#item-beef`, `#map-bigmac`, `#history-eggs`, `#regions-umk`.
+- URL hash keeps the view: `#wishlist-iphone`, `#item-beef`, `#map-bigmac`, `#history-eggs`, `#regions-umk`, `#compare-jakarta_vs_tokyo`, `#rank-t42` (a shared percentile; never the income unless the reader opts in).
+- **Kamu di persentil berapa?** Household income → per adult → position among adults in Indonesia and the world (WID pre-tax national income, 2024), with thresholds, multipliers, work time and growth since 1980, plus a wage lens that compares take-home pay with BPS averages (BPS publishes no wage percentiles). Data credit: World Inequality Database (WID.world). Method and the difference from WID's own comparator: [METHOD.md](METHOD.md).
+- **Data status** (`/status.html`): every number's date against its indicator's publishing schedule (`data/freshness.json`): current, due soon or overdue. `npm run check-data` applies the same rules.
 
 ## Updating data
 

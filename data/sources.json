@@ -844,6 +844,38 @@
       "url": "https://menu.starbucks.co.jp/4524785000223",
       "accessed": "2026-10-27",
       "note": "Grande ¥570 (eat-in, tax included)."
+    },
+    {
+      "id": "wid-bulk-2026-10",
+      "title": "WID bulk download (wid_all_data.zip): WID_data_ID.csv, WID_data_WO-PPP.csv",
+      "publisher": "World Inequality Database (WID.world)",
+      "url": "https://wid.world/bulk_download/wid_all_data.zip",
+      "accessed": "2026-10-27",
+      "note": "Variables tptinc992j, aptinc992j (pre-tax national income, equal-split adults), mptxgoi999, mnninci999, xlcusp999i, inyixx999i. Latest year 2024, constant 2025 prices."
+    },
+    {
+      "id": "wid-income-comparator",
+      "title": "Income Comparator",
+      "publisher": "World Inequality Database (WID.world)",
+      "url": "https://wid.world/income-comparator/",
+      "accessed": null,
+      "note": "Retained-earnings rate for Indonesia (14.9%) as shown by the comparator; the method follows the comparator, rebuilt independently."
+    },
+    {
+      "id": "kontan-inflasi-2026-09",
+      "title": "Inflasi Tahunan Naik Menjadi 3,28% pada September 2026",
+      "publisher": "Kontan (reporting BPS)",
+      "url": "https://pusatdata.kontan.co.id/infografik/275/Inflasi-Tahunan-Naik-Menjadi-328-pada-September-2026",
+      "accessed": "2026-10-27",
+      "note": "BPS CPI September 2026 112.31, September 2025 108.74; 3.28% y-o-y."
+    },
+    {
+      "id": "cnbc-sakernas-mei-2026",
+      "title": "BPS Catat Upah Buruh Naik! Tertinggi di 5 Sektor Usaha Ini",
+      "publisher": "CNBC Indonesia (reporting BPS Sakernas Mei 2026)",
+      "url": "https://www.cnbcindonesia.com/news/20260805141123-4-756778/bps-catat-upah-buruh-naik-tertinggi-di-5-sektor-usaha-ini",
+      "accessed": "2026-10-27",
+      "note": "BPS press release 5 Aug 2026 (bps.go.id/id/pressrelease/2026/08/05/2606): average wage Rp3,39 juta; by sex and 17 sectors. bps.go.id refused automated access, so the figures were read from this report."
     }
   ]
 }

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "dataset": "BPS average net wages of employees (Sakernas)",
+  "updated": "2026-10-27",
+  "survey": "Sakernas Mei 2026",
+  "note": "BPS publishes average (mean) net monthly wages of buruh/karyawan/pegawai, not percentiles. Averages are pulled up by high earners, so most employees earn less than the average.",
+  "national": {
+    "value": 3390000,
+    "unit": "IDR/month",
+    "asOf": "2026-05-31",
+    "sourceId": "cnbc-sakernas-mei-2026",
+    "status": "official",
+    "note": "Average net wage, all employees."
+  },
+  "bySex": {
+    "male": {
+      "value": 3690000,
+      "unit": "IDR/month",
+      "asOf": "2026-05-31",
+      "sourceId": "cnbc-sakernas-mei-2026",
+      "status": "official"
+    },
+    "female": {
+      "value": 2860000,
+      "unit": "IDR/month",
+      "asOf": "2026-05-31",
+      "sourceId": "cnbc-sakernas-mei-2026",
+      "status": "official"
+    }
+  },
+  "bySector": [
+    {
+      "id": "mining",
+      "label": {
+        "id": "Pertambangan dan penggalian",
+        "en": "Mining and quarrying"
+      },
+      "wage": {
+        "value": 5790000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "electricity",
+      "label": {
+        "id": "Pengadaan listrik dan gas",
+        "en": "Electricity and gas supply"
+      },
+      "wage": {
+        "value": 5550000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "finance",
+      "label": {
+        "id": "Jasa keuangan dan asuransi",
+        "en": "Financial and insurance activities"
+      },
+      "wage": {
+        "value": 5510000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "realestate",
+      "label": {
+        "id": "Real estat",
+        "en": "Real estate"
+      },
+      "wage": {
+        "value": 5290000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "infocom",
+      "label": {
+        "id": "Penerbitan dan telekomunikasi",
+        "en": "Publishing and telecommunications"
+      },
+      "wage": {
+        "value": 5240000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "publicadmin",
+      "label": {
+        "id": "Administrasi pemerintahan",
+        "en": "Public administration"
+      },
+      "wage": {
+        "value": 4140000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "professional",
+      "label": {
+        "id": "Jasa profesional dan administrasi",
+        "en": "Professional and administrative activities"
+      },
+      "wage": {
+        "value": 4040000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "transport",
+      "label": {
+        "id": "Transportasi dan pergudangan",
+        "en": "Transportation and storage"
+      },
+      "wage": {
+        "value": 4020000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "health",
+      "label": {
+        "id": "Jasa kesehatan dan kegiatan sosial",
+        "en": "Health and social activities"
+      },
+      "wage": {
+        "value": 3620000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "manufacturing",
+      "label": {
+        "id": "Industri pengolahan",
+        "en": "Manufacturing"
+      },
+      "wage": {
+        "value": 3420000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "construction",
+      "label": {
+        "id": "Konstruksi",
+        "en": "Construction"
+      },
+      "wage": {
+        "value": 3320000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "education",
+      "label": {
+        "id": "Jasa pendidikan",
+        "en": "Education"
+      },
+      "wage": {
+        "value": 3200000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "water",
+      "label": {
+        "id": "Pengadaan air dan pengelolaan sampah",
+        "en": "Water supply and waste management"
+      },
+      "wage": {
+        "value": 3060000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "trade",
+      "label": {
+        "id": "Perdagangan besar dan eceran",
+        "en": "Wholesale and retail trade"
+      },
+      "wage": {
+        "value": 2880000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "accommodation",
+      "label": {
+        "id": "Penyediaan akomodasi dan makan minum",
+        "en": "Accommodation and food services"
+      },
+      "wage": {
+        "value": 2640000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "agriculture",
+      "label": {
+        "id": "Pertanian, kehutanan, dan perikanan",
+        "en": "Agriculture, forestry and fishing"
+      },
+      "wage": {
+        "value": 2370000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "otherservices",
+      "label": {
+        "id": "Jasa lainnya",
+        "en": "Other service activities"
+      },
+      "wage": {
+        "value": 2260000,
+        "unit": "IDR/month",
+        "asOf": "2026-05-31",
+        "sourceId": "cnbc-sakernas-mei-2026",
+        "status": "official"
+      }
+    }
+  ]
+}

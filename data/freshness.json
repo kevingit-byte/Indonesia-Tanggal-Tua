@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "dataset": "How often each indicator is published, for the data status page",
+  "updated": "2026-10-27",
+  "note": "A value is current while it is younger than cadenceDays, due soon until cadenceDays + graceDays (publishers need time), and overdue after that. basis \"asOf\" counts age from the date the value applies to (periodic observations: food prices, exchange rates). basis \"checked\" counts from the later of asOf and the day its source was last read, for prices that stay valid until they change (fares, tariffs, shop prices, fees).",
+  "kinds": {
+    "wage": {
+      "label": {
+        "id": "Upah minimum",
+        "en": "Minimum wages"
+      },
+      "cadenceDays": 365,
+      "graceDays": 45,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Tahunan; di Indonesia UMP diumumkan November, berlaku 1 Januari",
+        "en": "Yearly; in Indonesia the UMP is announced in November, effective 1 January"
+      }
+    },
+    "fx": {
+      "label": {
+        "id": "Kurs",
+        "en": "Exchange rates"
+      },
+      "cadenceDays": 190,
+      "graceDays": 30,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Dua kali setahun, ikut rilis Indeks Big Mac (Januari dan Juli)",
+        "en": "Twice a year, with the Big Mac index release (January and July)"
+      }
+    },
+    "food": {
+      "label": {
+        "id": "Harga pangan",
+        "en": "Food prices"
+      },
+      "cadenceDays": 31,
+      "graceDays": 21,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Bulanan",
+        "en": "Monthly"
+      }
+    },
+    "petrol": {
+      "label": {
+        "id": "Bensin",
+        "en": "Petrol"
+      },
+      "cadenceDays": 31,
+      "graceDays": 31,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Bulanan, atau saat harga diumumkan",
+        "en": "Monthly, or when a price change is announced"
+      }
+    },
+    "electricity": {
+      "label": {
+        "id": "Listrik",
+        "en": "Electricity"
+      },
+      "cadenceDays": 92,
+      "graceDays": 31,
+      "basis": "checked",
+      "schedule": {
+        "id": "Per kuartal (penyesuaian tarif)",
+        "en": "Quarterly (tariff adjustments)"
+      }
+    },
+    "rent": {
+      "label": {
+        "id": "Sewa kamar",
+        "en": "Room rent"
+      },
+      "cadenceDays": 365,
+      "graceDays": 60,
+      "basis": "checked",
+      "schedule": {
+        "id": "Tahunan",
+        "en": "Yearly"
+      }
+    },
+    "transit": {
+      "label": {
+        "id": "Ongkos angkutan",
+        "en": "Transit fares"
+      },
+      "cadenceDays": 365,
+      "graceDays": 60,
+      "basis": "checked",
+      "schedule": {
+        "id": "Tahunan, atau saat tarif berubah",
+        "en": "Yearly, or when fares change"
+      }
+    },
+    "gadgets": {
+      "label": {
+        "id": "Gawai dan barang idaman",
+        "en": "Gadgets and wants"
+      },
+      "cadenceDays": 92,
+      "graceDays": 31,
+      "basis": "checked",
+      "schedule": {
+        "id": "Per kuartal, dan saat ada peluncuran atau kenaikan harga",
+        "en": "Quarterly, and at launches or price rises"
+      }
+    },
+    "latte": {
+      "label": {
+        "id": "Kopi Starbucks",
+        "en": "Starbucks coffee"
+      },
+      "cadenceDays": 182,
+      "graceDays": 31,
+      "basis": "checked",
+      "schedule": {
+        "id": "Dua kali setahun",
+        "en": "Twice a year"
+      }
+    },
+    "bigmac": {
+      "label": {
+        "id": "Big Mac",
+        "en": "Big Mac"
+      },
+      "cadenceDays": 190,
+      "graceDays": 30,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Januari dan Juli (Indeks Big Mac The Economist)",
+        "en": "January and July (The Economist Big Mac index)"
+      }
+    },
+    "subscriptions": {
+      "label": {
+        "id": "Langganan (Netflix)",
+        "en": "Subscriptions (Netflix)"
+      },
+      "cadenceDays": 182,
+      "graceDays": 31,
+      "basis": "checked",
+      "schedule": {
+        "id": "Dua kali setahun",
+        "en": "Twice a year"
+      }
+    },
+    "concert": {
+      "label": {
+        "id": "Konser",
+        "en": "Concert"
+      },
+      "cadenceDays": 182,
+      "graceDays": 31,
+      "basis": "checked",
+      "schedule": {
+        "id": "Per tur",
+        "en": "Per tour"
+      }
+    },
+    "flights": {
+      "label": {
+        "id": "Tiket pesawat ke Eropa",
+        "en": "Flights to Europe"
+      },
+      "cadenceDays": 31,
+      "graceDays": 31,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Bulanan",
+        "en": "Monthly"
+      }
+    },
+    "visa": {
+      "label": {
+        "id": "Visa Schengen",
+        "en": "Schengen visa"
+      },
+      "cadenceDays": 92,
+      "graceDays": 31,
+      "basis": "checked",
+      "schedule": {
+        "id": "Per kuartal",
+        "en": "Quarterly"
+      }
+    },
+    "history": {
+      "label": {
+        "id": "Riwayat Jakarta",
+        "en": "Jakarta history"
+      },
+      "cadenceDays": 365,
+      "graceDays": 45,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Tahunan (titik Januari)",
+        "en": "Yearly (January point)"
+      }
+    },
+    "wid": {
+      "label": {
+        "id": "Sebaran pendapatan (WID)",
+        "en": "Income distribution (WID)"
+      },
+      "cadenceDays": 730,
+      "graceDays": 120,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Tahunan; data WID tertinggal sekitar satu sampai dua tahun",
+        "en": "Yearly; WID data lag about one to two years"
+      }
+    },
+    "cpi": {
+      "label": {
+        "id": "Inflasi (IHK BPS)",
+        "en": "Inflation (BPS CPI)"
+      },
+      "cadenceDays": 31,
+      "graceDays": 31,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Bulanan, rilis awal bulan berikutnya",
+        "en": "Monthly, released early the next month"
+      }
+    },
+    "bps": {
+      "label": {
+        "id": "Rata-rata gaji (BPS Sakernas)",
+        "en": "Average pay (BPS Sakernas)"
+      },
+      "cadenceDays": 92,
+      "graceDays": 70,
+      "basis": "asOf",
+      "schedule": {
+        "id": "Per kuartal (Februari, Mei, Agustus, November), rilis sekitar lima minggu kemudian",
+        "en": "Quarterly (February, May, August, November), released about five weeks later"
+      }
+    }
+  }
+}

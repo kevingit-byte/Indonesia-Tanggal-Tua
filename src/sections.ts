@@ -1,6 +1,7 @@
 // Every section renders to an HTML string from the current data and UI state.
 // main.ts re-renders on any change; the page is small enough that this stays instant.
 import type { Datum, Place, SeriesPoint } from './data/types';
+import { rankCalcCard } from './rank';
 import { landmark, landmarkName } from './art/landmarks';
 import { flag } from './art/flags';
 import { esc, money, narrow, num, pct, rpShort, smart, workTime } from './format';
@@ -70,7 +71,7 @@ export function hero(): string {
   <h1>${t('hero.title.a')} <em>${t('hero.title.b')}</em>${t('hero.title.c')}</h1>
   <p class="lede">${t('hero.lede')}</p>
   <div class="skyline" aria-hidden="true">${strip}</div>
-  <a class="btn cta" href="#compare">${t('hero.cta')}</a>
+  <div class="ctas"><a class="btn cta" href="#compare">${t('hero.cta')}</a><a class="btn cta cta-2" href="#rank">${t('rk.hero.cta')}</a></div>
   <div class="verdict">
     <div class="id"><small>${t('hero.v.iphone')}</small><span class="big">${provBtn(days(ij), t('hero.v.iphone'), ij.inputs, 'pv pv-big')}</span><small>${t(
       'hero.v.iphoneVs',
@@ -471,6 +472,7 @@ export function calcSection(): string {
       .map((x) => `<option value="${x.id}"${x.id === p.id ? ' selected' : ''}>${esc(L(x.city))}, ${esc(L(x.country))}</option>`)
       .join('')}</select></div>
     <p class="permin">${ok ? `${t('calc.permin')}: <b>Rp${num(perMin)}</b>` : `<span class="neg">${t('calc.invalid')}</span>`}</p>
+    ${rankCalcCard()}
     <div class="mini">${mini}</div>
   </div><div class="receipt" aria-live="polite">${receipt}</div></div>`;
 }

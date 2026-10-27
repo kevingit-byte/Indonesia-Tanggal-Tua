@@ -3,17 +3,21 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type {
+  BpsWagesFile,
   Datum,
+  FreshnessFile,
   MethodFile,
   PlacesFile,
   PricesFile,
   RegionsFile,
   SourcesFile,
   TimeseriesFile,
+  WidFile,
   WishlistFile,
 } from '../src/data/types';
 import { STATUSES } from '../src/data/types';
 import { WAGE_PERIODS, isCurrencyCode, parseUnit } from '../src/data/units';
+import { entries, judge } from '../src/lib/freshness';
 
 /** Items that make up the food part of the basket (section "Inside Indonesia"). */
 const FOOD = ['rice', 'eggs', 'chicken', 'beef', 'oil'];
@@ -213,6 +217,65 @@ for (const s of ts.series) {
   }
 }
 
+// ---- wid-*.json: income distributions (World Inequality Database)
+const wids: WidFile[] = [];
+for (const name of ['wid-indonesia.json', 'wid-world.json']) {
+  const w = load<WidFile>(name);
+  wids.push(w);
+  checkMeta(name, w);
+  checkDatum(`${name}: distribution`, { value: w.mean, unit: w.unit, asOf: w.asOf, sourceId: w.sourceId, status: w.status }, `${w.currency}/year`, w.updated);
+  if (!isDate(w.downloaded)) errors.push(`${name}: downloaded must be YYYY-MM-DD`);
+  if (!w.variables?.threshold || !w.variables?.average) errors.push(`${name}: name the WID variable codes used`);
+  const g = w.groups;
+  if (g[0]?.p !== 0 || g[g.length - 1]?.pTo !== 100) errors.push(`${name}: groups must run from p0 to p100`);
+  for (let i = 0; i < g.length; i++) {
+    const x = g[i]!;
+    if (!(x.pTo > x.p)) errors.push(`${name}: group ${i} has pTo <= p`);
+    if (i && Math.abs(g[i - 1]!.pTo - x.p) > 1e-9) errors.push(`${name}: group ${i} does not start where group ${i - 1} ends`);
+    if (i && x.threshold < g[i - 1]!.threshold) errors.push(`${name}: thresholds must not fall (p${x.p})`);
+    if (x.average < x.threshold) errors.push(`${name}: average below threshold at p${x.p}`);
+  }
+  if (w.growth.percentiles.length !== 100) errors.push(`${name}: growth needs 100 percentiles`);
+  for (const k of ['productionTaxShare', 'pppPerUsd', 'cpiToPriceYear', 'retainedEarningsRate'] as const) {
+    const d = w[k];
+    if (d) checkDatum(`${name}: ${k}`, d, k === 'pppPerUsd' ? `${w.currency}/USD` : 'ratio', w.updated);
+  }
+}
+if (!wids[0]?.productionTaxShare || !wids[0]?.pppPerUsd || !wids[0]?.cpiToPriceYear || !wids[0]?.retainedEarningsRate)
+  errors.push('wid-indonesia.json: needs productionTaxShare, pppPerUsd, cpiToPriceYear and retainedEarningsRate');
+if (wids[0] && wids[1] && wids[0].priceYear !== wids[1].priceYear) errors.push('wid files must share one priceYear');
+
+// ---- bps-wages.json
+const bps = load<BpsWagesFile>('bps-wages.json');
+checkMeta('bps-wages.json', bps);
+checkDatum('bps-wages.json: national', bps.national, 'IDR/month', bps.updated);
+checkDatum('bps-wages.json: bySex.male', bps.bySex?.male, 'IDR/month', bps.updated);
+checkDatum('bps-wages.json: bySex.female', bps.bySex?.female, 'IDR/month', bps.updated);
+for (const s of bps.bySector) {
+  if (!s.label?.id || !s.label?.en) errors.push(`bps-wages.json: ${s.id} needs id and en labels`);
+  checkDatum(`bps-wages.json: bySector.${s.id}`, s.wage, 'IDR/month', bps.updated);
+}
+
+// ---- freshness.json: publishing schedules, and which values are past theirs
+const fresh = load<FreshnessFile>('freshness.json');
+checkMeta('freshness.json', fresh);
+for (const [k, v] of Object.entries(fresh.kinds)) {
+  if (!(v.cadenceDays > 0) || !(v.graceDays >= 0)) errors.push(`freshness.json: ${k} needs cadenceDays > 0 and graceDays >= 0`);
+  if (v.basis !== 'asOf' && v.basis !== 'checked') errors.push(`freshness.json: ${k}.basis must be "asOf" or "checked"`);
+  if (!v.label?.id || !v.label?.en || !v.schedule?.id || !v.schedule?.en) errors.push(`freshness.json: ${k} needs id/en label and schedule`);
+}
+{
+  const accessed = new Map(sourcesFile.sources.map((s) => [s.id, s.accessed]));
+  const all = entries({ places: placesFile, prices: pricesFile, wishlist: wish, regions, timeseries: ts, widId: wids[0]!, widWorld: wids[1]!, bps });
+  for (const e of all) if (!fresh.kinds[e.kind]) errors.push(`freshness.json: no schedule for indicator kind "${e.kind}"`);
+  const judged = all.map((e) => judge(e, fresh, new Date(process.env.TODAY ?? Date.now()), (id) => accessed.get(id) ?? null));
+  const late = judged.filter((j) => j.freshness === 'overdue');
+  const due = judged.filter((j) => j.freshness === 'due');
+  if (late.length)
+    gaps.push(`freshness: ${late.length} values overdue for an update${verbose ? `:\n      ${late.map((j) => `${j.where} (${j.kind}, since ${j.since})`).join('\n      ')}` : ' (--verbose to list; see /status.html)'}`);
+  if (due.length) notes.push(`freshness: ${due.length} values due for an update soon (see /status.html)`);
+}
+
 // ---- notes-id.json: Indonesian versions of every English note
 const notesId = load<{ schemaVersion: 1; dataset: string; updated: string; notes: Record<string, string> }>('notes-id.json');
 checkMeta('notes-id.json', notesId);
@@ -225,7 +288,7 @@ const collect = (o: unknown): void => {
     Object.values(o).forEach(collect);
   }
 };
-[placesFile, pricesFile, wish, regions, ts, sourcesFile].forEach(collect);
+[placesFile, pricesFile, wish, regions, ts, sourcesFile, ...wids, bps].forEach(collect);
 const untranslated = [...allNotes].filter((n) => !notesId.notes[n]);
 if (untranslated.length)
   gaps.push(`notes-id.json: ${untranslated.length} notes have no Indonesian version${verbose ? `:\n      ${untranslated.join('\n      ')}` : ' (--verbose to list)'}`);

@@ -1,0 +1,1329 @@
+{
+ "schemaVersion": 1,
+ "dataset": "WID pre-tax national income distribution, Indonesia",
+ "updated": "2026-10-27",
+ "region": "ID",
+ "label": "Indonesia",
+ "year": 2024,
+ "priceYear": 2025,
+ "currency": "IDR",
+ "unit": "IDR/year",
+ "asOf": "2024-12-31",
+ "sourceId": "wid-bulk-2026-10",
+ "status": "official",
+ "downloaded": "2026-10-27",
+ "concept": "Pre-tax national income per adult (age 20+), equal split within couples, in constant prices of priceYear.",
+ "variables": {
+  "threshold": "tptinc992j",
+  "average": "aptinc992j",
+  "bulkFileCodes": {
+   "threshold": "tptincj992",
+   "average": "aptincj992"
+  }
+ },
+ "mean": 96451776,
+ "groups": [
+  {
+   "p": 0,
+   "pTo": 1,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 1,
+   "pTo": 2,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 2,
+   "pTo": 3,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 3,
+   "pTo": 4,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 4,
+   "pTo": 5,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 5,
+   "pTo": 6,
+   "threshold": 375128,
+   "average": 750256
+  },
+  {
+   "p": 6,
+   "pTo": 7,
+   "threshold": 1500511,
+   "average": 2250767
+  },
+  {
+   "p": 7,
+   "pTo": 8,
+   "threshold": 3001023,
+   "average": 3751279
+  },
+  {
+   "p": 8,
+   "pTo": 9,
+   "threshold": 4501535,
+   "average": 5251791
+  },
+  {
+   "p": 9,
+   "pTo": 10,
+   "threshold": 6002047,
+   "average": 6752302
+  },
+  {
+   "p": 10,
+   "pTo": 11,
+   "threshold": 7502558,
+   "average": 8252814
+  },
+  {
+   "p": 11,
+   "pTo": 12,
+   "threshold": 9003070,
+   "average": 9753325
+  },
+  {
+   "p": 12,
+   "pTo": 13,
+   "threshold": 10503581,
+   "average": 11253836
+  },
+  {
+   "p": 13,
+   "pTo": 14,
+   "threshold": 12004092,
+   "average": 12754348
+  },
+  {
+   "p": 14,
+   "pTo": 15,
+   "threshold": 13504604,
+   "average": 14254861
+  },
+  {
+   "p": 15,
+   "pTo": 16,
+   "threshold": 15005116,
+   "average": 15755372
+  },
+  {
+   "p": 16,
+   "pTo": 17,
+   "threshold": 16505628,
+   "average": 17255883
+  },
+  {
+   "p": 17,
+   "pTo": 18,
+   "threshold": 18006140,
+   "average": 18756396
+  },
+  {
+   "p": 18,
+   "pTo": 19,
+   "threshold": 19506651,
+   "average": 20256907
+  },
+  {
+   "p": 19,
+   "pTo": 20,
+   "threshold": 21007163,
+   "average": 21757418
+  },
+  {
+   "p": 20,
+   "pTo": 21,
+   "threshold": 22132546,
+   "average": 22507674
+  },
+  {
+   "p": 21,
+   "pTo": 22,
+   "threshold": 22870358,
+   "average": 23233042
+  },
+  {
+   "p": 22,
+   "pTo": 23,
+   "threshold": 23537154,
+   "average": 23841266
+  },
+  {
+   "p": 23,
+   "pTo": 24,
+   "threshold": 24123435,
+   "average": 24405603
+  },
+  {
+   "p": 24,
+   "pTo": 25,
+   "threshold": 24743032,
+   "average": 25080458
+  },
+  {
+   "p": 25,
+   "pTo": 26,
+   "threshold": 25415407,
+   "average": 25750357
+  },
+  {
+   "p": 26,
+   "pTo": 27,
+   "threshold": 26115698,
+   "average": 26481037
+  },
+  {
+   "p": 27,
+   "pTo": 28,
+   "threshold": 26872144,
+   "average": 27263250
+  },
+  {
+   "p": 28,
+   "pTo": 29,
+   "threshold": 27639529,
+   "average": 28015808
+  },
+  {
+   "p": 29,
+   "pTo": 30,
+   "threshold": 28372002,
+   "average": 28728192
+  },
+  {
+   "p": 30,
+   "pTo": 31,
+   "threshold": 29178098,
+   "average": 29628007
+  },
+  {
+   "p": 31,
+   "pTo": 32,
+   "threshold": 30050348,
+   "average": 30472692
+  },
+  {
+   "p": 32,
+   "pTo": 33,
+   "threshold": 30894485,
+   "average": 31316275
+  },
+  {
+   "p": 33,
+   "pTo": 34,
+   "threshold": 31760576,
+   "average": 32204879
+  },
+  {
+   "p": 34,
+   "pTo": 35,
+   "threshold": 32659030,
+   "average": 33113178
+  },
+  {
+   "p": 35,
+   "pTo": 36,
+   "threshold": 33521075,
+   "average": 33928965
+  },
+  {
+   "p": 36,
+   "pTo": 37,
+   "threshold": 34435076,
+   "average": 34941188
+  },
+  {
+   "p": 37,
+   "pTo": 38,
+   "threshold": 35380208,
+   "average": 35819227
+  },
+  {
+   "p": 38,
+   "pTo": 39,
+   "threshold": 36276101,
+   "average": 36732976
+  },
+  {
+   "p": 39,
+   "pTo": 40,
+   "threshold": 37295049,
+   "average": 37857116
+  },
+  {
+   "p": 40,
+   "pTo": 41,
+   "threshold": 38394217,
+   "average": 38931323
+  },
+  {
+   "p": 41,
+   "pTo": 42,
+   "threshold": 39420099,
+   "average": 39908878
+  },
+  {
+   "p": 42,
+   "pTo": 43,
+   "threshold": 40415123,
+   "average": 40921373
+  },
+  {
+   "p": 43,
+   "pTo": 44,
+   "threshold": 41511433,
+   "average": 42101492
+  },
+  {
+   "p": 44,
+   "pTo": 45,
+   "threshold": 42735221,
+   "average": 43368953
+  },
+  {
+   "p": 45,
+   "pTo": 46,
+   "threshold": 43951429,
+   "average": 44533906
+  },
+  {
+   "p": 46,
+   "pTo": 47,
+   "threshold": 45159597,
+   "average": 45785293
+  },
+  {
+   "p": 47,
+   "pTo": 48,
+   "threshold": 46406670,
+   "average": 47028048
+  },
+  {
+   "p": 48,
+   "pTo": 49,
+   "threshold": 47648326,
+   "average": 48268606
+  },
+  {
+   "p": 49,
+   "pTo": 50,
+   "threshold": 48931647,
+   "average": 49594687
+  },
+  {
+   "p": 50,
+   "pTo": 51,
+   "threshold": 50182533,
+   "average": 50770377
+  },
+  {
+   "p": 51,
+   "pTo": 52,
+   "threshold": 51515207,
+   "average": 52260034
+  },
+  {
+   "p": 52,
+   "pTo": 53,
+   "threshold": 53029220,
+   "average": 53798409
+  },
+  {
+   "p": 53,
+   "pTo": 54,
+   "threshold": 54476975,
+   "average": 55155544
+  },
+  {
+   "p": 54,
+   "pTo": 55,
+   "threshold": 55903829,
+   "average": 56652115
+  },
+  {
+   "p": 55,
+   "pTo": 56,
+   "threshold": 57491209,
+   "average": 58330306
+  },
+  {
+   "p": 56,
+   "pTo": 57,
+   "threshold": 59104539,
+   "average": 59878773
+  },
+  {
+   "p": 57,
+   "pTo": 58,
+   "threshold": 60792220,
+   "average": 61705672
+  },
+  {
+   "p": 58,
+   "pTo": 59,
+   "threshold": 62606787,
+   "average": 63507892
+  },
+  {
+   "p": 59,
+   "pTo": 60,
+   "threshold": 64469143,
+   "average": 65430399
+  },
+  {
+   "p": 60,
+   "pTo": 61,
+   "threshold": 66356282,
+   "average": 67282172
+  },
+  {
+   "p": 61,
+   "pTo": 62,
+   "threshold": 68322745,
+   "average": 69363315
+  },
+  {
+   "p": 62,
+   "pTo": 63,
+   "threshold": 70460401,
+   "average": 71557474
+  },
+  {
+   "p": 63,
+   "pTo": 64,
+   "threshold": 72684316,
+   "average": 73811156
+  },
+  {
+   "p": 64,
+   "pTo": 65,
+   "threshold": 74899235,
+   "average": 75987300
+  },
+  {
+   "p": 65,
+   "pTo": 66,
+   "threshold": 77191464,
+   "average": 78395631
+  },
+  {
+   "p": 66,
+   "pTo": 67,
+   "threshold": 79684888,
+   "average": 80974138
+  },
+  {
+   "p": 67,
+   "pTo": 68,
+   "threshold": 82232279,
+   "average": 83490427
+  },
+  {
+   "p": 68,
+   "pTo": 69,
+   "threshold": 84727543,
+   "average": 85964657
+  },
+  {
+   "p": 69,
+   "pTo": 70,
+   "threshold": 87389423,
+   "average": 88814183
+  },
+  {
+   "p": 70,
+   "pTo": 71,
+   "threshold": 90308732,
+   "average": 91803294
+  },
+  {
+   "p": 71,
+   "pTo": 72,
+   "threshold": 93143599,
+   "average": 94483910
+  },
+  {
+   "p": 72,
+   "pTo": 73,
+   "threshold": 95979843,
+   "average": 97475771
+  },
+  {
+   "p": 73,
+   "pTo": 74,
+   "threshold": 99025980,
+   "average": 100576177
+  },
+  {
+   "p": 74,
+   "pTo": 75,
+   "threshold": 102271320,
+   "average": 103966466
+  },
+  {
+   "p": 75,
+   "pTo": 76,
+   "threshold": 105573578,
+   "average": 107180701
+  },
+  {
+   "p": 76,
+   "pTo": 77,
+   "threshold": 108840290,
+   "average": 110499868
+  },
+  {
+   "p": 77,
+   "pTo": 78,
+   "threshold": 112393962,
+   "average": 114288044
+  },
+  {
+   "p": 78,
+   "pTo": 79,
+   "threshold": 116285185,
+   "average": 118282329
+  },
+  {
+   "p": 79,
+   "pTo": 80,
+   "threshold": 120134529,
+   "average": 121986723
+  },
+  {
+   "p": 80,
+   "pTo": 81,
+   "threshold": 124141791,
+   "average": 126296857
+  },
+  {
+   "p": 81,
+   "pTo": 82,
+   "threshold": 128467999,
+   "average": 130639132
+  },
+  {
+   "p": 82,
+   "pTo": 83,
+   "threshold": 132992179,
+   "average": 135345228
+  },
+  {
+   "p": 83,
+   "pTo": 84,
+   "threshold": 137827632,
+   "average": 140310036
+  },
+  {
+   "p": 84,
+   "pTo": 85,
+   "threshold": 143029072,
+   "average": 145748113
+  },
+  {
+   "p": 85,
+   "pTo": 86,
+   "threshold": 148700374,
+   "average": 151652620
+  },
+  {
+   "p": 86,
+   "pTo": 87,
+   "threshold": 154995120,
+   "average": 158337594
+  },
+  {
+   "p": 87,
+   "pTo": 88,
+   "threshold": 161891613,
+   "average": 165445622
+  },
+  {
+   "p": 88,
+   "pTo": 89,
+   "threshold": 169685235,
+   "average": 173924836
+  },
+  {
+   "p": 89,
+   "pTo": 90,
+   "threshold": 178764113,
+   "average": 183603385
+  },
+  {
+   "p": 90,
+   "pTo": 91,
+   "threshold": 184013073,
+   "average": 184422759
+  },
+  {
+   "p": 91,
+   "pTo": 92,
+   "threshold": 191077413,
+   "average": 197732061
+  },
+  {
+   "p": 92,
+   "pTo": 93,
+   "threshold": 206088108,
+   "average": 214444162
+  },
+  {
+   "p": 93,
+   "pTo": 94,
+   "threshold": 225237272,
+   "average": 236030398
+  },
+  {
+   "p": 94,
+   "pTo": 95,
+   "threshold": 249885952,
+   "average": 263741512
+  },
+  {
+   "p": 95,
+   "pTo": 96,
+   "threshold": 282069762,
+   "average": 300398031
+  },
+  {
+   "p": 96,
+   "pTo": 97,
+   "threshold": 327156147,
+   "average": 353914246
+  },
+  {
+   "p": 97,
+   "pTo": 98,
+   "threshold": 396533590,
+   "average": 439152943
+  },
+  {
+   "p": 98,
+   "pTo": 99,
+   "threshold": 523736786,
+   "average": 608320691
+  },
+  {
+   "p": 99.0,
+   "pTo": 99.1,
+   "threshold": 686821656,
+   "average": 765322608
+  },
+  {
+   "p": 99.1,
+   "pTo": 99.2,
+   "threshold": 792432528,
+   "average": 819542386
+  },
+  {
+   "p": 99.2,
+   "pTo": 99.3,
+   "threshold": 851494922,
+   "average": 883447553
+  },
+  {
+   "p": 99.3,
+   "pTo": 99.4,
+   "threshold": 922351244,
+   "average": 961254901
+  },
+  {
+   "p": 99.4,
+   "pTo": 99.5,
+   "threshold": 1012244888,
+   "average": 1063234771
+  },
+  {
+   "p": 99.5,
+   "pTo": 99.6,
+   "threshold": 1132968686,
+   "average": 1202702426
+  },
+  {
+   "p": 99.6,
+   "pTo": 99.7,
+   "threshold": 1298236824,
+   "average": 1393771282
+  },
+  {
+   "p": 99.7,
+   "pTo": 99.8,
+   "threshold": 1548196573,
+   "average": 1702621647
+  },
+  {
+   "p": 99.8,
+   "pTo": 99.9,
+   "threshold": 2031740895,
+   "average": 2360860268
+  },
+  {
+   "p": 99.9,
+   "pTo": 99.91,
+   "threshold": 2738384461,
+   "average": 3115908542
+  },
+  {
+   "p": 99.91,
+   "pTo": 99.92,
+   "threshold": 3203220830,
+   "average": 3290533054
+  },
+  {
+   "p": 99.92,
+   "pTo": 99.93,
+   "threshold": 3395029410,
+   "average": 3499525624
+  },
+  {
+   "p": 99.93,
+   "pTo": 99.94,
+   "threshold": 3627465721,
+   "average": 3755406162
+  },
+  {
+   "p": 99.94,
+   "pTo": 99.95,
+   "threshold": 3913825712,
+   "average": 4072245470
+  },
+  {
+   "p": 99.95,
+   "pTo": 99.96,
+   "threshold": 4281135334,
+   "average": 4490025573
+  },
+  {
+   "p": 99.96,
+   "pTo": 99.97,
+   "threshold": 4775179340,
+   "average": 5060332893
+  },
+  {
+   "p": 99.97,
+   "pTo": 99.98,
+   "threshold": 5515431504,
+   "average": 5970530954
+  },
+  {
+   "p": 99.98,
+   "pTo": 99.99,
+   "threshold": 6882808825,
+   "average": 7795086947
+  },
+  {
+   "p": 99.99,
+   "pTo": 99.991,
+   "threshold": 8755173862,
+   "average": 9715261351
+  },
+  {
+   "p": 99.991,
+   "pTo": 99.992,
+   "threshold": 9997039147,
+   "average": 10278815316
+  },
+  {
+   "p": 99.992,
+   "pTo": 99.993,
+   "threshold": 10613579222,
+   "average": 10948342073
+  },
+  {
+   "p": 99.993,
+   "pTo": 99.994,
+   "threshold": 11346994609,
+   "average": 11745646142
+  },
+  {
+   "p": 99.994,
+   "pTo": 99.995,
+   "threshold": 12269191660,
+   "average": 12792735182
+  },
+  {
+   "p": 99.995,
+   "pTo": 99.996,
+   "threshold": 13498851960,
+   "average": 14204969832
+  },
+  {
+   "p": 99.996,
+   "pTo": 99.997,
+   "threshold": 15200027990,
+   "average": 16195086259
+  },
+  {
+   "p": 99.997,
+   "pTo": 99.998,
+   "threshold": 17736151144,
+   "average": 19277217774
+  },
+  {
+   "p": 99.998,
+   "pTo": 99.999,
+   "threshold": 21979772279,
+   "average": 24682326063
+  },
+  {
+   "p": 99.999,
+   "pTo": 100.0,
+   "threshold": 45271501164,
+   "average": 65860675860
+  }
+ ],
+ "growth": {
+  "from": 1980,
+  "to": 2024,
+  "variable": "aptinc992j",
+  "note": "Average income of each percentile in both years, constant prices of priceYear.",
+  "percentiles": [
+   {
+    "p": 0,
+    "from": 0,
+    "to": 0
+   },
+   {
+    "p": 1,
+    "from": 0,
+    "to": 0
+   },
+   {
+    "p": 2,
+    "from": 0,
+    "to": 0
+   },
+   {
+    "p": 3,
+    "from": 0,
+    "to": 0
+   },
+   {
+    "p": 4,
+    "from": 0,
+    "to": 0
+   },
+   {
+    "p": 5,
+    "from": 359558,
+    "to": 750256
+   },
+   {
+    "p": 6,
+    "from": 1078675,
+    "to": 2250767
+   },
+   {
+    "p": 7,
+    "from": 1797791,
+    "to": 3751279
+   },
+   {
+    "p": 8,
+    "from": 2516908,
+    "to": 5251791
+   },
+   {
+    "p": 9,
+    "from": 3236024,
+    "to": 6752302
+   },
+   {
+    "p": 10,
+    "from": 3955140,
+    "to": 8252814
+   },
+   {
+    "p": 11,
+    "from": 4674256,
+    "to": 9753325
+   },
+   {
+    "p": 12,
+    "from": 5393373,
+    "to": 11253836
+   },
+   {
+    "p": 13,
+    "from": 6112490,
+    "to": 12754348
+   },
+   {
+    "p": 14,
+    "from": 6831606,
+    "to": 14254861
+   },
+   {
+    "p": 15,
+    "from": 7550723,
+    "to": 15755372
+   },
+   {
+    "p": 16,
+    "from": 8269839,
+    "to": 17255883
+   },
+   {
+    "p": 17,
+    "from": 8988955,
+    "to": 18756396
+   },
+   {
+    "p": 18,
+    "from": 9708072,
+    "to": 20256907
+   },
+   {
+    "p": 19,
+    "from": 10427189,
+    "to": 21757418
+   },
+   {
+    "p": 20,
+    "from": 10786746,
+    "to": 22507674
+   },
+   {
+    "p": 21,
+    "from": 11061504,
+    "to": 23233042
+   },
+   {
+    "p": 22,
+    "from": 11316098,
+    "to": 23841266
+   },
+   {
+    "p": 23,
+    "from": 11570792,
+    "to": 24405603
+   },
+   {
+    "p": 24,
+    "from": 11842574,
+    "to": 25080458
+   },
+   {
+    "p": 25,
+    "from": 12102572,
+    "to": 25750357
+   },
+   {
+    "p": 26,
+    "from": 12450703,
+    "to": 26481037
+   },
+   {
+    "p": 27,
+    "from": 12957870,
+    "to": 27263250
+   },
+   {
+    "p": 28,
+    "from": 13459559,
+    "to": 28015808
+   },
+   {
+    "p": 29,
+    "from": 13970746,
+    "to": 28728192
+   },
+   {
+    "p": 30,
+    "from": 14315297,
+    "to": 29628007
+   },
+   {
+    "p": 31,
+    "from": 14481341,
+    "to": 30472692
+   },
+   {
+    "p": 32,
+    "from": 14653222,
+    "to": 31316275
+   },
+   {
+    "p": 33,
+    "from": 14825266,
+    "to": 32204879
+   },
+   {
+    "p": 34,
+    "from": 14993490,
+    "to": 33113178
+   },
+   {
+    "p": 35,
+    "from": 15171122,
+    "to": 33928965
+   },
+   {
+    "p": 36,
+    "from": 15342215,
+    "to": 34941188
+   },
+   {
+    "p": 37,
+    "from": 15584748,
+    "to": 35819227
+   },
+   {
+    "p": 38,
+    "from": 15923907,
+    "to": 36732976
+   },
+   {
+    "p": 39,
+    "from": 16260293,
+    "to": 37857116
+   },
+   {
+    "p": 40,
+    "from": 16669188,
+    "to": 38931323
+   },
+   {
+    "p": 41,
+    "from": 17137762,
+    "to": 39908878
+   },
+   {
+    "p": 42,
+    "from": 17599361,
+    "to": 40921373
+   },
+   {
+    "p": 43,
+    "from": 18072051,
+    "to": 42101492
+   },
+   {
+    "p": 44,
+    "from": 18558504,
+    "to": 43368953
+   },
+   {
+    "p": 45,
+    "from": 19015788,
+    "to": 44533906
+   },
+   {
+    "p": 46,
+    "from": 19456285,
+    "to": 45785293
+   },
+   {
+    "p": 47,
+    "from": 19894452,
+    "to": 47028048
+   },
+   {
+    "p": 48,
+    "from": 20348017,
+    "to": 48268606
+   },
+   {
+    "p": 49,
+    "from": 20800660,
+    "to": 49594687
+   },
+   {
+    "p": 50,
+    "from": 21213151,
+    "to": 50770377
+   },
+   {
+    "p": 51,
+    "from": 21601044,
+    "to": 52260034
+   },
+   {
+    "p": 52,
+    "from": 21981053,
+    "to": 53798409
+   },
+   {
+    "p": 53,
+    "from": 22370688,
+    "to": 55155544
+   },
+   {
+    "p": 54,
+    "from": 22767288,
+    "to": 56652115
+   },
+   {
+    "p": 55,
+    "from": 23193814,
+    "to": 58330306
+   },
+   {
+    "p": 56,
+    "from": 23675264,
+    "to": 59878773
+   },
+   {
+    "p": 57,
+    "from": 24168487,
+    "to": 61705672
+   },
+   {
+    "p": 58,
+    "from": 24682510,
+    "to": 63507892
+   },
+   {
+    "p": 59,
+    "from": 25214488,
+    "to": 65430399
+   },
+   {
+    "p": 60,
+    "from": 25817010,
+    "to": 67282172
+   },
+   {
+    "p": 61,
+    "from": 26471657,
+    "to": 69363315
+   },
+   {
+    "p": 62,
+    "from": 27119945,
+    "to": 71557474
+   },
+   {
+    "p": 63,
+    "from": 27789030,
+    "to": 73811156
+   },
+   {
+    "p": 64,
+    "from": 28467197,
+    "to": 75987300
+   },
+   {
+    "p": 65,
+    "from": 29170635,
+    "to": 78395631
+   },
+   {
+    "p": 66,
+    "from": 29895217,
+    "to": 80974138
+   },
+   {
+    "p": 67,
+    "from": 30642382,
+    "to": 83490427
+   },
+   {
+    "p": 68,
+    "from": 31389431,
+    "to": 85964657
+   },
+   {
+    "p": 69,
+    "from": 32160710,
+    "to": 88814183
+   },
+   {
+    "p": 70,
+    "from": 32924595,
+    "to": 91803294
+   },
+   {
+    "p": 71,
+    "from": 33699246,
+    "to": 94483910
+   },
+   {
+    "p": 72,
+    "from": 34488906,
+    "to": 97475771
+   },
+   {
+    "p": 73,
+    "from": 35285092,
+    "to": 100576177
+   },
+   {
+    "p": 74,
+    "from": 36105397,
+    "to": 103966466
+   },
+   {
+    "p": 75,
+    "from": 36965404,
+    "to": 107180701
+   },
+   {
+    "p": 76,
+    "from": 38002147,
+    "to": 110499868
+   },
+   {
+    "p": 77,
+    "from": 39066424,
+    "to": 114288044
+   },
+   {
+    "p": 78,
+    "from": 40166839,
+    "to": 118282329
+   },
+   {
+    "p": 79,
+    "from": 41305376,
+    "to": 121986723
+   },
+   {
+    "p": 80,
+    "from": 42586955,
+    "to": 126296857
+   },
+   {
+    "p": 81,
+    "from": 44009330,
+    "to": 130639132
+   },
+   {
+    "p": 82,
+    "from": 45466690,
+    "to": 135345228
+   },
+   {
+    "p": 83,
+    "from": 46976367,
+    "to": 140310036
+   },
+   {
+    "p": 84,
+    "from": 48574247,
+    "to": 145748113
+   },
+   {
+    "p": 85,
+    "from": 50282793,
+    "to": 151652620
+   },
+   {
+    "p": 86,
+    "from": 52528826,
+    "to": 158337594
+   },
+   {
+    "p": 87,
+    "from": 55074621,
+    "to": 165445622
+   },
+   {
+    "p": 88,
+    "from": 57806555,
+    "to": 173924836
+   },
+   {
+    "p": 89,
+    "from": 60774872,
+    "to": 183603385
+   },
+   {
+    "p": 90,
+    "from": 61039168,
+    "to": 184422759
+   },
+   {
+    "p": 91,
+    "from": 64866738,
+    "to": 197732061
+   },
+   {
+    "p": 92,
+    "from": 69669792,
+    "to": 214444162
+   },
+   {
+    "p": 93,
+    "from": 75896453,
+    "to": 236030398
+   },
+   {
+    "p": 94,
+    "from": 84053224,
+    "to": 263741512
+   },
+   {
+    "p": 95,
+    "from": 94500559,
+    "to": 300398031
+   },
+   {
+    "p": 96,
+    "from": 109173183,
+    "to": 353914246
+   },
+   {
+    "p": 97,
+    "from": 132500585,
+    "to": 439152943
+   },
+   {
+    "p": 98,
+    "from": 178760778,
+    "to": 608320691
+   },
+   {
+    "p": 99,
+    "from": 486630703,
+    "to": 1721472812
+   }
+  ]
+ },
+ "productionTaxShare": {
+  "value": 0.072,
+  "unit": "ratio",
+  "asOf": "2024-12-31",
+  "sourceId": "wid-bulk-2026-10",
+  "status": "official",
+  "note": "Net taxes on production and imports (mptxgoi999) divided by national income (mnninci999). Pre-tax national income includes these taxes; a household income figure does not."
+ },
+ "pppPerUsd": {
+  "value": 4719.44,
+  "unit": "IDR/USD",
+  "asOf": "2025-12-31",
+  "sourceId": "wid-bulk-2026-10",
+  "status": "official",
+  "note": "WID PPP conversion factor (xlcusp999i), rupiah per US dollar at purchasing-power parity."
+ },
+ "cpiToPriceYear": {
+  "value": 0.9682,
+  "unit": "ratio",
+  "asOf": "2026-09-30",
+  "sourceId": "kontan-inflasi-2026-09",
+  "status": "official",
+  "note": "Rupiah of September 2026 to 2025 prices: CPI September 2025 (108.74) ÷ CPI September 2026 (112.31), i.e. 3.28% year-on-year inflation. Approximates the 2025 average price level by September 2025."
+ },
+ "retainedEarningsRate": {
+  "value": 0.149,
+  "unit": "ratio",
+  "asOf": "2026-10-27",
+  "sourceId": "wid-income-comparator",
+  "status": "snapshot",
+  "note": "Share of a shareholding's value added as retained corporate earnings, as used by the WID Income Comparator for Indonesia. Not in the bulk download; reported from the comparator."
+ }
+}

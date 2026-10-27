@@ -10,6 +10,8 @@ Do this once a month, plus the dated items below. After editing, run `npm run ch
 - [ ] **Wishlist**: re-read Apple store pages (iPhone 17 256 GB) and retailer pages for Switch 2, Stanley Quencher 40 oz, Starbucks grande latte and Netflix Standard. Use the seller's own page where one exists and set `asOf` to the day read.
 - [ ] **Flights to Paris**: re-read the airline "fares from" pages listed in `sources.json` (Etihad, Vietnam Airlines, Thai, Korean Air, JAL, Cathay). Set `asOf` to the day read; keep travel dates in `note`.
 - [ ] **Concert**: when the BTS tour ends (March 2027), switch `bts` to the next tour that covers most cities, or keep it as a dated snapshot.
+- [ ] **Inflation**: BPS CPI (first days of the month). Update `cpiToPriceYear` in `wid-indonesia.json` (CPI of WID's price-year month ÷ latest CPI) only when WID's price year changes or once a quarter.
+- [ ] Open `/status.html` (or run `npm run check-data -- --verbose`) and work down everything marked overdue, then everything due.
 - [ ] Run `npm run check-data` and look at the gaps list: work down the values still citing `bjk-prototype-2026-10`.
 
 ## Dated
@@ -19,6 +21,8 @@ Do this once a month, plus the dated items below. After editing, run `npm run ch
 - [ ] **November–December**: Kemnaker and provincial governors announce next year's **UMP** (by 21 November) and **UMK** (by 30 November–December). Update `regions-id.json` (set `year`), the Indonesian places in `places.json`, and add the new Jakarta UMP point to `timeseries-jakarta.json`.
 - [ ] **Each country's wage review**: Japan (October, MHLW regional minimums), Korea (decided August, effective 1 January), Vietnam (decree, usually 1 January or 1 July), Philippines (NCR wage orders, NWPC), Thailand (Wage Committee), Malaysia (Minimum Wages Order), Cambodia (garment sector, announced September–October for 1 January), Laos, Singapore (MOM Local Qualifying Salary).
 - [ ] **Fuel and electricity** when Pertamina or PLN announce a change (PLN tariff adjustments are quarterly).
+- [ ] **Each quarter (BPS Sakernas)**: February, May, August and November rounds, published about five weeks later. Update `bps-wages.json` (national, by sex, by sector) and its `survey` label.
+- [ ] **Once a year (WID)**: when WID publishes a new year, re-download Indonesia (`WID_data_ID.csv`) and the world at PPP (`WID_data_WO-PPP.csv`) and rebuild `wid-indonesia.json` and `wid-world.json` (same variables: `tptinc992j`, `aptinc992j`, `mptxgoi999`, `mnninci999`, `xlcusp999i`, `inyixx999i`). Update `year`, `priceYear`, `downloaded`, the CPI factor, and the reference-case test in `src/lib/percentile.test.ts`; note the change in METHOD.md.
 
 ## Rules
 

@@ -292,6 +292,17 @@
     "Nintendo Official Store on Shopee: ₱31,990 standalone.": "Nintendo Official Store di Shopee: ₱31.990 tanpa bundel.",
     "Korea: ₩648,000 → ₩758,000 from 1 September 2026.": "Korea: ₩648.000 → ₩758.000 mulai 1 September 2026.",
     "Suggested retail price raised to ¥59,980 on 25 May 2026.": "Harga eceran anjuran naik menjadi ¥59.980 pada 25 Mei 2026.",
-    "Grande ¥570 (eat-in, tax included).": "Grande ¥570 (makan di tempat, termasuk pajak)."
+    "Grande ¥570 (eat-in, tax included).": "Grande ¥570 (makan di tempat, termasuk pajak).",
+    "Variables tptinc992j, aptinc992j (pre-tax national income, equal-split adults), mptxgoi999, mnninci999, xlcusp999i, inyixx999i. Latest year 2024, constant 2025 prices.": "Variabel tptinc992j, aptinc992j (pendapatan nasional sebelum pajak, dibagi rata antarorang dewasa), mptxgoi999, mnninci999, xlcusp999i, inyixx999i. Tahun terbaru 2024, harga konstan 2025.",
+    "Retained-earnings rate for Indonesia (14.9%) as shown by the comparator; the method follows the comparator, rebuilt independently.": "Tingkat laba ditahan untuk Indonesia (14,9%) seperti yang ditampilkan comparator; metodenya mengikuti comparator, dibangun ulang secara mandiri.",
+    "BPS CPI September 2026 112.31, September 2025 108.74; 3.28% y-o-y.": "IHK BPS September 2026 112,31, September 2025 108,74; inflasi tahunan 3,28%.",
+    "BPS press release 5 Aug 2026 (bps.go.id/id/pressrelease/2026/08/05/2606): average wage Rp3,39 juta; by sex and 17 sectors. bps.go.id refused automated access, so the figures were read from this report.": "Berita resmi BPS 5 Agu 2026 (bps.go.id/id/pressrelease/2026/08/05/2606): rata-rata upah Rp3,39 juta; menurut jenis kelamin dan 17 lapangan usaha. Situs bps.go.id menolak akses otomatis, jadi angkanya dibaca dari laporan ini.",
+    "Average income of each percentile in both years, constant prices of priceYear.": "Rata-rata pendapatan tiap persentil di kedua tahun, harga konstan tahun acuan.",
+    "Net taxes on production and imports (mptxgoi999) divided by national income (mnninci999). Pre-tax national income includes these taxes; a household income figure does not.": "Pajak neto atas produksi dan impor (mptxgoi999) dibagi pendapatan nasional (mnninci999). Pendapatan nasional sebelum pajak memuat pajak ini; angka pendapatan rumah tangga tidak.",
+    "WID PPP conversion factor (xlcusp999i), rupiah per US dollar at purchasing-power parity.": "Faktor konversi PPP dari WID (xlcusp999i), rupiah per dolar AS menurut paritas daya beli.",
+    "Rupiah of September 2026 to 2025 prices: CPI September 2025 (108.74) ÷ CPI September 2026 (112.31), i.e. 3.28% year-on-year inflation. Approximates the 2025 average price level by September 2025.": "Rupiah September 2026 ke harga 2025: IHK September 2025 (108,74) ÷ IHK September 2026 (112,31), yaitu inflasi tahunan 3,28%. Tingkat harga rata-rata 2025 didekati dengan September 2025.",
+    "Share of a shareholding's value added as retained corporate earnings, as used by the WID Income Comparator for Indonesia. Not in the bulk download; reported from the comparator.": "Bagian dari nilai kepemilikan saham yang ditambahkan sebagai laba ditahan perusahaan, seperti dipakai WID Income Comparator untuk Indonesia. Tidak ada di unduhan massal; dilaporkan dari comparator.",
+    "BPS publishes average (mean) net monthly wages of buruh/karyawan/pegawai, not percentiles. Averages are pulled up by high earners, so most employees earn less than the average.": "BPS menerbitkan rata-rata upah bersih sebulan buruh/karyawan/pegawai, bukan persentil. Rata-rata terangkat oleh gaji tinggi, jadi sebagian besar pekerja bergaji di bawah rata-rata.",
+    "Average net wage, all employees.": "Rata-rata upah bersih, semua buruh/karyawan."
   }
 }

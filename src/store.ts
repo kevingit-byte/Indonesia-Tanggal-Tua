@@ -7,7 +7,11 @@ import tsJson from '../data/timeseries-jakarta.json';
 import sourcesJson from '../data/sources.json';
 import methodJson from '../data/method.json';
 import notesIdJson from '../data/notes-id.json';
+import widIdJson from '../data/wid-indonesia.json';
+import widWoJson from '../data/wid-world.json';
+import bpsJson from '../data/bps-wages.json';
 import type {
+  BpsWagesFile,
   Datum,
   MethodFile,
   PlacesFile,
@@ -16,6 +20,7 @@ import type {
   Source,
   SourcesFile,
   TimeseriesFile,
+  WidFile,
   WishlistFile,
 } from './data/types';
 import type { Lang } from './i18n';
@@ -28,6 +33,9 @@ const base = {
   timeseries: tsJson as unknown as TimeseriesFile,
   sources: sourcesJson as unknown as SourcesFile,
   method: methodJson as unknown as MethodFile,
+  widId: widIdJson as unknown as WidFile,
+  widWorld: widWoJson as unknown as WidFile,
+  bps: bpsJson as unknown as BpsWagesFile,
 };
 export type Data = typeof base;
 
@@ -69,7 +77,8 @@ function lookup(d: Data, key: string): Datum | undefined {
 let current: Data = build();
 
 function build(): Data {
-  const d = structuredClone(base);
+  // Only places, prices and the wishlist can be edited; everything else is shared as-is.
+  const d: Data = { ...base, places: structuredClone(base.places), prices: structuredClone(base.prices), wishlist: structuredClone(base.wishlist) };
   for (const [key, value] of Object.entries(edits)) {
     const datum = lookup(d, key) as EditedDatum | undefined;
     if (!datum || datum.value === value) continue;

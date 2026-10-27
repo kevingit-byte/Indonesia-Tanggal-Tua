@@ -1,0 +1,1297 @@
+{
+ "schemaVersion": 1,
+ "dataset": "WID pre-tax national income distribution, World",
+ "updated": "2026-10-27",
+ "region": "WO-PPP",
+ "label": "World",
+ "year": 2024,
+ "priceYear": 2025,
+ "currency": "USD",
+ "unit": "USD/year",
+ "asOf": "2024-12-31",
+ "sourceId": "wid-bulk-2026-10",
+ "status": "official",
+ "downloaded": "2026-10-27",
+ "concept": "Pre-tax national income per adult (age 20+), equal split within couples, in constant prices of priceYear.",
+ "variables": {
+  "threshold": "tptinc992j",
+  "average": "aptinc992j",
+  "bulkFileCodes": {
+   "threshold": "tptincj992",
+   "average": "aptincj992"
+  }
+ },
+ "mean": 31192,
+ "groups": [
+  {
+   "p": 0,
+   "pTo": 1,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 1,
+   "pTo": 2,
+   "threshold": 0,
+   "average": 0
+  },
+  {
+   "p": 2,
+   "pTo": 3,
+   "threshold": 1,
+   "average": 1
+  },
+  {
+   "p": 3,
+   "pTo": 4,
+   "threshold": 1,
+   "average": 2
+  },
+  {
+   "p": 4,
+   "pTo": 5,
+   "threshold": 2,
+   "average": 2
+  },
+  {
+   "p": 5,
+   "pTo": 6,
+   "threshold": 41,
+   "average": 80
+  },
+  {
+   "p": 6,
+   "pTo": 7,
+   "threshold": 195,
+   "average": 308
+  },
+  {
+   "p": 7,
+   "pTo": 8,
+   "threshold": 453,
+   "average": 593
+  },
+  {
+   "p": 8,
+   "pTo": 9,
+   "threshold": 742,
+   "average": 883
+  },
+  {
+   "p": 9,
+   "pTo": 10,
+   "threshold": 1018,
+   "average": 1142
+  },
+  {
+   "p": 10,
+   "pTo": 11,
+   "threshold": 1276,
+   "average": 1397
+  },
+  {
+   "p": 11,
+   "pTo": 12,
+   "threshold": 1540,
+   "average": 1668
+  },
+  {
+   "p": 12,
+   "pTo": 13,
+   "threshold": 1810,
+   "average": 1934
+  },
+  {
+   "p": 13,
+   "pTo": 14,
+   "threshold": 2088,
+   "average": 2220
+  },
+  {
+   "p": 14,
+   "pTo": 15,
+   "threshold": 2357,
+   "average": 2471
+  },
+  {
+   "p": 15,
+   "pTo": 16,
+   "threshold": 2615,
+   "average": 2732
+  },
+  {
+   "p": 16,
+   "pTo": 17,
+   "threshold": 2895,
+   "average": 3029
+  },
+  {
+   "p": 17,
+   "pTo": 18,
+   "threshold": 3193,
+   "average": 3324
+  },
+  {
+   "p": 18,
+   "pTo": 19,
+   "threshold": 3492,
+   "average": 3624
+  },
+  {
+   "p": 19,
+   "pTo": 20,
+   "threshold": 3796,
+   "average": 3928
+  },
+  {
+   "p": 20,
+   "pTo": 21,
+   "threshold": 4081,
+   "average": 4193
+  },
+  {
+   "p": 21,
+   "pTo": 22,
+   "threshold": 4312,
+   "average": 4388
+  },
+  {
+   "p": 22,
+   "pTo": 23,
+   "threshold": 4513,
+   "average": 4592
+  },
+  {
+   "p": 23,
+   "pTo": 24,
+   "threshold": 4696,
+   "average": 4753
+  },
+  {
+   "p": 24,
+   "pTo": 25,
+   "threshold": 4874,
+   "average": 4945
+  },
+  {
+   "p": 25,
+   "pTo": 26,
+   "threshold": 5068,
+   "average": 5140
+  },
+  {
+   "p": 26,
+   "pTo": 27,
+   "threshold": 5270,
+   "average": 5348
+  },
+  {
+   "p": 27,
+   "pTo": 28,
+   "threshold": 5465,
+   "average": 5526
+  },
+  {
+   "p": 28,
+   "pTo": 29,
+   "threshold": 5647,
+   "average": 5710
+  },
+  {
+   "p": 29,
+   "pTo": 30,
+   "threshold": 5832,
+   "average": 5894
+  },
+  {
+   "p": 30,
+   "pTo": 31,
+   "threshold": 6044,
+   "average": 6134
+  },
+  {
+   "p": 31,
+   "pTo": 32,
+   "threshold": 6262,
+   "average": 6327
+  },
+  {
+   "p": 32,
+   "pTo": 33,
+   "threshold": 6465,
+   "average": 6537
+  },
+  {
+   "p": 33,
+   "pTo": 34,
+   "threshold": 6682,
+   "average": 6758
+  },
+  {
+   "p": 34,
+   "pTo": 35,
+   "threshold": 6924,
+   "average": 7020
+  },
+  {
+   "p": 35,
+   "pTo": 36,
+   "threshold": 7185,
+   "average": 7278
+  },
+  {
+   "p": 36,
+   "pTo": 37,
+   "threshold": 7429,
+   "average": 7504
+  },
+  {
+   "p": 37,
+   "pTo": 38,
+   "threshold": 7659,
+   "average": 7736
+  },
+  {
+   "p": 38,
+   "pTo": 39,
+   "threshold": 7917,
+   "average": 8018
+  },
+  {
+   "p": 39,
+   "pTo": 40,
+   "threshold": 8208,
+   "average": 8315
+  },
+  {
+   "p": 40,
+   "pTo": 41,
+   "threshold": 8501,
+   "average": 8601
+  },
+  {
+   "p": 41,
+   "pTo": 42,
+   "threshold": 8798,
+   "average": 8906
+  },
+  {
+   "p": 42,
+   "pTo": 43,
+   "threshold": 9098,
+   "average": 9198
+  },
+  {
+   "p": 43,
+   "pTo": 44,
+   "threshold": 9415,
+   "average": 9537
+  },
+  {
+   "p": 44,
+   "pTo": 45,
+   "threshold": 9762,
+   "average": 9888
+  },
+  {
+   "p": 45,
+   "pTo": 46,
+   "threshold": 10101,
+   "average": 10211
+  },
+  {
+   "p": 46,
+   "pTo": 47,
+   "threshold": 10454,
+   "average": 10590
+  },
+  {
+   "p": 47,
+   "pTo": 48,
+   "threshold": 10834,
+   "average": 10968
+  },
+  {
+   "p": 48,
+   "pTo": 49,
+   "threshold": 11190,
+   "average": 11298
+  },
+  {
+   "p": 49,
+   "pTo": 50,
+   "threshold": 11560,
+   "average": 11705
+  },
+  {
+   "p": 50,
+   "pTo": 51,
+   "threshold": 11986,
+   "average": 12144
+  },
+  {
+   "p": 51,
+   "pTo": 52,
+   "threshold": 12438,
+   "average": 12606
+  },
+  {
+   "p": 52,
+   "pTo": 53,
+   "threshold": 12935,
+   "average": 13133
+  },
+  {
+   "p": 53,
+   "pTo": 54,
+   "threshold": 13433,
+   "average": 13596
+  },
+  {
+   "p": 54,
+   "pTo": 55,
+   "threshold": 13914,
+   "average": 14090
+  },
+  {
+   "p": 55,
+   "pTo": 56,
+   "threshold": 14422,
+   "average": 14607
+  },
+  {
+   "p": 56,
+   "pTo": 57,
+   "threshold": 14940,
+   "average": 15122
+  },
+  {
+   "p": 57,
+   "pTo": 58,
+   "threshold": 15518,
+   "average": 15757
+  },
+  {
+   "p": 58,
+   "pTo": 59,
+   "threshold": 16158,
+   "average": 16395
+  },
+  {
+   "p": 59,
+   "pTo": 60,
+   "threshold": 16794,
+   "average": 17022
+  },
+  {
+   "p": 60,
+   "pTo": 61,
+   "threshold": 17484,
+   "average": 17769
+  },
+  {
+   "p": 61,
+   "pTo": 62,
+   "threshold": 18251,
+   "average": 18547
+  },
+  {
+   "p": 62,
+   "pTo": 63,
+   "threshold": 19057,
+   "average": 19374
+  },
+  {
+   "p": 63,
+   "pTo": 64,
+   "threshold": 19871,
+   "average": 20166
+  },
+  {
+   "p": 64,
+   "pTo": 65,
+   "threshold": 20654,
+   "average": 20932
+  },
+  {
+   "p": 65,
+   "pTo": 66,
+   "threshold": 21486,
+   "average": 21821
+  },
+  {
+   "p": 66,
+   "pTo": 67,
+   "threshold": 22408,
+   "average": 22766
+  },
+  {
+   "p": 67,
+   "pTo": 68,
+   "threshold": 23393,
+   "average": 23782
+  },
+  {
+   "p": 68,
+   "pTo": 69,
+   "threshold": 24368,
+   "average": 24706
+  },
+  {
+   "p": 69,
+   "pTo": 70,
+   "threshold": 25249,
+   "average": 25534
+  },
+  {
+   "p": 70,
+   "pTo": 71,
+   "threshold": 26185,
+   "average": 26569
+  },
+  {
+   "p": 71,
+   "pTo": 72,
+   "threshold": 27258,
+   "average": 27668
+  },
+  {
+   "p": 72,
+   "pTo": 73,
+   "threshold": 28391,
+   "average": 28824
+  },
+  {
+   "p": 73,
+   "pTo": 74,
+   "threshold": 29607,
+   "average": 30090
+  },
+  {
+   "p": 74,
+   "pTo": 75,
+   "threshold": 30872,
+   "average": 31340
+  },
+  {
+   "p": 75,
+   "pTo": 76,
+   "threshold": 32102,
+   "average": 32538
+  },
+  {
+   "p": 76,
+   "pTo": 77,
+   "threshold": 33344,
+   "average": 33811
+  },
+  {
+   "p": 77,
+   "pTo": 78,
+   "threshold": 34750,
+   "average": 35335
+  },
+  {
+   "p": 78,
+   "pTo": 79,
+   "threshold": 36380,
+   "average": 37055
+  },
+  {
+   "p": 79,
+   "pTo": 80,
+   "threshold": 38084,
+   "average": 38725
+  },
+  {
+   "p": 80,
+   "pTo": 81,
+   "threshold": 39913,
+   "average": 40694
+  },
+  {
+   "p": 81,
+   "pTo": 82,
+   "threshold": 41907,
+   "average": 42694
+  },
+  {
+   "p": 82,
+   "pTo": 83,
+   "threshold": 43876,
+   "average": 44612
+  },
+  {
+   "p": 83,
+   "pTo": 84,
+   "threshold": 46067,
+   "average": 47054
+  },
+  {
+   "p": 84,
+   "pTo": 85,
+   "threshold": 48431,
+   "average": 49314
+  },
+  {
+   "p": 85,
+   "pTo": 86,
+   "threshold": 50783,
+   "average": 51735
+  },
+  {
+   "p": 86,
+   "pTo": 87,
+   "threshold": 53595,
+   "average": 54911
+  },
+  {
+   "p": 87,
+   "pTo": 88,
+   "threshold": 57006,
+   "average": 58522
+  },
+  {
+   "p": 88,
+   "pTo": 89,
+   "threshold": 60797,
+   "average": 62453
+  },
+  {
+   "p": 89,
+   "pTo": 90,
+   "threshold": 64896,
+   "average": 66679
+  },
+  {
+   "p": 90,
+   "pTo": 91,
+   "threshold": 69250,
+   "average": 71116
+  },
+  {
+   "p": 91,
+   "pTo": 92,
+   "threshold": 74089,
+   "average": 76307
+  },
+  {
+   "p": 92,
+   "pTo": 93,
+   "threshold": 79535,
+   "average": 81954
+  },
+  {
+   "p": 93,
+   "pTo": 94,
+   "threshold": 85979,
+   "average": 89129
+  },
+  {
+   "p": 94,
+   "pTo": 95,
+   "threshold": 94757,
+   "average": 99421
+  },
+  {
+   "p": 95,
+   "pTo": 96,
+   "threshold": 106610,
+   "average": 112714
+  },
+  {
+   "p": 96,
+   "pTo": 97,
+   "threshold": 122096,
+   "average": 130236
+  },
+  {
+   "p": 97,
+   "pTo": 98,
+   "threshold": 143502,
+   "average": 155308
+  },
+  {
+   "p": 98,
+   "pTo": 99,
+   "threshold": 182265,
+   "average": 207367
+  },
+  {
+   "p": 99.0,
+   "pTo": 99.1,
+   "threshold": 236177,
+   "average": 262584
+  },
+  {
+   "p": 99.1,
+   "pTo": 99.2,
+   "threshold": 271185,
+   "average": 277027
+  },
+  {
+   "p": 99.2,
+   "pTo": 99.3,
+   "threshold": 289843,
+   "average": 299710
+  },
+  {
+   "p": 99.3,
+   "pTo": 99.4,
+   "threshold": 311332,
+   "average": 319786
+  },
+  {
+   "p": 99.4,
+   "pTo": 99.5,
+   "threshold": 341760,
+   "average": 360256
+  },
+  {
+   "p": 99.5,
+   "pTo": 99.6,
+   "threshold": 382449,
+   "average": 400751
+  },
+  {
+   "p": 99.6,
+   "pTo": 99.7,
+   "threshold": 441256,
+   "average": 477272
+  },
+  {
+   "p": 99.7,
+   "pTo": 99.8,
+   "threshold": 523047,
+   "average": 563501
+  },
+  {
+   "p": 99.8,
+   "pTo": 99.9,
+   "threshold": 663632,
+   "average": 757012
+  },
+  {
+   "p": 99.9,
+   "pTo": 99.91,
+   "threshold": 874023,
+   "average": 982144
+  },
+  {
+   "p": 99.91,
+   "pTo": 99.92,
+   "threshold": 1029213,
+   "average": 1065812
+  },
+  {
+   "p": 99.92,
+   "pTo": 99.93,
+   "threshold": 1114309,
+   "average": 1151471
+  },
+  {
+   "p": 99.93,
+   "pTo": 99.94,
+   "threshold": 1213798,
+   "average": 1263779
+  },
+  {
+   "p": 99.94,
+   "pTo": 99.95,
+   "threshold": 1335187,
+   "average": 1393013
+  },
+  {
+   "p": 99.95,
+   "pTo": 99.96,
+   "threshold": 1512443,
+   "average": 1616489
+  },
+  {
+   "p": 99.96,
+   "pTo": 99.97,
+   "threshold": 1690012,
+   "average": 1746346
+  },
+  {
+   "p": 99.97,
+   "pTo": 99.98,
+   "threshold": 2002919,
+   "average": 2239119
+  },
+  {
+   "p": 99.98,
+   "pTo": 99.99,
+   "threshold": 2610560,
+   "average": 2955445
+  },
+  {
+   "p": 99.99,
+   "pTo": 99.991,
+   "threshold": 3505558,
+   "average": 4020013
+  },
+  {
+   "p": 99.991,
+   "pTo": 99.992,
+   "threshold": 4171520,
+   "average": 4280595
+  },
+  {
+   "p": 99.992,
+   "pTo": 99.993,
+   "threshold": 4455606,
+   "average": 4585296
+  },
+  {
+   "p": 99.993,
+   "pTo": 99.994,
+   "threshold": 4897196,
+   "average": 5159282
+  },
+  {
+   "p": 99.994,
+   "pTo": 99.995,
+   "threshold": 5574473,
+   "average": 5932960
+  },
+  {
+   "p": 99.995,
+   "pTo": 99.996,
+   "threshold": 6464857,
+   "average": 6930994
+  },
+  {
+   "p": 99.996,
+   "pTo": 99.997,
+   "threshold": 7345074,
+   "average": 7684439
+  },
+  {
+   "p": 99.997,
+   "pTo": 99.998,
+   "threshold": 8971366,
+   "average": 10167036
+  },
+  {
+   "p": 99.998,
+   "pTo": 99.999,
+   "threshold": 12862006,
+   "average": 15426142
+  },
+  {
+   "p": 99.999,
+   "pTo": 100.0,
+   "threshold": 39264660,
+   "average": 62703773
+  }
+ ],
+ "growth": {
+  "from": 1980,
+  "to": 2024,
+  "variable": "aptinc992j",
+  "note": "Average income of each percentile in both years, constant prices of priceYear.",
+  "percentiles": [
+   {
+    "p": 0,
+    "from": 0,
+    "to": 0
+   },
+   {
+    "p": 1,
+    "from": 1,
+    "to": 0
+   },
+   {
+    "p": 2,
+    "from": 2,
+    "to": 1
+   },
+   {
+    "p": 3,
+    "from": 3,
+    "to": 2
+   },
+   {
+    "p": 4,
+    "from": 4,
+    "to": 2
+   },
+   {
+    "p": 5,
+    "from": 66,
+    "to": 80
+   },
+   {
+    "p": 6,
+    "from": 200,
+    "to": 308
+   },
+   {
+    "p": 7,
+    "from": 331,
+    "to": 593
+   },
+   {
+    "p": 8,
+    "from": 456,
+    "to": 883
+   },
+   {
+    "p": 9,
+    "from": 581,
+    "to": 1142
+   },
+   {
+    "p": 10,
+    "from": 706,
+    "to": 1397
+   },
+   {
+    "p": 11,
+    "from": 836,
+    "to": 1668
+   },
+   {
+    "p": 12,
+    "from": 978,
+    "to": 1934
+   },
+   {
+    "p": 13,
+    "from": 1122,
+    "to": 2220
+   },
+   {
+    "p": 14,
+    "from": 1243,
+    "to": 2471
+   },
+   {
+    "p": 15,
+    "from": 1365,
+    "to": 2732
+   },
+   {
+    "p": 16,
+    "from": 1506,
+    "to": 3029
+   },
+   {
+    "p": 17,
+    "from": 1612,
+    "to": 3324
+   },
+   {
+    "p": 18,
+    "from": 1706,
+    "to": 3624
+   },
+   {
+    "p": 19,
+    "from": 1787,
+    "to": 3928
+   },
+   {
+    "p": 20,
+    "from": 1871,
+    "to": 4193
+   },
+   {
+    "p": 21,
+    "from": 1963,
+    "to": 4388
+   },
+   {
+    "p": 22,
+    "from": 2060,
+    "to": 4592
+   },
+   {
+    "p": 23,
+    "from": 2161,
+    "to": 4753
+   },
+   {
+    "p": 24,
+    "from": 2270,
+    "to": 4945
+   },
+   {
+    "p": 25,
+    "from": 2378,
+    "to": 5140
+   },
+   {
+    "p": 26,
+    "from": 2481,
+    "to": 5348
+   },
+   {
+    "p": 27,
+    "from": 2584,
+    "to": 5526
+   },
+   {
+    "p": 28,
+    "from": 2700,
+    "to": 5710
+   },
+   {
+    "p": 29,
+    "from": 2800,
+    "to": 5894
+   },
+   {
+    "p": 30,
+    "from": 2904,
+    "to": 6134
+   },
+   {
+    "p": 31,
+    "from": 3004,
+    "to": 6327
+   },
+   {
+    "p": 32,
+    "from": 3112,
+    "to": 6537
+   },
+   {
+    "p": 33,
+    "from": 3227,
+    "to": 6758
+   },
+   {
+    "p": 34,
+    "from": 3339,
+    "to": 7020
+   },
+   {
+    "p": 35,
+    "from": 3408,
+    "to": 7278
+   },
+   {
+    "p": 36,
+    "from": 3466,
+    "to": 7504
+   },
+   {
+    "p": 37,
+    "from": 3533,
+    "to": 7736
+   },
+   {
+    "p": 38,
+    "from": 3598,
+    "to": 8018
+   },
+   {
+    "p": 39,
+    "from": 3656,
+    "to": 8315
+   },
+   {
+    "p": 40,
+    "from": 3713,
+    "to": 8601
+   },
+   {
+    "p": 41,
+    "from": 3773,
+    "to": 8906
+   },
+   {
+    "p": 42,
+    "from": 3864,
+    "to": 9198
+   },
+   {
+    "p": 43,
+    "from": 3997,
+    "to": 9537
+   },
+   {
+    "p": 44,
+    "from": 4128,
+    "to": 9888
+   },
+   {
+    "p": 45,
+    "from": 4252,
+    "to": 10211
+   },
+   {
+    "p": 46,
+    "from": 4388,
+    "to": 10590
+   },
+   {
+    "p": 47,
+    "from": 4547,
+    "to": 10968
+   },
+   {
+    "p": 48,
+    "from": 4708,
+    "to": 11298
+   },
+   {
+    "p": 49,
+    "from": 4936,
+    "to": 11705
+   },
+   {
+    "p": 50,
+    "from": 5234,
+    "to": 12144
+   },
+   {
+    "p": 51,
+    "from": 5571,
+    "to": 12606
+   },
+   {
+    "p": 52,
+    "from": 5898,
+    "to": 13133
+   },
+   {
+    "p": 53,
+    "from": 6263,
+    "to": 13596
+   },
+   {
+    "p": 54,
+    "from": 6606,
+    "to": 14090
+   },
+   {
+    "p": 55,
+    "from": 7042,
+    "to": 14607
+   },
+   {
+    "p": 56,
+    "from": 7451,
+    "to": 15122
+   },
+   {
+    "p": 57,
+    "from": 7886,
+    "to": 15757
+   },
+   {
+    "p": 58,
+    "from": 8314,
+    "to": 16395
+   },
+   {
+    "p": 59,
+    "from": 8921,
+    "to": 17022
+   },
+   {
+    "p": 60,
+    "from": 9434,
+    "to": 17769
+   },
+   {
+    "p": 61,
+    "from": 10079,
+    "to": 18547
+   },
+   {
+    "p": 62,
+    "from": 10712,
+    "to": 19374
+   },
+   {
+    "p": 63,
+    "from": 11408,
+    "to": 20166
+   },
+   {
+    "p": 64,
+    "from": 12154,
+    "to": 20932
+   },
+   {
+    "p": 65,
+    "from": 12963,
+    "to": 21821
+   },
+   {
+    "p": 66,
+    "from": 13794,
+    "to": 22766
+   },
+   {
+    "p": 67,
+    "from": 14668,
+    "to": 23782
+   },
+   {
+    "p": 68,
+    "from": 15750,
+    "to": 24706
+   },
+   {
+    "p": 69,
+    "from": 16967,
+    "to": 25534
+   },
+   {
+    "p": 70,
+    "from": 18106,
+    "to": 26569
+   },
+   {
+    "p": 71,
+    "from": 19231,
+    "to": 27668
+   },
+   {
+    "p": 72,
+    "from": 20319,
+    "to": 28824
+   },
+   {
+    "p": 73,
+    "from": 21443,
+    "to": 30090
+   },
+   {
+    "p": 74,
+    "from": 22608,
+    "to": 31340
+   },
+   {
+    "p": 75,
+    "from": 23752,
+    "to": 32538
+   },
+   {
+    "p": 76,
+    "from": 25037,
+    "to": 33811
+   },
+   {
+    "p": 77,
+    "from": 26296,
+    "to": 35335
+   },
+   {
+    "p": 78,
+    "from": 27600,
+    "to": 37055
+   },
+   {
+    "p": 79,
+    "from": 28930,
+    "to": 38725
+   },
+   {
+    "p": 80,
+    "from": 30347,
+    "to": 40694
+   },
+   {
+    "p": 81,
+    "from": 31730,
+    "to": 42694
+   },
+   {
+    "p": 82,
+    "from": 33204,
+    "to": 44612
+   },
+   {
+    "p": 83,
+    "from": 34728,
+    "to": 47054
+   },
+   {
+    "p": 84,
+    "from": 36042,
+    "to": 49314
+   },
+   {
+    "p": 85,
+    "from": 37310,
+    "to": 51735
+   },
+   {
+    "p": 86,
+    "from": 38998,
+    "to": 54911
+   },
+   {
+    "p": 87,
+    "from": 41136,
+    "to": 58522
+   },
+   {
+    "p": 88,
+    "from": 43726,
+    "to": 62453
+   },
+   {
+    "p": 89,
+    "from": 46586,
+    "to": 66679
+   },
+   {
+    "p": 90,
+    "from": 49644,
+    "to": 71116
+   },
+   {
+    "p": 91,
+    "from": 53152,
+    "to": 76307
+   },
+   {
+    "p": 92,
+    "from": 56935,
+    "to": 81954
+   },
+   {
+    "p": 93,
+    "from": 61151,
+    "to": 89129
+   },
+   {
+    "p": 94,
+    "from": 66386,
+    "to": 99421
+   },
+   {
+    "p": 95,
+    "from": 73101,
+    "to": 112714
+   },
+   {
+    "p": 96,
+    "from": 81496,
+    "to": 130236
+   },
+   {
+    "p": 97,
+    "from": 93502,
+    "to": 155308
+   },
+   {
+    "p": 98,
+    "from": 120980,
+    "to": 207367
+   },
+   {
+    "p": 99,
+    "from": 317891,
+    "to": 642817
+   }
+  ]
+ }
+}

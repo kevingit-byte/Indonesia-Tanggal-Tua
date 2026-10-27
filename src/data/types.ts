@@ -149,3 +149,60 @@ export interface MethodFile extends DatasetMeta {
   basket: BasketLine[];
   indexBaseYear: number;
 }
+
+/** One WID g-percentile group: incomes from percentile p up to pTo. Per adult per year, constant prices of priceYear. */
+export interface WidGroup {
+  p: number;
+  pTo: number;
+  /** Entry threshold: the income at percentile p. */
+  threshold: number;
+  /** Average income of the group. */
+  average: number;
+}
+
+export interface WidFile extends DatasetMeta {
+  region: string;
+  label: string;
+  /** Year of the distribution. */
+  year: number;
+  /** Year whose price level the amounts are expressed in. */
+  priceYear: number;
+  currency: string;
+  unit: string;
+  asOf: string;
+  sourceId: string;
+  status: Status;
+  downloaded: string;
+  concept: string;
+  variables: { threshold: string; average: string };
+  mean: number;
+  groups: WidGroup[];
+  growth: { from: number; to: number; percentiles: { p: number; from: number; to: number }[] };
+  /** Indonesia only. */
+  productionTaxShare?: Datum;
+  pppPerUsd?: Datum;
+  cpiToPriceYear?: Datum;
+  retainedEarningsRate?: Datum;
+}
+
+export interface BpsWagesFile extends DatasetMeta {
+  survey: string;
+  note: string;
+  national: Datum;
+  bySex: { male: Datum; female: Datum };
+  bySector: { id: string; label: Localized; wage: Datum }[];
+}
+
+export interface FreshnessKind {
+  label: Localized;
+  cadenceDays: number;
+  graceDays: number;
+  /** "asOf": age from the date the value applies to. "checked": from the later of asOf and the source's last read. */
+  basis: 'asOf' | 'checked';
+  schedule: Localized;
+}
+
+export interface FreshnessFile extends DatasetMeta {
+  note: string;
+  kinds: Record<string, FreshnessKind>;
+}

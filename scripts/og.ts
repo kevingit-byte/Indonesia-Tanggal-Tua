@@ -44,7 +44,7 @@ try {
       join(root, `public/s/${view}.html`),
       `<!doctype html><html lang="id"><head><meta charset="utf-8"><title>${title} · Berapa Jam Kerja</title>
 <meta property="og:type" content="website"><meta property="og:title" content="${title}">
-<meta property="og:description" content="Harga diukur dengan waktu kerja upah minimum: Indonesia, Asia Tenggara, Korea, Jepang.">
+<meta property="og:description" content="Harga diukur dengan waktu kerja upah minimum: Indonesia, Asia Tenggara, Tiongkok, Korea, Jepang.">
 <meta property="og:image" content="${site}og/${view}.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta http-equiv="refresh" content="0; url=${target}">
 <link rel="canonical" href="${site}#${view}"></head><body><a href="${target}">${title}</a></body></html>\n`,

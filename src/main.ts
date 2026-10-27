@@ -2,6 +2,7 @@ import './style.css';
 import { esc, money, num } from './format';
 import { setLang, t, type Lang } from './i18n';
 import { compareSection } from './compare';
+import { afterRankRender, bindRank, rankSection, readRankHash } from './rank';
 import { loadGeo, mapSection } from './map';
 import {
   basketSection,
@@ -27,6 +28,7 @@ const SECTIONS: [string, () => string][] = [
   ['regions', regionsSection],
   ['history', historySection],
   ['calc', calcSection],
+  ['rank', rankSection],
   ['context', contextSection],
   ['data', dataSection],
 ];
@@ -85,6 +87,7 @@ function render() {
       el.classList.remove('pending');
     }
   }
+  if (shown.has('rank')) afterRankRender();
   if (focusKey) {
     const el = document.querySelector<HTMLElement>(focusKey);
     el?.focus({ preventScroll: true });
@@ -103,6 +106,7 @@ function renderSections(ids: string[]) {
     el.innerHTML = fn();
     el.classList.remove('pending');
   }
+  if (ids.includes('rank')) afterRankRender();
 }
 
 /** Sections render once they come near the screen, so the first paint only builds what is visible. */
@@ -233,6 +237,8 @@ async function doShare(btn: HTMLElement) {
 }
 
 // ---- start
+bindRank();
+readRankHash(location.hash);
 const og = new URLSearchParams(location.search).get('og');
 if (og) {
   import('./og').then((m) => m.renderOg(og));
@@ -251,6 +257,7 @@ if (og) {
   loadGeo().then(() => renderSections(['map']));
   // A pasted link or the Back button changes only the hash: apply it without a reload.
   addEventListener('hashchange', () => {
+    readRankHash(location.hash);
     const s = readHash();
     if (!s) return;
     shown.add(s);
