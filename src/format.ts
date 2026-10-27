@@ -14,7 +14,7 @@ export function smart(v: number): string {
 }
 
 const SYMBOL: Record<string, string> = {
-  IDR: 'Rp', MYR: 'RM', SGD: 'S$', THB: '฿', VND: '₫', PHP: '₱', USD: 'US$', LAK: '₭', KRW: '₩', JPY: '¥',
+  IDR: 'Rp', MYR: 'RM', SGD: 'S$', THB: '฿', VND: '₫', PHP: '₱', USD: 'US$', LAK: '₭', KRW: '₩', JPY: '¥', CNY: 'CN¥',
 };
 
 export function money(v: number, currency: string): string {

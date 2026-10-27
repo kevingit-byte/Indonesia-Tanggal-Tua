@@ -34,6 +34,7 @@ data/                     all numbers, versioned; nothing numeric lives in code
   regions-id.json         2026 UMP/UMK for Indonesian regions
   timeseries-jakarta.json Jakarta UMP 2000–2026 and published rice-price anchors
   sources.json            every source: title, publisher, URL, access date
+  notes-id.json           Indonesian version of every English note (shown when the page is in Indonesian)
   method.json             basket quantities, workday length, index base year
 scripts/check-data.ts     validator (npm run check-data)
 scripts/og.ts             share images and share pages (npm run og)
@@ -76,7 +77,7 @@ Every number is a **Datum**:
 ## Method
 
 - Pay per minute = monthly wage ÷ (monthly hours × 60). Work time = price ÷ pay per minute.
-- Monthly hours: 173 (ID, JP), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR): each country's statutory normal week × 52 ÷ 12 (Korea's official 209), stored per place with the law in `note`.
+- Monthly hours: 173 (ID, JP), 174 (CN), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR): each country's statutory normal week × 52 ÷ 12 (Korea's official 209), stored per place with the law in `note`.
 - Daily wages count monthly hours ÷ 8 days (e.g. Bangkok ฿400 × 26).
 - Monthly basics basket for one person (`method.json`): one room, 8 kg rice, 3 kg eggs, 4 kg chicken, 1 kg beef, 2 L oil, 90 kWh electricity, 44 transit rides. Leftover = wage − basket.
 - Every computed figure carries the weakest status of its inputs, so anything built on an estimate is shown as an estimate.
@@ -90,6 +91,7 @@ Every number is a **Datum**:
 - Each city carries its flag and a line-drawn landmark (Monas, Petronas Towers, Marina Bay Sands, Wat Arun, Bitexco, a jeepney, Independence Monument, Patuxai, N Seoul Tower, Tokyo Tower, a KRL train for Bekasi).
 - Basket colours (room, food, transit, electricity) are validated for colour-blind separation and 3:1 contrast in both themes.
 - Sections render as they near the screen; the map and world atlas load after first paint.
+- Bahasa Indonesia by default; `?lang=en` (or the ID | EN switch) gives English, and the switch updates the address so it can be shared as-is.
 - URL hash keeps the view: `#wishlist-iphone`, `#item-beef`, `#map-bigmac`, `#history-eggs`, `#regions-umk`.
 
 ## Updating data

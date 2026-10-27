@@ -207,6 +207,24 @@ for (const s of ts.series) {
   }
 }
 
+// ---- notes-id.json: Indonesian versions of every English note
+const notesId = load<{ schemaVersion: 1; dataset: string; updated: string; notes: Record<string, string> }>('notes-id.json');
+checkMeta('notes-id.json', notesId);
+const allNotes = new Set<string>();
+const collect = (o: unknown): void => {
+  if (Array.isArray(o)) o.forEach(collect);
+  else if (o && typeof o === 'object') {
+    const note = (o as { note?: unknown }).note;
+    if (typeof note === 'string') allNotes.add(note);
+    Object.values(o).forEach(collect);
+  }
+};
+[placesFile, pricesFile, wish, regions, ts, sourcesFile].forEach(collect);
+const untranslated = [...allNotes].filter((n) => !notesId.notes[n]);
+if (untranslated.length)
+  gaps.push(`notes-id.json: ${untranslated.length} notes have no Indonesian version${verbose ? `:\n      ${untranslated.join('\n      ')}` : ' (--verbose to list)'}`);
+for (const k of Object.keys(notesId.notes)) if (!allNotes.has(k)) notes.push(`notes-id.json: translation for a note no longer in the data: "${k.slice(0, 60)}…"`);
+
 // ---- report
 for (const s of sourcesFile.sources) if (!usedSources.has(s.id)) notes.push(`sources.json: ${s.id} is not cited by any value`);
 const prototypeCount = usedSources.get('bjk-prototype-2026-10') ?? 0;

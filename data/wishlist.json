@@ -83,6 +83,13 @@
           "sourceId": "bjk-estimate-2026-10",
           "status": "estimate",
           "note": "No Apple online store; typical reseller price in Vientiane."
+        },
+        "CN": {
+          "value": 6799,
+          "unit": "CNY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "apple-store-cn",
+          "status": "official"
         }
       }
     },
@@ -168,6 +175,14 @@
           "sourceId": "bjk-estimate-2026-10",
           "status": "estimate",
           "note": "Japanese-language edition at Nintendo's announced price."
+        },
+        "CN": {
+          "value": 3000,
+          "unit": "CNY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Typical price for imported units on Chinese marketplaces."
         }
       }
     },
@@ -254,6 +269,14 @@
         "JP": {
           "value": 7700,
           "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "CN": {
+          "value": 399,
+          "unit": "CNY/item",
           "asOf": "2026-10-27",
           "sourceId": "bjk-estimate-2026-10",
           "status": "estimate",
@@ -348,6 +371,14 @@
           "sourceId": "bjk-estimate-2026-10",
           "status": "estimate",
           "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "CN": {
+          "value": 36,
+          "unit": "CNY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
         }
       }
     },
@@ -430,6 +461,13 @@
           "sourceId": "economist-bigmac-2026-07",
           "status": "snapshot",
           "note": "Not sold: McDonald's does not operate in Laos."
+        },
+        "CN": {
+          "value": 26.5,
+          "unit": "CNY/item",
+          "asOf": "2026-07-01",
+          "sourceId": "economist-bigmac-2026-07",
+          "status": "snapshot"
         }
       }
     },
@@ -512,6 +550,14 @@
           "asOf": "2026-10-27",
           "sourceId": "netflix-help-jp",
           "status": "official"
+        },
+        "CN": {
+          "value": null,
+          "unit": "CNY/month",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Not sold: Netflix is not available in mainland China."
         }
       }
     }

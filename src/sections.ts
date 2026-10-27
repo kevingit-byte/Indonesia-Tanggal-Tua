@@ -6,7 +6,7 @@ import { flag } from './art/flags';
 import { esc, money, narrow, num, pct, rpShort, smart, workTime } from './format';
 import { L, t, type Key } from './i18n';
 import { basket, toLocal, toUsd, weakest, workMinutes, type Derived } from './lib/model';
-import { data, editCount, source, ui, type EditedDatum } from './store';
+import { data, editCount, noteText, source, ui, type EditedDatum } from './store';
 import {
   barLegend,
   barRows,
@@ -54,7 +54,7 @@ export function hero(): string {
     .map((f) => f.updated)
     .sort()
     .pop();
-  const strip = ['jakarta', 'kuala-lumpur', 'singapore', 'bangkok', 'ho-chi-minh-city', 'phnom-penh', 'vientiane', 'manila', 'seoul', 'tokyo']
+  const strip = ['jakarta', 'kuala-lumpur', 'singapore', 'bangkok', 'ho-chi-minh-city', 'phnom-penh', 'vientiane', 'manila', 'shanghai', 'seoul', 'tokyo']
     .map((id) => `<span class="sk${id === 'jakarta' ? ' sk-id' : ''}" title="${esc(L(landmarkName(id)!))}">${landmark(id)}</span>`)
     .join('');
   return `
@@ -148,7 +148,7 @@ export function wishSection(): string {
   );
   const notes = Object.entries(item.prices)
     .filter(([, v]) => v.value === null && v.note)
-    .map(([, v]) => esc(v.note!))
+    .map(([, v]) => esc(noteText(v.note!)))
     .join(' ');
   return `${head('wish.eyebrow', 'wish.title', 'wish.lede', 'wishlist')}
   ${chips('wish', t('wish.item'), d.wishlist.items.map((i) => ({ value: i.id, label: L(i.label) })), item.id)}
@@ -528,7 +528,7 @@ export function dataSection(): string {
       (s) =>
         `<li id="src-${s.id}"><b>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</b> · ${esc(s.publisher)} · ${
           s.accessed ? `${t('data.accessed')} ${s.accessed}` : t('data.noaccess')
-        }${s.note ? `<br><small>${esc(s.note)}</small>` : ''}</li>`,
+        }${s.note ? `<br><small>${esc(noteText(s.note))}</small>` : ''}</li>`,
     )
     .join('');
   return `${head('data.eyebrow', 'data.title', 'data.lede', 'data')}

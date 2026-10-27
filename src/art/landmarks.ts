@@ -42,6 +42,10 @@ const L: Record<string, { name: { id: string; en: string }; d: string }> = {
     name: { id: 'N Seoul Tower', en: 'N Seoul Tower' },
     d: 'M4 60c10-10 20-14 28-14s18 4 28 14M30 46V24h4v22M26 24h12l-2-6h-8zM29 18v-4h6v4M32 14V4M24 46h16',
   },
+  shanghai: {
+    name: { id: 'Menara Mutiara Timur', en: 'Oriental Pearl Tower' },
+    d: 'M8 60h48M24 60l6-14M40 60l-6-14M26 46a6 6 0 1 0 12 0a6 6 0 1 0-12 0M30 40V22M34 40V22M28 18a4 4 0 1 0 8 0a4 4 0 1 0-8 0M32 14V3M20 60l10-10M44 60L34 50',
+  },
   tokyo: {
     name: { id: 'Menara Tokyo', en: 'Tokyo Tower' },
     d: 'M8 60h48M14 60L29 10h6l15 50M19 44h26M24 28h16M27 18h10M32 10V3M19 44l13-16 13 16M22 60c2-6 6-10 10-10s8 4 10 10',

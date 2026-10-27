@@ -6,6 +6,7 @@ import regionsJson from '../data/regions-id.json';
 import tsJson from '../data/timeseries-jakarta.json';
 import sourcesJson from '../data/sources.json';
 import methodJson from '../data/method.json';
+import notesIdJson from '../data/notes-id.json';
 import type {
   Datum,
   MethodFile,
@@ -98,6 +99,13 @@ export function resetEdits() {
   emit();
 }
 
+const notesId = (notesIdJson as { notes: Record<string, string> }).notes;
+
+/** Data notes are written in English; show the Indonesian version when the page is in Indonesian. */
+export function noteText(note: string): string {
+  return ui.lang === 'id' ? (notesId[note] ?? note) : note;
+}
+
 export function source(id: string): Source | undefined {
   return base.sources.sources.find((s) => s.id === id);
 }
@@ -121,6 +129,9 @@ export interface UiState {
 }
 
 const prefs = readJson<Partial<UiState>>(PREFS_KEY, {});
+// ?lang=en / ?lang=id in a shared link wins over the reader's saved choice.
+const urlLang = new URLSearchParams(location.search).get('lang');
+if (urlLang === 'en' || urlLang === 'id') prefs.lang = urlLang;
 export const ui: UiState = {
   lang: prefs.lang ?? 'id',
   theme: prefs.theme ?? 'auto',
