@@ -30,6 +30,10 @@ const L: Record<string, { name: { id: string; en: string }; d: string }> = {
     name: { id: 'Kapal pinisi', en: 'Pinisi schooner' },
     d: 'M4 48h56l-6 8H12zM20 48V8M38 48V12M20 10l-12 30h12M20 12l14 26H20M38 14l-10 26h10M38 16l14 24H38M4 60c8-3 16-3 24 0s16 3 32 0',
   },
+  yogyakarta: {
+    name: { id: 'Tugu Yogyakarta', en: 'Tugu Yogyakarta monument' },
+    d: 'M10 60h44M16 60v-6h32v6M21 54v-8h22v8M25 46V30h14v16M28 30l-2-6h12l-2 6M29 24v-6h6v6M30 18c0-4 1-8 2-12 1 4 2 8 2 12M28 38h8',
+  },
   'kuala-lumpur': {
     name: { id: 'Menara Petronas', en: 'Petronas Towers' },
     d: 'M6 60h52M16 60V22l4-6 4 6v38M40 60V22l4-6 4 6v38M20 16V6M44 16V6M24 34h16M18 28h4M18 40h4M18 50h4M42 28h4M42 40h4M42 50h4',

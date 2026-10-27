@@ -2,6 +2,7 @@
 import type { Datum, Place } from './data/types';
 import { landmark, landmarkName } from './art/landmarks';
 import { flag } from './art/flags';
+import { icon } from './art/icons';
 import { esc, money, num, pct, rpShort, workTime } from './format';
 import { L, t } from './i18n';
 import { basket, monthlyWage, toUsd, wishLocal, workMinutes, workMinutesLocal, type Derived } from './lib/model';
@@ -12,6 +13,7 @@ const wd = () => data().method.workdayHours;
 const byId = (id: string) => data().places.places.find((p) => p.id === id) ?? data().places.places[0]!;
 
 interface Row {
+  id: string;
   label: string;
   per?: string;
   a: Derived;
@@ -48,6 +50,7 @@ function rowsFor(a: Place, b: Place): { basics: Row[]; wish: Row[] } {
     { id: 'rent', label: t('item.room'), per: t('cmp.month') },
     { id: 'transit', label: t('item.transit'), per: '' },
   ].map(({ id, label, per }) => ({
+    id,
     label,
     per,
     a: workMinutes(priceOf(a, id), a, wd()),
@@ -60,6 +63,7 @@ function rowsFor(a: Place, b: Place): { basics: Row[]; wish: Row[] } {
       const la = wishLocal(i, all, a);
       const lb = wishLocal(i, all, b);
       return {
+        id: i.id,
         label: L(i.label),
         a: workMinutesLocal(la, a, wd()),
         b: workMinutesLocal(lb, b, wd()),
@@ -70,33 +74,43 @@ function rowsFor(a: Place, b: Place): { basics: Row[]; wish: Row[] } {
   return { basics, wish };
 }
 
-function ratioText(r: Row, a: Place, b: Place): string {
-  if (r.a.value === null || r.b.value === null || !r.a.value || !r.b.value) return '';
+/** Which side takes longer, and by how much; null when either side has no number. Within 5% counts as the same. */
+function ratio(r: Row): { side: 'a' | 'b' | 'same'; x: number } | null {
+  if (!r.a.value || !r.b.value) return null;
   const x = r.a.value / r.b.value;
-  if (x > 0.95 && x < 1.05) return `<span class="cmp-same">${t('cmp.same')}</span>`;
-  const [who, k, cls] = x >= 1 ? [a, x, 'a'] : [b, 1 / x, 'b'];
-  return `<span class="cmp-r cmp-r-${cls}">${t('cmp.longer', { city: esc(L(who.city)), x: num(k, k < 10 ? 1 : 0) })}</span>`;
+  if (x > 0.95 && x < 1.05) return { side: 'same', x: 1 };
+  return x >= 1 ? { side: 'a', x } : { side: 'b', x: 1 / x };
 }
 
-function bar(d: Derived, max: number, side: 'a' | 'b', label: string, empty?: string): string {
-  if (d.value === null) return `<div class="cmp-bar cmp-${side}"><span class="na">${esc(empty ?? t('nodata'))}</span></div>`;
+/** One city's half of a row: value, a bar growing outwards from the middle, and the "longer" mark if this side loses. */
+function side(r: Row, d: Derived, max: number, s: 'a' | 'b', p: Place, empty?: string): string {
+  if (d.value === null) return `<div class="cmp-side cmp-${s}"><span class="na">${esc(empty ?? t('nodata'))}</span></div>`;
   const w = max ? Math.max(1, (d.value / max) * 100) : 0;
-  return `<div class="cmp-bar cmp-${side}"><i class="${isWeak(d.status) ? 'weak' : ''}" style="width:${w.toFixed(1)}%"></i><span>${statusTag(d)}${provBtn(
-    workTime(d.value, wd()),
-    label,
-    d.inputs,
-  )}</span></div>`;
+  const q = ratio(r);
+  const note =
+    q && q.side === s
+      ? `<span class="cmp-r"><span aria-hidden="true">▲</span> ${t('cmp.longer', { x: num(q.x, q.x < 10 ? 1 : 0) })}<span class="sr"> (${esc(L(p.city))})</span></span>`
+      : '';
+  return `<div class="cmp-side cmp-${s}"><span class="cmp-v">${statusTag(d)}${provBtn(workTime(d.value, wd()), `${r.label}, ${L(p.city)}`, d.inputs)}</span><span class="cmp-track"><i class="${
+    isWeak(d.status) ? 'weak' : ''
+  }" style="width:${w.toFixed(1)}%"></i></span>${note}</div>`;
 }
 
-function rowsHtml(rows: Row[], a: Place, b: Place): string {
-  return rows
-    .map((r) => {
+function groupHtml(title: string, rows: Row[], a: Place, b: Place): string {
+  const qs = rows.map(ratio);
+  const count = (s: 'a' | 'b') => qs.filter((q) => q?.side === s).length;
+  const head = (p: Place, s: 'a' | 'b') =>
+    `<div class="cmp-h cmp-${s}">${flag(p.iso2, L(p.country))}<b>${esc(L(p.city))}</b><small>▲ ${t('cmp.longerN', { n: String(count(s)) })}</small></div>`;
+  const body = rows
+    .map((r, i) => {
       const max = Math.max(r.a.value ?? 0, r.b.value ?? 0);
-      return `<div class="cmp-row"><div class="cmp-lab"><b>${esc(r.label)}</b>${r.per ? `<small>${esc(r.per)}</small>` : ''}</div>
-        <div class="cmp-bars">${bar(r.a, max, 'a', `${r.label}, ${L(a.city)}`, r.aEmpty)}${bar(r.b, max, 'b', `${r.label}, ${L(b.city)}`, r.bEmpty)}</div>
-        <div class="cmp-ratio">${ratioText(r, a, b)}</div></div>`;
+      const same = qs[i]?.side === 'same' ? `<small class="cmp-same">= ${t('cmp.same')}</small>` : '';
+      return `<div class="cmp-row">${side(r, r.a, max, 'a', a, r.aEmpty)}<div class="cmp-mid">${icon(r.id)}<b>${esc(r.label)}</b>${
+        r.per ? `<small>${esc(r.per)}</small>` : ''
+      }${same}</div>${side(r, r.b, max, 'b', b, r.bEmpty)}</div>`;
     })
     .join('');
+  return `<div class="cmp-group"><h3 class="h3">${title}</h3><div class="cmp-row cmp-hrow">${head(a, 'a')}<div></div>${head(b, 'b')}</div>${body}</div>`;
 }
 
 export function compareSection(): string {
@@ -124,8 +138,8 @@ export function compareSection(): string {
   <div class="cmp-cards">${card(a, 'a')}${card(b, 'b')}</div>
   <p class="cmp-summary">${t('cmp.summary', { a: esc(L(a.city)), n: String(aLonger), m: String(both.length) })}</p>
   <div class="cmp-month"><div><small>${t('cmp.basket')}</small><b class="cmp-a-t"><span>${esc(L(a.city))}</span> ${shareCell(sa, ba, a)}</b><b class="cmp-b-t"><span>${esc(L(b.city))}</span> ${shareCell(sb, bb, b)}</b></div></div>
-  <div class="cmp-group"><h3 class="h3">${t('cmp.basics')}</h3>${rowsHtml(basics, a, b)}</div>
-  <div class="cmp-group"><h3 class="h3">${t('cmp.wish')}</h3>${rowsHtml(wish, a, b)}</div>
-  <div class="legend"><span><i class="sw cmp-a-sw"></i>${esc(L(a.city))}</span><span><i class="sw cmp-b-sw"></i>${esc(L(b.city))}</span><span><i class="sw sw-weak"></i><span class="est-mark" aria-hidden="true">≈</span>${t('legend.est')}</span></div>
+  ${groupHtml(t('cmp.basics'), basics, a, b)}
+  ${groupHtml(t('cmp.wish'), wish, a, b)}
+  <div class="legend"><span><i class="sw cmp-a-sw"></i>${esc(L(a.city))}</span><span><i class="sw cmp-b-sw"></i>${esc(L(b.city))}</span><span><b class="cmp-tri" aria-hidden="true">▲</b>${t('cmp.legendLonger')}</span><span><i class="sw sw-weak"></i><span class="est-mark" aria-hidden="true">≈</span>${t('legend.est')}</span></div>
   <div class="foot">${shareBtn('compare', `${a.id}_vs_${b.id}`)}</div>`;
 }

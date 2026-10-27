@@ -681,6 +681,19 @@
         "sourceId": "goodstats-umk-sulsel-2026",
         "status": "official"
       }
+    },
+    {
+      "id": "kota-yogyakarta",
+      "name": "Kota Yogyakarta",
+      "province": "DI Yogyakarta",
+      "level": "UMK",
+      "wage": {
+        "value": 2827593,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-diy-2026",
+        "status": "official"
+      }
     }
   ],
   "nationalPrices": {

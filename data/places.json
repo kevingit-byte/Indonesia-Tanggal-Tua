@@ -1032,6 +1032,67 @@
         "status": "official",
         "note": "Teman Bus fare; several routes have stopped running."
       }
+    },
+    {
+      "id": "yogyakarta",
+      "city": {
+        "id": "Yogyakarta",
+        "en": "Yogyakarta"
+      },
+      "country": {
+        "id": "Indonesia",
+        "en": "Indonesia"
+      },
+      "iso2": "ID",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "lat": -7.7956,
+      "lon": 110.3695,
+      "currency": "IDR",
+      "wageType": "UMK",
+      "wageLabel": {
+        "id": "UMK Kota Yogyakarta 2026",
+        "en": "Yogyakarta city minimum 2026"
+      },
+      "fxPerUsd": {
+        "value": 18065,
+        "unit": "IDR/USD",
+        "asOf": "2026-07-01",
+        "sourceId": "economist-bigmac-2026-07",
+        "status": "snapshot",
+        "note": "Market rate used by The Economist for its July 2026 Big Mac index."
+      },
+      "wage": {
+        "value": 2827593,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "goodstats-umk-diy-2026",
+        "status": "official"
+      },
+      "monthlyHours": {
+        "value": 173,
+        "unit": "h/month",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 800000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 2700,
+        "unit": "IDR/ride",
+        "asOf": "2026-01-01",
+        "sourceId": "kompastv-transjogja-2026",
+        "status": "official",
+        "note": "Trans Jogja fare paid by card or QRIS; Rp3.500 in cash."
+      }
     }
   ]
 }
