@@ -184,25 +184,28 @@
           "note": "No official Nintendo distribution; typical price at large retailers (parallel import)."
         },
         "MY": {
-          "value": 1949,
+          "value": 2558,
           "unit": "MYR/item",
-          "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate"
+          "asOf": "2026-09-01",
+          "sourceId": "geekculture-switch2-sgmy-2026",
+          "status": "official",
+          "note": "Nintendo price from 1 September 2026, up from RM2,288."
         },
         "SG": {
-          "value": 649,
+          "value": 799,
           "unit": "SGD/item",
-          "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate"
+          "asOf": "2026-09-01",
+          "sourceId": "geekculture-switch2-sgmy-2026",
+          "status": "official",
+          "note": "Nintendo price from 1 September 2026, up from S$719."
         },
         "TH": {
-          "value": 15900,
+          "value": 17800,
           "unit": "THB/item",
-          "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate"
+          "asOf": "2026-06-16",
+          "sourceId": "nextbite-switch2-th-2026",
+          "status": "official",
+          "note": "Official Thai price via distributor Synnex; no 2026 increase announced."
         },
         "VN": {
           "value": 13500000,
@@ -212,11 +215,12 @@
           "status": "estimate"
         },
         "PH": {
-          "value": 27995,
+          "value": 31990,
           "unit": "PHP/item",
-          "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate"
+          "asOf": "2025-06-26",
+          "sourceId": "gadgetpilipinas-switch2-ph",
+          "status": "official",
+          "note": "Nintendo Official Store (Shopee) launch price; no 2026 increase announced."
         },
         "KH": {
           "value": 499,
@@ -235,20 +239,20 @@
           "note": "Not sold through any official or major retail channel in Laos."
         },
         "KR": {
-          "value": 648000,
+          "value": 758000,
           "unit": "KRW/item",
-          "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate",
-          "note": "Nintendo Korea announced price."
+          "asOf": "2026-09-01",
+          "sourceId": "screenrant-switch2-kr-2026",
+          "status": "official",
+          "note": "Nintendo Korea price from 1 September 2026, up from ₩648,000."
         },
         "JP": {
-          "value": 49980,
+          "value": 59980,
           "unit": "JPY/item",
-          "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate",
-          "note": "Japanese-language edition at Nintendo's announced price."
+          "asOf": "2026-05-25",
+          "sourceId": "adnkronos-switch2-jp-2026",
+          "status": "official",
+          "note": "Japanese-language model, Nintendo suggested retail price from 25 May 2026, up from ¥49,980."
         },
         "CN": {
           "value": 3000,
@@ -439,12 +443,12 @@
           "note": "Hot caffè latte, grande, menu-board price."
         },
         "JP": {
-          "value": 540,
+          "value": 570,
           "unit": "JPY/item",
           "asOf": "2026-10-27",
-          "sourceId": "bjk-estimate-2026-10",
-          "status": "estimate",
-          "note": "Hot caffè latte, grande, menu-board price."
+          "sourceId": "starbucks-jp-latte",
+          "status": "official",
+          "note": "Starbucks Latte, grande, eat-in price including tax (standard stores)."
         },
         "CN": {
           "value": 36,

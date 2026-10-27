@@ -772,6 +772,78 @@
       "url": "https://www.kompas.tv/info-publik/654812/rute-trans-jogja-terbaru-2026-lengkap-semua-jalur",
       "accessed": "2026-10-27",
       "note": "Fare from 1 January 2026: Rp2.700 cashless, Rp3.500 cash, per trip."
+    },
+    {
+      "id": "ptc-fares-2025",
+      "title": "Public transport fares & passes",
+      "publisher": "Public Transport Council, Singapore",
+      "url": "https://www.ptc.gov.sg/fares/public-transport-fares-and-passes",
+      "accessed": "2026-10-27",
+      "note": "Adult card fare $1.28 up to 3.2 km (Fare Review Exercise 2025, from 27 Dec 2025)."
+    },
+    {
+      "id": "shanghai-metro-fare-2026",
+      "title": "Shanghai seeks public opinion on metro fare adjustment",
+      "publisher": "Shanghai Municipal People's Government",
+      "url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260820/6676e7847de746e9aef956c40460bd84.html",
+      "accessed": "2026-10-27",
+      "note": "Current fare: 3 yuan up to 6 km, plus 1 yuan per 10 km thereafter."
+    },
+    {
+      "id": "tnb-tariff-2025",
+      "title": "Addressing electricity bill concerns: AFA mechanism (press release S.A. 2026/09/15_23)",
+      "publisher": "Tenaga Nasional Berhad",
+      "url": "https://www.tnb.com.my/assets/press_releases/20260915_23_bi.pdf",
+      "accessed": "2026-10-27",
+      "note": "Domestic users at 600 kWh and below are exempt from AFA, 8% service tax and retail charge. Tariff components from the July 2025 tariff structure (mytnb.com.my/tariff)."
+    },
+    {
+      "id": "geekculture-switch2-sgmy-2026",
+      "title": "Nintendo Switch 2 Prices Increasing In Singapore & Malaysia From 1 Sept 2026",
+      "publisher": "Geek Culture",
+      "url": "https://geekculture.co/nintendo-switch-2-prices-increasing-in-singapore-and-malaysia-from-1-sept-2026/",
+      "accessed": "2026-10-27",
+      "note": "S$719 → S$799; RM2,288 → RM2,558 from 1 September 2026."
+    },
+    {
+      "id": "nextbite-switch2-th-2026",
+      "title": "Nintendo Switch 2 news Thailand, June 2026",
+      "publisher": "NextBite",
+      "url": "https://nextbite.io/en/news/nintendo-switch-2-news-thailand-june-2026/",
+      "accessed": "2026-10-27",
+      "note": "Official Thai price from 17,800 THB (standard model)."
+    },
+    {
+      "id": "gadgetpilipinas-switch2-ph",
+      "title": "Nintendo Switch 2 Spotted on Shopee Mall: Starts at PHP 31,990",
+      "publisher": "Gadget Pilipinas",
+      "url": "https://www.gadgetpilipinas.net/2025/05/nintendo-switch-2-price-ph/",
+      "accessed": "2026-10-27",
+      "note": "Nintendo Official Store on Shopee: ₱31,990 standalone."
+    },
+    {
+      "id": "screenrant-switch2-kr-2026",
+      "title": "Nintendo Officially Announces Another Switch 2 Price Increase",
+      "publisher": "Screen Rant",
+      "url": "https://screenrant.com/nintendo-switch-2-price-increase-south-korea/",
+      "accessed": "2026-10-27",
+      "note": "Korea: ₩648,000 → ₩758,000 from 1 September 2026."
+    },
+    {
+      "id": "adnkronos-switch2-jp-2026",
+      "title": "Nintendo to Raise Switch 2 Price by 10,000 Yen",
+      "publisher": "Adnkronos",
+      "url": "https://english.adnkronos.com/2026/05/08/nintendo-to-raise-switch-2-price-by-10000-yen/",
+      "accessed": "2026-10-27",
+      "note": "Suggested retail price raised to ¥59,980 on 25 May 2026."
+    },
+    {
+      "id": "starbucks-jp-latte",
+      "title": "スターバックス ラテ",
+      "publisher": "Starbucks Coffee Japan",
+      "url": "https://menu.starbucks.co.jp/4524785000223",
+      "accessed": "2026-10-27",
+      "note": "Grande ¥570 (eat-in, tax included)."
     }
   ]
 }

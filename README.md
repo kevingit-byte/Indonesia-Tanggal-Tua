@@ -100,3 +100,7 @@ Every number is a **Datum**:
 ## Updating data
 
 See [DATA_UPDATE.md](DATA_UPDATE.md).
+
+## License
+
+All rights reserved; see [LICENSE](LICENSE). Readers may quote individual figures with credit and a link; the code and the compiled dataset may not be copied, scraped, modified or used commercially without permission. The underlying statistics belong to their publishers (named in every source panel) and remain available from them. The site shows the same terms at `/lisensi.html`, and `public/robots.txt` asks AI-training crawlers not to collect the site.

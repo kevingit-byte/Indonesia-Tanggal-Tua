@@ -234,8 +234,8 @@ const dict = {
   'share': { id: 'Bagikan tampilan ini', en: 'Share this view' },
   'share.copied': { id: 'Tautan disalin', en: 'Link copied' },
   'footer': {
-    id: 'Dibuat untuk pembaca Indonesia. Data terbuka di GitHub; koreksi dipersilakan.',
-    en: 'Made for Indonesian readers. Data is open on GitHub; corrections welcome.',
+    id: '© 2026 Berapa Jam Kerja. Hak cipta dilindungi: boleh mengutip angka dengan menyebut Berapa Jam Kerja dan menautkan halaman ini; kode dan kumpulan datanya tidak boleh disalin. Setiap angka mencantumkan sumber aslinya: klik angkanya. <a href="/lisensi.html">Lisensi</a>',
+    en: '© 2026 Berapa Jam Kerja. All rights reserved: you may quote figures with credit and a link; the code and the dataset may not be copied. Every number lists its original source: click it. <a href="/lisensi.html">Licence</a>',
   },
 } satisfies Record<string, Record<Lang, string>>;
 
