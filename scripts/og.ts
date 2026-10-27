@@ -12,8 +12,8 @@ type Browser = { newPage(o: object): Promise<any>; close(): Promise<void> };
 const { chromium } = createRequire(import.meta.url)('playwright') as { chromium: { launch(): Promise<Browser> } };
 
 const root = join(import.meta.dirname, '..');
-const base = process.env.BASE ?? '/Indonesia-Tanggal-Tua/';
-const site = process.env.SITE_URL ?? `https://kevingit-byte.github.io${base}`;
+const base = process.env.BASE ?? '/';
+const site = process.env.SITE_URL ?? 'https://indonesia-tanggal-tua.vercel.app/';
 const views: Record<string, string> = {
   home: 'Berapa jam kerja untuk hidup pas-pasan?',
   'item-rice': 'Satu kilo beras, diukur dengan menit kerja upah minimum',
