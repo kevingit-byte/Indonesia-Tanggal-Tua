@@ -92,6 +92,8 @@ Every number is a **Datum**:
 - Basket colours (room, food, transit, electricity) are validated for colour-blind separation and 3:1 contrast in both themes.
 - Sections render as they near the screen; the map and world atlas load after first paint.
 - Bahasa Indonesia by default; `?lang=en` (or the ID | EN switch) gives English, and the switch updates the address so it can be shared as-is.
+- **Bandingkan (compare):** pick any two cities; every basic, want and experience is shown in each city's own work time, with the ratio. Shareable as `#compare-jakarta_vs_tokyo`.
+- Wishlist includes experiences: the cheapest official BTS ARIRANG World Tour ticket in each city on the tour (cities without a show say so), and a trip to Europe = return economy flight to Paris + Schengen visa. A bundle item (`"bundle": [...]` in `wishlist.json`) has no prices of its own; the site adds up its parts and keeps every part's source.
 - URL hash keeps the view: `#wishlist-iphone`, `#item-beef`, `#map-bigmac`, `#history-eggs`, `#regions-umk`.
 
 ## Updating data

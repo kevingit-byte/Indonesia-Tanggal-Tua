@@ -24,6 +24,28 @@ const dict = {
   'lang': { id: 'Bahasa', en: 'Language' },
   'nav': { id: 'Bagian', en: 'Sections' },
 
+  'cmp.eyebrow': { id: 'Bandingkan', en: 'Compare' },
+  'cmp.title': { id: 'Dua kota, satu ukuran: waktu kerja', en: 'Two cities, one yardstick: work time' },
+  'cmp.lede': {
+    id: 'Pilih dua kota. Setiap barang diukur dengan upah minimum kotanya sendiri, jadi kamu bisa lihat di mana hidup lebih ringan, dari sekilo beras sampai tiket ke Eropa.',
+    en: "Pick two cities. Each item is measured against that city's own minimum wage, so you can see where life is lighter, from a kilo of rice to a ticket to Europe.",
+  },
+  'cmp.a': { id: 'Kota pertama', en: 'First city' },
+  'cmp.b': { id: 'Kota kedua', en: 'Second city' },
+  'cmp.swap': { id: 'Tukar kota', en: 'Swap cities' },
+  'cmp.wage': { id: 'Upah minimum', en: 'Minimum wage' },
+  'cmp.perHour': { id: 'per jam', en: 'per hour' },
+  'cmp.month': { id: 'sebulan', en: 'a month' },
+  'cmp.basics': { id: 'Kebutuhan pokok', en: 'Basics' },
+  'cmp.wish': { id: 'Barang idaman & pengalaman', en: 'Wants & experiences' },
+  'cmp.basket': { id: 'Kebutuhan sebulan, % dari upah', en: 'Monthly basics, % of wage' },
+  'cmp.longer': { id: '{x}× lebih lama di {city}', en: '{x}× longer in {city}' },
+  'cmp.same': { id: 'hampir sama', en: 'about the same' },
+  'cmp.summary': {
+    id: 'Pekerja upah minimum di {a} harus bekerja lebih lama untuk {n} dari {m} hal yang bisa dibandingkan.',
+    en: 'A minimum-wage worker in {a} has to work longer for {n} of {m} comparable things.',
+  },
+  'hero.cta': { id: 'Bandingkan dua kota →', en: 'Compare two cities →' },
   'map.eyebrow': { id: '1 · Peta', en: '1 · Map' },
   'map.title': { id: 'Di mana kerja upah minimum paling berarti', en: 'Where minimum-wage work goes furthest' },
   'map.lede': {
@@ -57,9 +79,10 @@ const dict = {
   'wish.eyebrow': { id: '3 · Barang idaman', en: '3 · Wishlist' },
   'wish.title': { id: 'Barang yang benar-benar diinginkan orang', en: 'The things people actually want' },
   'wish.lede': {
-    id: 'iPhone, Switch, tumbler Stanley, kopi Starbucks. Produk yang sama di mana-mana, jadi selisihnya terlihat jelas. Diukur dalam hari kerja 8 jam.',
-    en: 'An iPhone, a Switch, a Stanley tumbler, a Starbucks run. Same products everywhere, so they show the gap cleanly. Measured in 8-hour workdays.',
+    id: 'iPhone, Switch, tumbler Stanley, kopi Starbucks, nonton konser BTS, sampai jalan-jalan ke Eropa. Produk yang sama di mana-mana, jadi selisihnya terlihat jelas. Diukur dalam hari kerja 8 jam.',
+    en: 'An iPhone, a Switch, a Stanley tumbler, a Starbucks run, a BTS concert, a trip to Europe. Same things everywhere, so they show the gap cleanly. Measured in 8-hour workdays.',
   },
+  'wish.bundle': { id: 'Dihitung sebagai {parts}. Klik angkanya untuk melihat sumber masing-masing.', en: 'Counted as {parts}. Click a number to see each source.' },
   'wish.item': { id: 'Barang idaman', en: 'Wanted item' },
 
   'basket.eyebrow': { id: '4 · Kebutuhan sebulan', en: '4 · A month of basics' },

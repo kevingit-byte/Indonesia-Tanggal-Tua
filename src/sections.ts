@@ -5,7 +5,7 @@ import { landmark, landmarkName } from './art/landmarks';
 import { flag } from './art/flags';
 import { esc, money, narrow, num, pct, rpShort, smart, workTime } from './format';
 import { L, t, type Key } from './i18n';
-import { basket, toLocal, toUsd, weakest, workMinutes, type Derived } from './lib/model';
+import { basket, toLocal, toUsd, weakest, wishLocal, workMinutes, workMinutesLocal, type Derived } from './lib/model';
 import { data, editCount, noteText, source, ui, type EditedDatum } from './store';
 import {
   barLegend,
@@ -70,6 +70,7 @@ export function hero(): string {
   <h1>${t('hero.title.a')} <em>${t('hero.title.b')}</em>${t('hero.title.c')}</h1>
   <p class="lede">${t('hero.lede')}</p>
   <div class="skyline" aria-hidden="true">${strip}</div>
+  <a class="btn cta" href="#compare">${t('hero.cta')}</a>
   <div class="verdict">
     <div class="id"><small>${t('hero.v.iphone')}</small><span class="big">${provBtn(days(ij), t('hero.v.iphone'), ij.inputs, 'pv pv-big')}</span><small>${t(
       'hero.v.iphoneVs',
@@ -134,32 +135,41 @@ export function itemsSection(): string {
 // ---------------------------------------------------------------- 3 · wishlist
 export function wishSection(): string {
   const d = data();
-  const item = d.wishlist.items.find((i) => i.id === ui.wish) ?? d.wishlist.items[0]!;
+  const all = d.wishlist.items;
+  const visible = all.filter((i) => !i.hidden);
+  const item = visible.find((i) => i.id === ui.wish) ?? visible[0]!;
   const rows = sortRows(
     places().map((p) => {
+      const local = wishLocal(item, all, p);
+      const m = workMinutesLocal(local, p, wd());
       const price = item.prices[p.iso2];
-      const m = workMinutes(price, p, wd());
-      const notSold = price?.value === null;
+      const sub =
+        local?.value == null
+          ? undefined
+          : price?.value != null
+            ? money(price.value, price.unit.split('/')[0] ?? p.currency)
+            : money(local.value, p.currency);
       return {
         place: p,
-        sub: price?.value != null ? money(price.value, (price.unit.split('/')[0] as string) ?? p.currency) : undefined,
+        sub,
         value: m.value,
         display: m.value === null ? '' : workTime(m.value, wd()),
         provLabel: `${L(item.label)}, ${L(p.city)}`,
         derived: m,
-        emptyText: notSold ? t('notsold') : undefined,
+        emptyText: local && local.value === null ? t('notsold') : undefined,
         extra: monthsExtra(m.value, p),
       };
     }),
   );
-  const notes = Object.entries(item.prices)
-    .filter(([, v]) => v.value === null && v.note)
-    .map(([, v]) => esc(noteText(v.note!)))
+  const parts = item.bundle ? all.filter((i) => item.bundle!.includes(i.id)) : [item];
+  const notes = [...new Set(parts.flatMap((x) => Object.values(x.prices)).filter((v) => v.value === null && v.note).map((v) => noteText(v.note!)))]
+    .map(esc)
     .join(' ');
+  const bundleNote = item.bundle ? `<p class="note">${t('wish.bundle', { parts: parts.map((x) => L(x.label)).join(' + ') })}</p>` : '';
   return `${head('wish.eyebrow', 'wish.title', 'wish.lede', 'wishlist')}
-  ${chips('wish', t('wish.item'), d.wishlist.items.map((i) => ({ value: i.id, label: L(i.label) })), item.id)}
+  ${chips('wish', t('wish.item'), visible.map((i) => ({ value: i.id, label: L(i.label) })), item.id)}
   <div class="bars">${barRows(rows)}</div>
-  ${notes ? `<p class="note">${notes}</p>` : ''}
+  ${bundleNote}${notes ? `<p class="note">${notes}</p>` : ''}
   <div class="foot">${barLegend()}${shareBtn('wishlist', item.id)}</div>`;
 }
 
@@ -420,9 +430,8 @@ export function calcSection(): string {
   }
   lines.push({ label: t('item.room'), idr: p.rent?.value != null ? toIdr(p.rent.value) : null, inputs: p.rent ? [p.rent] : [] });
   lines.push({ label: t('item.transit'), idr: p.transitFare?.value != null ? toIdr(p.transitFare.value) : null, inputs: p.transitFare ? [p.transitFare] : [] });
-  for (const w of d.wishlist.items) {
-    const pr = w.prices[p.iso2];
-    const loc = pr ? toLocal(pr, p) : null;
+  for (const w of d.wishlist.items.filter((i) => !i.hidden)) {
+    const loc = wishLocal(w, d.wishlist.items, p);
     lines.push({ label: L(w.label), idr: loc?.value != null ? toIdr(loc.value) : null, inputs: loc?.inputs ?? [] });
   }
   const mini = lines
@@ -518,6 +527,7 @@ export function dataSection(): string {
   const countries = [...new Map(places().map((p) => [p.iso2, p])).values()];
   const head2 = `<tr><th scope="col"></th>${countries.map((p) => `<th scope="col">${flag(p.iso2, L(p.country))} ${esc(L(p.country))}</th>`).join('')}</tr>`;
   const body2 = d.wishlist.items
+    .filter((w) => !w.bundle)
     .map(
       (w) =>
         `<tr><th scope="row">${esc(L(w.label))}</th>${countries

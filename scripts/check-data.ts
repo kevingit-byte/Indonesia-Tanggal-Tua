@@ -162,7 +162,13 @@ for (const line of method.basket) {
 // ---- wishlist.json
 const wish = load<WishlistFile>('wishlist.json');
 checkMeta('wishlist.json', wish);
+const wishIds = new Set(wish.items.map((i) => i.id));
 for (const item of wish.items) {
+  if (item.bundle) {
+    for (const part of item.bundle) if (!wishIds.has(part)) errors.push(`wishlist.json: ${item.id} bundles unknown item "${part}"`);
+    if (Object.keys(item.prices).length) errors.push(`wishlist.json: ${item.id} is a bundle and must not have its own prices`);
+    continue;
+  }
   for (const iso of Object.keys(item.prices))
     if (!currencyByIso2.has(iso)) errors.push(`wishlist.json: ${item.id}.${iso} is not a country in places.json`);
   for (const [iso, cur] of currencyByIso2) {

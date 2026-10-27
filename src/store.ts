@@ -126,6 +126,8 @@ export interface UiState {
   calcWage: number;
   calcHours: number;
   calcPlace: string;
+  cmpA: string;
+  cmpB: string;
 }
 
 const prefs = readJson<Partial<UiState>>(PREFS_KEY, {});
@@ -146,6 +148,8 @@ export const ui: UiState = {
   calcWage: prefs.calcWage ?? 5729876,
   calcHours: prefs.calcHours ?? 40,
   calcPlace: prefs.calcPlace ?? 'jakarta',
+  cmpA: 'jakarta',
+  cmpB: 'tokyo',
 };
 
 const listeners = new Set<() => void>();
@@ -175,6 +179,14 @@ export function readHash(): string | null {
   const [section, ...rest] = h.split('-');
   const key = HASH_KEYS[section!];
   const choice = rest.join('-');
+  // #compare-jakarta_vs_tokyo (place ids contain hyphens, so the pair is joined with _vs_)
+  if (section === 'compare') {
+    const [a, b] = choice.split('_vs_');
+    const ids = new Set(base.places.places.map((p) => p.id));
+    if (a && ids.has(a)) ui.cmpA = a;
+    if (b && ids.has(b)) ui.cmpB = b;
+    return section;
+  }
   if (key && choice) (ui as unknown as Record<string, string>)[key] = key === 'regionLevel' ? choice.toUpperCase() : choice;
   return section!;
 }
