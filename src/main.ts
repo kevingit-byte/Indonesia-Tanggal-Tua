@@ -204,7 +204,7 @@ dialog.addEventListener('click', (e) => {
   if (e.target === dialog) dialog.close();
 });
 
-const OG_KEYS = new Set(['item-rice', 'wishlist-iphone', 'wishlist-switch2', 'wishlist-bigmac', 'wishlist-latte', 'basket-idr', 'history-rice']);
+const OG_KEYS = new Set(['item-rice', 'wishlist-iphone', 'wishlist-iphone18pro', 'wishlist-switch2', 'wishlist-bigmac', 'wishlist-latte', 'basket-idr', 'history-rice']);
 
 async function doShare(btn: HTMLElement) {
   const key = btn.dataset.share!;

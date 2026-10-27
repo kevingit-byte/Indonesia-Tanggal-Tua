@@ -126,6 +126,7 @@ section.pending { min-height: 600px; }
 .row.is-id .fill.weak { background: repeating-linear-gradient(135deg, var(--id) 0 3px, transparent 3px 6px); box-shadow: inset 0 0 0 1.5px var(--id); }
 .row .val { font-family: var(--mono); font-size: 0.84rem; text-align: right; font-variant-numeric: tabular-nums; }
 .row .val .tag { display: inline-block; margin-top: 2px; }
+.row .val small { display: block; color: var(--muted); font-size: 0.7rem; font-family: var(--body); }
 .bars-regions .row { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) 4.2rem; }
 .bars-regions .row .lab-t b { color: var(--ink); }
 .bars-regions .row.is-hl .lab-t b { color: var(--id); }

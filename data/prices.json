@@ -181,45 +181,50 @@
       "rice": {
         "value": 3.5,
         "unit": "MYR/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "kpdn-pricecatcher-2026-10",
+        "status": "snapshot",
+        "note": "Beras Cap Jasmine Super 5 Special (import), RM35,00 per 10 kg, KL median."
       },
       "eggs": {
-        "value": 7.5,
+        "value": 7.56,
         "unit": "MYR/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-10-26",
+        "sourceId": "kpdn-pricecatcher-2026-10",
+        "status": "snapshot",
+        "note": "Telur ayam gred A (65–69,9 g), RM15,30 per 30, KL median; per kg at 67,5 g per egg."
       },
       "chicken": {
-        "value": 10,
+        "value": 9.2,
         "unit": "MYR/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "kpdn-pricecatcher-2026-10",
+        "status": "snapshot",
+        "note": "Ayam bersih standard, KL median."
       },
       "beef": {
-        "value": 32,
+        "value": 41.0,
         "unit": "MYR/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "kpdn-pricecatcher-2026-10",
+        "status": "snapshot",
+        "note": "Daging lembu import (topside), KL median of 3 premises."
       },
       "oil": {
-        "value": 6,
+        "value": 2.3,
         "unit": "MYR/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "kpdn-pricecatcher-2026-10",
+        "status": "snapshot",
+        "note": "Minyak masak paket (subsidised 1 kg pack), RM2,50 per kg; per litre at 0,92 kg/L."
       },
       "petrol": {
         "value": 1.99,
         "unit": "MYR/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-08",
+        "sourceId": "mof-my-fuel-2026-10",
+        "status": "official",
+        "note": "RON95 for eligible citizens under BUDI95 (unsubsidised RM4,67)."
       },
       "electricity": {
         "value": 0.4,
@@ -232,55 +237,60 @@
     },
     "singapore": {
       "rice": {
-        "value": 2.5,
+        "value": 2.93,
         "unit": "SGD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "singstat-m213761",
+        "status": "snapshot",
+        "note": "Premium Thai rice, S$14,65 per 5 kg."
       },
       "eggs": {
-        "value": 5.5,
+        "value": 5.48,
         "unit": "SGD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-09-30",
+        "sourceId": "singstat-m213761",
+        "status": "snapshot",
+        "note": "Hen eggs, S$3,29 per 10; per kg at 60 g per egg."
       },
       "chicken": {
-        "value": 8,
+        "value": 8.68,
         "unit": "SGD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "singstat-m213761",
+        "status": "snapshot",
+        "note": "Whole chicken, chilled."
       },
       "beef": {
-        "value": 30,
+        "value": 15.26,
         "unit": "SGD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "singstat-m213761",
+        "status": "snapshot",
+        "note": "Beef cube, frozen, S$7,63 per 500 g (chilled ribeye is S$62,14/kg)."
       },
       "oil": {
-        "value": 4,
+        "value": 2.91,
         "unit": "SGD/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "singstat-m213761",
+        "status": "snapshot",
+        "note": "Cooking oil, S$6,33 per 2 kg; per litre at 0,92 kg/L."
       },
       "petrol": {
-        "value": 2.9,
+        "value": 3.42,
         "unit": "SGD/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-06-23",
+        "sourceId": "ann-sg-fuel-2026-06",
+        "status": "snapshot",
+        "note": "95-octane posted price before discounts; October figure not found."
       },
       "electricity": {
-        "value": 0.3,
+        "value": 0.3116,
         "unit": "SGD/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2026-10-01",
+        "sourceId": "thestar-sg-tariff-2026-q4",
+        "status": "official",
+        "note": "SP Group household tariff, 28,59 cents + 9% GST."
       }
     },
     "bangkok": {
@@ -292,26 +302,28 @@
         "status": "estimate"
       },
       "eggs": {
-        "value": 65,
+        "value": 75.65,
         "unit": "THB/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-10-26",
+        "sourceId": "dit-bangkok-retail-2026-10",
+        "status": "snapshot",
+        "note": "Eggs no. 3, ฿4,35 each; per kg at 57,5 g per egg."
       },
       "chicken": {
-        "value": 80,
+        "value": 87.5,
         "unit": "THB/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "dit-bangkok-retail-2026-10",
+        "status": "snapshot",
+        "note": "Chicken drumstick and thigh."
       },
       "beef": {
-        "value": 300,
+        "value": 240,
         "unit": "THB/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "dit-bangkok-retail-2026-10",
+        "status": "snapshot",
+        "note": "Beef rump."
       },
       "oil": {
         "value": 50,
@@ -321,19 +333,20 @@
         "status": "estimate"
       },
       "petrol": {
-        "value": 35,
+        "value": 42.04,
         "unit": "THB/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-21",
+        "sourceId": "nation-th-fuel-2026-10-21",
+        "status": "official",
+        "note": "Gasohol 95, PTT Station Bangkok."
       },
       "electricity": {
-        "value": 4.2,
+        "value": 4.23,
         "unit": "THB/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2026-09-01",
+        "sourceId": "thaipost-ft-2026",
+        "status": "official",
+        "note": "Average tariff ฿3,95 per unit + 7% VAT."
       }
     },
     "ho-chi-minh-city": {
@@ -374,50 +387,54 @@
         "status": "estimate"
       },
       "petrol": {
-        "value": 20000,
+        "value": 26720,
         "unit": "VND/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-15",
+        "sourceId": "baovanhoa-xang-2026-10-22",
+        "status": "official",
+        "note": "E10 RON 95-III, Region 1."
       },
       "electricity": {
-        "value": 2800,
+        "value": 2215,
         "unit": "VND/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2025-05-10",
+        "sourceId": "vtc-evn-2026",
+        "status": "official",
+        "note": "Average for 90 kWh on the tiered tariff (50 × ₫1.984 + 40 × ₫2.050) + 10% VAT."
       }
     },
     "manila": {
       "rice": {
-        "value": 50,
+        "value": 46.18,
         "unit": "PHP/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-08-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Rice (regular milled), Metro Manila."
       },
       "eggs": {
-        "value": 130,
+        "value": 139.17,
         "unit": "PHP/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-08-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Eggs, ₱8,35 each; per kg at 60 g per egg."
       },
       "chicken": {
-        "value": 190,
+        "value": 200.45,
         "unit": "PHP/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-08-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Chicken (whole), Metro Manila."
       },
       "beef": {
-        "value": 450,
+        "value": 588.63,
         "unit": "PHP/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-08-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Beef, Metro Manila."
       },
       "oil": {
         "value": 110,
@@ -427,117 +444,128 @@
         "status": "estimate"
       },
       "petrol": {
-        "value": 62,
+        "value": 89.13,
         "unit": "PHP/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-06",
+        "sourceId": "tribune-ph-fuel-2026-10-05",
+        "status": "snapshot",
+        "note": "RON 91, Metro Manila common price."
       },
       "electricity": {
-        "value": 12.5,
+        "value": 15.06,
         "unit": "PHP/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2026-10-13",
+        "sourceId": "tribune-meralco-2026-10",
+        "status": "official",
+        "note": "Meralco residential rate, October 2026."
       }
     },
     "phnom-penh": {
       "rice": {
-        "value": 1.0,
+        "value": 0.49,
         "unit": "USD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Rice (mixed, low quality), Phnom Penh markets, 2.000 riel; WFP's US-dollar conversion."
       },
       "eggs": {
-        "value": 2.2,
+        "value": 1.76,
         "unit": "USD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-09-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "WFP tracks duck eggs only: US$1,23 per 10; per kg at 70 g per egg."
       },
       "chicken": {
-        "value": 4.0,
+        "value": 3.09,
         "unit": "USD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Chicken, Cambodia-wide median of markets (none recorded in Phnom Penh that month)."
       },
       "beef": {
-        "value": 9.0,
+        "value": 4.19,
         "unit": "USD/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Beef (fat, without bones), Cambodia-wide median of markets."
       },
       "oil": {
-        "value": 2.0,
+        "value": 1.48,
         "unit": "USD/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Vegetable oil, US$7,40 per 5 L, Phnom Penh markets."
       },
       "petrol": {
-        "value": 1.05,
+        "value": 1.31,
         "unit": "USD/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-11",
+        "sourceId": "thestar-kh-fuel-2026-10-11",
+        "status": "official",
+        "note": "Regular petrol, 5.350 riel; converted at 4.082 riel per US$ (WFP September 2026 rate)."
       },
       "electricity": {
-        "value": 0.19,
+        "value": 0.149,
         "unit": "USD/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2025-09-30",
+        "sourceId": "gpp-kh-electricity",
+        "status": "snapshot",
+        "note": "610 riel per kWh, converted at 4.082 riel per US$."
       }
     },
     "vientiane": {
       "rice": {
-        "value": 20000,
+        "value": 20375,
         "unit": "LAK/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-06-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Rice (ordinary, first quality), Vientiane Capital markets."
       },
       "eggs": {
-        "value": 33000,
+        "value": 55033,
         "unit": "LAK/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-06-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Eggs, ₭3.302 each; per kg at 60 g per egg."
       },
       "chicken": {
-        "value": 70000,
+        "value": 75000,
         "unit": "LAK/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-06-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Chicken, Vientiane Capital markets."
       },
       "beef": {
-        "value": 150000,
+        "value": 125000,
         "unit": "LAK/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-06-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Beef (first quality), Vientiane Capital markets."
       },
       "oil": {
-        "value": 50000,
+        "value": 40000,
         "unit": "LAK/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-06-15",
+        "sourceId": "wfp-hdx-food-prices",
+        "status": "snapshot",
+        "note": "Palm oil, Vientiane Capital markets."
       },
       "petrol": {
-        "value": 30000,
+        "value": 36900,
         "unit": "LAK/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-03-31",
+        "sourceId": "vientiane-times-fuel-2026",
+        "status": "snapshot",
+        "note": "Regular petrol in Vientiane after the March 2026 increases; October figure not found."
       },
       "electricity": {
         "value": 900,
@@ -550,33 +578,36 @@
     },
     "seoul": {
       "rice": {
-        "value": 3200,
+        "value": 5149,
         "unit": "KRW/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "seoul-mulga-2026-10",
+        "status": "snapshot",
+        "note": "Odae rice, ₩102.978 per 20 kg, Seoul average."
       },
       "eggs": {
-        "value": 3900,
+        "value": 5953,
         "unit": "KRW/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-10-26",
+        "sourceId": "seoul-mulga-2026-10",
+        "status": "snapshot",
+        "note": "Eggs, ₩3.572 per 10; per kg at 60 g per egg."
       },
       "chicken": {
-        "value": 7000,
+        "value": 7842,
         "unit": "KRW/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "seoul-mulga-2026-10",
+        "status": "snapshot",
+        "note": "Chicken, Seoul average."
       },
       "beef": {
-        "value": 40000,
+        "value": 41830,
         "unit": "KRW/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-26",
+        "sourceId": "seoul-mulga-2026-10",
+        "status": "snapshot",
+        "note": "Imported beef, ₩4.183 per 100 g, Seoul average."
       },
       "oil": {
         "value": 4500,
@@ -586,126 +617,136 @@
         "status": "estimate"
       },
       "petrol": {
-        "value": 1680,
+        "value": 1904,
         "unit": "KRW/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-10-08",
+        "sourceId": "mtn-opinet-2026-10-10",
+        "status": "snapshot",
+        "note": "Seoul average, week of 4–8 October 2026."
       },
       "electricity": {
-        "value": 150,
+        "value": 148,
         "unit": "KRW/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2026-06-30",
+        "sourceId": "glasswallet-kr-tariff-2026",
+        "status": "snapshot",
+        "note": "For 90 kWh: (₩910 base + 90 × ₩120) + 10% VAT + 3,7% electricity fund, per kWh."
       }
     },
     "tokyo": {
       "rice": {
-        "value": 840,
+        "value": 740,
         "unit": "JPY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "snapshot",
+        "note": "Rice, single-origin, not Koshihikari, ¥3.700 per 5 kg."
       },
       "eggs": {
-        "value": 470,
+        "value": 523,
         "unit": "JPY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "snapshot",
+        "note": "Eggs, ¥324 per pack of 10 (mixed M–L); per kg at 62 g per egg."
       },
       "chicken": {
-        "value": 1000,
+        "value": 1630,
         "unit": "JPY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "snapshot",
+        "note": "Broiler thigh, ¥163 per 100 g."
       },
       "beef": {
-        "value": 3500,
+        "value": 4210,
         "unit": "JPY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "snapshot",
+        "note": "Imported beef, chilled shoulder loin or thigh, ¥421 per 100 g."
       },
       "oil": {
-        "value": 420,
+        "value": 448,
         "unit": "JPY/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "snapshot",
+        "note": "Canola oil, ¥438 per 900 g; per litre at 0,92 kg/L."
       },
       "petrol": {
-        "value": 160,
+        "value": 172,
         "unit": "JPY/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "official",
+        "note": "Regular petrol, full service."
       },
       "electricity": {
-        "value": 33,
+        "value": 32.56,
         "unit": "JPY/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2026-09-30",
+        "sourceId": "tokyo-bukka-2026-09",
+        "status": "official",
+        "note": "¥13.090 for a 402 kWh month (TEPCO metered lighting), per kWh."
       }
     },
     "shanghai": {
       "rice": {
-        "value": 6,
+        "value": 5.64,
         "unit": "CNY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "shanghai-ndrc-prices-2026-09-30",
+        "status": "snapshot",
+        "note": "粳米 (japonica rice), loose, ¥2,82 per 500 g."
       },
       "eggs": {
-        "value": 12,
+        "value": 12.04,
         "unit": "CNY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Eggs converted to per kg at about 60 g per egg."
+        "asOf": "2026-09-30",
+        "sourceId": "shanghai-ndrc-prices-2026-09-30",
+        "status": "snapshot",
+        "note": "Fresh eggs, ¥6,02 per 500 g."
       },
       "chicken": {
-        "value": 24,
+        "value": 27.63,
         "unit": "CNY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "shanghai-ndrc-prices-2026-09-30",
+        "status": "snapshot",
+        "note": "White-striped whole chicken (白条鸡), ¥13,82 per 500 g."
       },
       "beef": {
-        "value": 80,
+        "value": 104.07,
         "unit": "CNY/kg",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "shanghai-ndrc-prices-2026-09-30",
+        "status": "snapshot",
+        "note": "Fresh beef shank (腱子肉), ¥52,03 per 500 g."
       },
       "oil": {
-        "value": 14,
+        "value": 10.6,
         "unit": "CNY/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate"
+        "asOf": "2026-09-30",
+        "sourceId": "shanghai-ndrc-prices-2026-09-30",
+        "status": "snapshot",
+        "note": "Soybean oil, first grade, ¥53,01 per 5 L."
       },
       "petrol": {
-        "value": 7.6,
+        "value": 7.14,
         "unit": "CNY/L",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Grade 92 petrol."
+        "asOf": "2026-07-03",
+        "sourceId": "shanghai-ndrc-fuel-2026-07",
+        "status": "official",
+        "note": "Grade 92, official maximum retail price (¥9.455 per tonne)."
       },
       "electricity": {
-        "value": 0.62,
+        "value": 0.617,
         "unit": "CNY/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Residential first-tier rate."
+        "asOf": "2026-01-01",
+        "sourceId": "thepaper-sh-electricity",
+        "status": "official",
+        "note": "First tier, daytime (06:00–22:00)."
       }
     }
   }

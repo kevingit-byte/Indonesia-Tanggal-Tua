@@ -276,6 +276,318 @@
       "url": "https://www.apple.com.cn/shop/buy-iphone/iphone-17",
       "accessed": "2026-10-27",
       "note": "Current list price for iPhone 17 256GB read from the store page."
+    },
+    {
+      "id": "kpdn-pricecatcher-2026-10",
+      "title": "PriceCatcher: harga barangan (pricecatcher_2026-10.parquet)",
+      "publisher": "Ministry of Domestic Trade and Cost of Living (KPDN) via data.gov.my",
+      "url": "https://data.gov.my/data-catalogue/pricecatcher",
+      "accessed": "2026-10-27",
+      "note": "Median of prices recorded at premises in W.P. Kuala Lumpur, 10–26 October 2026."
+    },
+    {
+      "id": "singstat-m213761",
+      "title": "Average Retail Prices Of Selected Consumer Items, Monthly (M213761)",
+      "publisher": "Department of Statistics Singapore",
+      "url": "https://tablebuilder.singstat.gov.sg/table/TS/M213761",
+      "accessed": "2026-10-27",
+      "note": "September 2026 averages."
+    },
+    {
+      "id": "wfp-hdx-food-prices",
+      "title": "WFP food prices (wfp_food_prices_khm/lao/phl.csv)",
+      "publisher": "World Food Programme via Humanitarian Data Exchange (HDX)",
+      "url": "https://data.humdata.org/dataset/wfp-food-prices-for-cambodia",
+      "accessed": "2026-10-27",
+      "note": "Retail market prices: Phnom Penh markets and Cambodia-wide medians (15 September 2026), Vientiane (15 June 2026), Metro Manila (15 August 2026). Laos and Philippines datasets: data.humdata.org/dataset/wfp-food-prices-for-lao-people-s-democratic-republic and …-for-philippines."
+    },
+    {
+      "id": "shanghai-ndrc-prices-2026-09-30",
+      "title": "上海市主要主副食品品种价格信息表(2026年09月30日)",
+      "publisher": "Shanghai Municipal Development and Reform Commission",
+      "url": "https://www.shanghai.gov.cn/nw17239/20260930/bc747e41f274434ea440e2ece781eacd.html",
+      "accessed": "2026-10-27",
+      "note": "City-wide average of supermarkets and wet markets, 30 September 2026, prices per 500 g converted to per kg."
+    },
+    {
+      "id": "tokyo-bukka-2026-09",
+      "title": "東京の物価 令和8年(2026年)9月分, 第7表 主要品目の東京都区部小売価格",
+      "publisher": "Tokyo Metropolitan Government, Bureau of General Affairs (statistics)",
+      "url": "https://www.toukei.metro.tokyo.lg.jp/bukka/2026/bk2691data.htm",
+      "accessed": "2026-10-27",
+      "note": "Official Tokyo-ward averages from the national Retail Price Survey, September 2026 (CSV bk269v0702.csv)."
+    },
+    {
+      "id": "bisnis-ibox-2026-10-01",
+      "title": "Update Harga iPhone 15, 16, dan 17 di iBox 1 Oktober, Ada yang Turun Rp1,5 Juta",
+      "publisher": "Bisnis.com",
+      "url": "https://teknologi.bisnis.com/read/20261001/280/2008758/update-harga-iphone-15-16-dan-17-di-ibox-1-oktober-ada-yang-turun-rp15-juta",
+      "accessed": "2026-10-27",
+      "note": "iBox price list of 1 October 2026: iPhone 17 256GB Rp20.499.000 (launch price was Rp17.249.000)."
+    },
+    {
+      "id": "selular-iphone18-id",
+      "title": "Daftar Harga Resmi iPhone 18 Series di Indonesia, iPhone 18 Pro Tembus Rp58 Juta",
+      "publisher": "Selular.ID",
+      "url": "https://selular.id/2026/10/daftar-harga-resmi-iphone-18-series-di-indonesia-iphone-18-pro-tembus-rp58-juta/",
+      "accessed": "2026-10-27",
+      "note": "Official Indonesian prices announced for pre-order on 7 October 2026: iPhone 18 Pro 256GB Rp27.499.000."
+    },
+    {
+      "id": "apple-store-18pro-sg",
+      "title": "Buy iPhone 18 Pro – Apple (SG)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/sg/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-my",
+      "title": "Buy iPhone 18 Pro – Apple (MY)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/my/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-th",
+      "title": "Buy iPhone 18 Pro – Apple (TH)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/th/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-vn",
+      "title": "Buy iPhone 18 Pro – Apple (VN)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/vn/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-ph",
+      "title": "Buy iPhone 18 Pro – Apple (PH)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/ph/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-kr",
+      "title": "Buy iPhone 18 Pro – Apple (KR)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/kr/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-jp",
+      "title": "Buy iPhone 18 Pro – Apple (JP)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/jp/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "apple-store-18pro-cn",
+      "title": "Buy iPhone 18 Pro – Apple (CN)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com.cn/shop/buy-iphone/iphone-18-pro",
+      "accessed": "2026-10-27",
+      "note": "List price for iPhone 18 Pro 256GB read from the store page."
+    },
+    {
+      "id": "seoul-mulga-2026-10",
+      "title": "서울시 물가정보 · 지역별 물가 (2026년 10월 26일–11월 1일 조사)",
+      "publisher": "Seoul Metropolitan Government (Fair Trade Center)",
+      "url": "https://sftc.seoul.go.kr/seoul/mulga/pricesInfo/areaPrices/list.do?menuNo=200006",
+      "accessed": "2026-10-27",
+      "note": "Seoul-wide average of surveyed markets and supermarkets."
+    },
+    {
+      "id": "dit-bangkok-retail-2026-10",
+      "title": "ราคาสินค้าย้อนหลัง ค้าปลีก (กรุงเทพมหานคร)",
+      "publisher": "Department of Internal Trade, Ministry of Commerce, Thailand",
+      "url": "https://mex.moc.go.th/page/dit/checkpricedetail/type/R/catid/1/itemid/P11028",
+      "accessed": "2026-10-27",
+      "note": "Bangkok retail average for 26 October 2026 (2569): eggs P11028, chicken P11013, beef P11031."
+    },
+    {
+      "id": "nation-th-fuel-2026-10-21",
+      "title": "Regular diesel, petrol and gasohol 91 and 95 prices rise by 60 satang on October 21",
+      "publisher": "Nation Thailand",
+      "url": "https://www.nationthailand.com/news/general/40072549",
+      "accessed": "2026-10-27",
+      "note": "PTT Station Bangkok prices from 21 October 2026."
+    },
+    {
+      "id": "baovanhoa-xang-2026-10-22",
+      "title": "Giá xăng dầu hôm nay 22.10.2026",
+      "publisher": "Báo Văn Hóa (Petrolimex prices)",
+      "url": "https://baovanhoa.vn/kinh-te/gia-xang-dau-hom-nay-22102026-cho-ky-dieu-hanh-15h-chieu-nay-277859.html",
+      "accessed": "2026-10-27",
+      "note": "Petrolimex Region 1 prices in force from 15:00 on 15 October 2026."
+    },
+    {
+      "id": "tribune-ph-fuel-2026-10-05",
+      "title": "Gasoline climbs as diesel gets relief",
+      "publisher": "Daily Tribune (DOE Metro Manila monitoring)",
+      "url": "https://tribune.net.ph/2026/10/05/gasoline-climbs-as-diesel-gets-relief",
+      "accessed": "2026-10-27",
+      "note": "Metro Manila common prices for the week from 6 October 2026."
+    },
+    {
+      "id": "thestar-kh-fuel-2026-10-11",
+      "title": "Petrol prices continue to climb in Cambodia as diesel pressures ease slightly",
+      "publisher": "The Star (citing Cambodia's Ministry of Commerce)",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/11/gasoline-prices-continue-to-climb-in-cambodia-as-diesel-pressures-ease-slightly",
+      "accessed": "2026-10-27",
+      "note": "Ministry of Commerce retail fuel prices for 11–21 October 2026."
+    },
+    {
+      "id": "vientiane-times-fuel-2026",
+      "title": "Fuel prices (Vientiane Times)",
+      "publisher": "Vientiane Times",
+      "url": "https://vientianetimes.org.la/freefreenews/freecontent_54_Construction_y26.php",
+      "accessed": "2026-10-27",
+      "note": "Pump prices in Vientiane after the March 2026 increases. No later figure found."
+    },
+    {
+      "id": "mtn-opinet-2026-10-10",
+      "title": "전국 기름값 21주 연속 내림세… 휘발유, 0.4원 내린 1857.6원",
+      "publisher": "MTN (citing KNOC Opinet)",
+      "url": "https://news.mtn.co.kr/article/2026101010102185257",
+      "accessed": "2026-10-27",
+      "note": "Seoul weekly average, 4–8 October 2026."
+    },
+    {
+      "id": "shanghai-ndrc-fuel-2026-07",
+      "title": "沪发改价管〔2026〕28号 成品油价格",
+      "publisher": "Shanghai Municipal Development and Reform Commission",
+      "url": "https://fgw.sh.gov.cn/cmsres/f4/f4411a32242f450f9b62ddc27e840300/b16b1dea7bed4156d68a2a92645e5d29.pdf",
+      "accessed": "2026-10-27",
+      "note": "Maximum retail price of grade 92 petrol from 3 July 2026; national increases on 17 and 31 July are not included."
+    },
+    {
+      "id": "mof-my-fuel-2026-10",
+      "title": "Unsubsidised RON95 climbs to RM4.67 as Budi95 price stays frozen",
+      "publisher": "The Vibes (citing Malaysia's Ministry of Finance)",
+      "url": "https://www.thevibes.com/articles/news/128080/mof-unsubsidised-ron95-climbs-to-rm4.67-as-budi95-price-stays-frozen",
+      "accessed": "2026-10-27",
+      "note": "Weekly fuel prices for 8–14 October 2026."
+    },
+    {
+      "id": "ann-sg-fuel-2026-06",
+      "title": "Petrol, diesel prices ease in Singapore as oil prices fall",
+      "publisher": "Asia News Network (CAS Price Kaki data)",
+      "url": "https://asianews.network/?p=282758",
+      "accessed": "2026-10-27",
+      "note": "95-octane posted price on 23 June 2026, before card discounts. No October figure found."
+    },
+    {
+      "id": "thestar-sg-tariff-2026-q4",
+      "title": "Electricity tariff for Singapore households to fall by 10.4% in fourth quarter of 2026",
+      "publisher": "The Star (citing SP Group)",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/30/electricity-tariff-for-singapore-households-to-fall-by-104-in-fourth-quarter-of-2026",
+      "accessed": "2026-10-27",
+      "note": "SP Group regulated household tariff for October–December 2026."
+    },
+    {
+      "id": "thaipost-ft-2026",
+      "title": "กกพ. เคาะค่าเอฟทีงวดเดือน ก.ย.-ธ.ค. ที่ 16.23 สตางค์/หน่วย ใช้เงิน Claw back รักษาค่าไฟเฉลี่ย 3.95 บาท/หน่วย",
+      "publisher": "Thai Post (ERC decision)",
+      "url": "https://www.thaipost.net/economy-news/1037295/",
+      "accessed": "2026-10-27",
+      "note": "Average tariff for September–December 2026, before VAT."
+    },
+    {
+      "id": "vtc-evn-2026",
+      "title": "Chi tiết bảng giá điện sinh hoạt 2026",
+      "publisher": "VTC News (EVN tariff, Decision 1279/QĐ-BCT)",
+      "url": "https://vtcnews.vn/chi-tiet-bang-gia-dien-sinh-hoat-2026-cach-tinh-gia-dien-thang-6-2026-ar1021826.html",
+      "accessed": "2026-10-27",
+      "note": "Six-tier residential tariff in force since 10 May 2025."
+    },
+    {
+      "id": "tribune-meralco-2026-10",
+      "title": "Meralco rate hike eats into October bill relief",
+      "publisher": "Daily Tribune",
+      "url": "https://tribune.net.ph/2026/10/13/meralco-rate-hike-eats-into-october-bill-relief",
+      "accessed": "2026-10-27",
+      "note": "Meralco residential rate for October 2026."
+    },
+    {
+      "id": "gpp-kh-electricity",
+      "title": "Cambodia electricity prices",
+      "publisher": "GlobalPetrolPrices.com (data from the Electricity Authority of Cambodia)",
+      "url": "https://www.globalpetrolprices.com/Cambodia/electricity_prices/",
+      "accessed": "2026-10-27",
+      "note": "Household rate including taxes, collected September 2025."
+    },
+    {
+      "id": "glasswallet-kr-tariff-2026",
+      "title": "전기요금 누진제 구간 가이드 - 2026년 요금표",
+      "publisher": "GlassWallet (KEPCO residential tariff)",
+      "url": "https://glasswallet.com/calculate/electricity-bill/progressive-rate/",
+      "accessed": "2026-10-27",
+      "note": "First tier (≤200 kWh) energy charge and base charge."
+    },
+    {
+      "id": "thepaper-sh-electricity",
+      "title": "上海居民用电继续执行居民目录电价",
+      "publisher": "The Paper (State Grid Shanghai tariff)",
+      "url": "https://m.thepaper.cn/newsDetail_forward_31029299",
+      "accessed": "2026-10-27",
+      "note": "Residential first-tier daytime rate."
+    },
+    {
+      "id": "bisnis-transjakarta-2026-06",
+      "title": "Pramono Tegaskan Pemprov DKI Tetap Beri Subsidi Meski Tarif Transjakarta Naik",
+      "publisher": "Bisnis.com",
+      "url": "https://ekonomi.bisnis.com/read/20260610/98/1979870/pramono-tegaskan-pemprov-dki-tetap-beri-subsidi-meski-tarif-transjakarta-naik",
+      "accessed": "2026-10-27",
+      "note": "Governor: passengers pay Rp3.500 per trip on all routes (June 2026)."
+    },
+    {
+      "id": "kb-seoul-metro-fare",
+      "title": "수도권 지하철 요금 인상, 6월부터 150원 올라요",
+      "publisher": "KB Think",
+      "url": "https://kbthink.com/main/living-finance/talk-cardnews/2025/metro-fare.html",
+      "accessed": "2026-10-27",
+      "note": "Seoul subway adult card fare ₩1.550 from 28 June 2025."
+    },
+    {
+      "id": "tribune-jeepney-2026-09",
+      "title": "Jeepney roaming around Manila after DOTr's approval on the recommended fare hike",
+      "publisher": "Daily Tribune",
+      "url": "https://tribune.net.ph/2026/09/26/jeepney-roaming-around-manila-after-dotrs-approval-on-the-recommended-fare-hike",
+      "accessed": "2026-10-27",
+      "note": "Traditional jeepney minimum fare ₱14 from late September 2026."
+    },
+    {
+      "id": "thairath-bmta-2026",
+      "title": "ขสมก. เช่ารถเมล์อีวีแทนรถร้อน คงราคา 8 บาท",
+      "publisher": "Thairath",
+      "url": "https://www.thairath.co.th/scoop/theissue/2886199",
+      "accessed": "2026-10-27",
+      "note": "BMTA ordinary (non-air-conditioned) bus fare ฿8."
+    },
+    {
+      "id": "tienphong-hcmc-bus-free",
+      "title": "Xe buýt TPHCM miễn phí từ hôm nay (1/7)",
+      "publisher": "Tiền Phong",
+      "url": "https://tienphong.vn/xe-buyt-tphcm-mien-phi-tu-hom-nay-17-hoan-tien-ve-tap-nam-2026-o-dau-post1855805.tpo",
+      "accessed": "2026-10-27",
+      "note": "Ho Chi Minh City buses free on 134 routes from 1 July to 31 December 2026."
+    },
+    {
+      "id": "wiki-pp-city-bus",
+      "title": "Phnom Penh City Bus",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phnom_Penh_City_Bus",
+      "accessed": "2026-10-27",
+      "note": "Flat fare 1.500 riel per trip."
     }
   ]
 }

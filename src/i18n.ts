@@ -191,6 +191,7 @@ const dict = {
   'legend.est': { id: 'Ada perkiraan di dalamnya', en: 'Includes an estimate' },
   'notsold': { id: 'tidak dijual', en: 'not sold' },
   'perMonth': { id: '/bulan', en: '/month' },
+  'months': { id: '≈ {n} bulan gaji', en: '≈ {n} months of wages' },
   'nodata': { id: 'belum ada data', en: 'no data yet' },
   'unit.min': { id: 'mnt', en: 'min' },
   'unit.h': { id: 'jam', en: 'h' },

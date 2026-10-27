@@ -33,7 +33,12 @@ function sortRows(rows: BarRow[]) {
   return rows.sort((a, b) => (b.value ?? -1) - (a.value ?? -1));
 }
 
-const wageSub = (p: Place) => L(p.wageLabel);
+/** "≈ 3,0 bulan gaji" once something costs at least a month of full-time minimum-wage work. */
+function monthsExtra(minutes: number | null, p: Place): string | undefined {
+  const h = p.monthlyHours?.value;
+  if (minutes === null || !h || minutes < h * 60) return undefined;
+  return t('months', { n: num(minutes / (h * 60), 1) });
+}
 
 function head(eyebrow: Key, title: Key, lede?: Key, id?: string) {
   return `<div class="sec-head"><div class="eyebrow">${t(eyebrow)}</div><h2${id ? ` id="${id}-h"` : ''}>${t(title)}</h2>${
@@ -69,7 +74,7 @@ export function hero(): string {
     <div class="id"><small>${t('hero.v.iphone')}</small><span class="big">${provBtn(days(ij), t('hero.v.iphone'), ij.inputs, 'pv pv-big')}</span><small>${t(
       'hero.v.iphoneVs',
       { x: days(iphone(byId('tokyo'))), y: days(iphone(byId('singapore'))) },
-    )}</small></div>
+    )}</small><small>${monthsExtra(ij.value, jkt) ?? ''}</small></div>
     <div class="id"><small>${t('hero.v.rice')}</small><span class="big">${provBtn(mins(rj), t('hero.v.rice'), rj.inputs, 'pv pv-big')}</span><small>${t(
       'hero.v.riceVs',
       { x: mins(rice(byId('bangkok'))), y: mins(rice(byId('manila'))) },
@@ -143,6 +148,7 @@ export function wishSection(): string {
         provLabel: `${L(item.label)}, ${L(p.city)}`,
         derived: m,
         emptyText: notSold ? t('notsold') : undefined,
+        extra: monthsExtra(m.value, p),
       };
     }),
   );
