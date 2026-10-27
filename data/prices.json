@@ -69,6 +69,54 @@
         "sourceId": "bjk-prototype-2026-10",
         "status": "official",
         "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "rice": {
+        "value": 17050,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, DKI Jakarta average, traditional markets."
+      },
+      "eggs": {
+        "value": 25700,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, DKI Jakarta average, traditional markets."
+      },
+      "chicken": {
+        "value": 39000,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, DKI Jakarta average, traditional markets."
+      },
+      "beef": {
+        "value": 154300,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, DKI Jakarta average, traditional markets."
+      },
+      "oil": {
+        "value": 23200,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), DKI Jakarta average, traditional markets."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
       }
     },
     "kota-bekasi": {
@@ -79,16 +127,532 @@
         "sourceId": "bjk-prototype-2026-10",
         "status": "official",
         "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "rice": {
+        "value": 15850,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, Jawa Barat provincial average (no Bekasi-only series)."
+      },
+      "eggs": {
+        "value": 25500,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, Jawa Barat provincial average (no Bekasi-only series)."
+      },
+      "chicken": {
+        "value": 37750,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, Jawa Barat provincial average (no Bekasi-only series)."
+      },
+      "beef": {
+        "value": 157650,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, Jawa Barat provincial average (no Bekasi-only series)."
+      },
+      "oil": {
+        "value": 22600,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), Jawa Barat provincial average (no Bekasi-only series)."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
       }
     },
-    "kuala-lumpur": {},
-    "singapore": {},
-    "bangkok": {},
-    "ho-chi-minh-city": {},
-    "manila": {},
-    "phnom-penh": {},
-    "vientiane": {},
-    "seoul": {},
-    "tokyo": {}
+    "kuala-lumpur": {
+      "rice": {
+        "value": 3.5,
+        "unit": "MYR/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 7.5,
+        "unit": "MYR/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 10,
+        "unit": "MYR/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 32,
+        "unit": "MYR/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 6,
+        "unit": "MYR/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 1.99,
+        "unit": "MYR/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 0.4,
+        "unit": "MYR/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "singapore": {
+      "rice": {
+        "value": 2.5,
+        "unit": "SGD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 5.5,
+        "unit": "SGD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 8,
+        "unit": "SGD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 30,
+        "unit": "SGD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 4,
+        "unit": "SGD/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 2.9,
+        "unit": "SGD/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 0.3,
+        "unit": "SGD/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "bangkok": {
+      "rice": {
+        "value": 35,
+        "unit": "THB/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 65,
+        "unit": "THB/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 80,
+        "unit": "THB/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 300,
+        "unit": "THB/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 50,
+        "unit": "THB/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 35,
+        "unit": "THB/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 4.2,
+        "unit": "THB/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "ho-chi-minh-city": {
+      "rice": {
+        "value": 18000,
+        "unit": "VND/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 50000,
+        "unit": "VND/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 80000,
+        "unit": "VND/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 250000,
+        "unit": "VND/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 45000,
+        "unit": "VND/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 20000,
+        "unit": "VND/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 2800,
+        "unit": "VND/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "manila": {
+      "rice": {
+        "value": 50,
+        "unit": "PHP/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 130,
+        "unit": "PHP/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 190,
+        "unit": "PHP/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 450,
+        "unit": "PHP/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 110,
+        "unit": "PHP/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 62,
+        "unit": "PHP/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 12.5,
+        "unit": "PHP/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "phnom-penh": {
+      "rice": {
+        "value": 1.0,
+        "unit": "USD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 2.2,
+        "unit": "USD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 4.0,
+        "unit": "USD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 9.0,
+        "unit": "USD/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 2.0,
+        "unit": "USD/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 1.05,
+        "unit": "USD/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 0.19,
+        "unit": "USD/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "vientiane": {
+      "rice": {
+        "value": 20000,
+        "unit": "LAK/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 33000,
+        "unit": "LAK/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 70000,
+        "unit": "LAK/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 150000,
+        "unit": "LAK/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 50000,
+        "unit": "LAK/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 30000,
+        "unit": "LAK/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 900,
+        "unit": "LAK/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "seoul": {
+      "rice": {
+        "value": 3200,
+        "unit": "KRW/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 3900,
+        "unit": "KRW/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 7000,
+        "unit": "KRW/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 40000,
+        "unit": "KRW/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 4500,
+        "unit": "KRW/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 1680,
+        "unit": "KRW/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 150,
+        "unit": "KRW/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    },
+    "tokyo": {
+      "rice": {
+        "value": 840,
+        "unit": "JPY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "eggs": {
+        "value": 470,
+        "unit": "JPY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Eggs converted to per kg at about 60 g per egg."
+      },
+      "chicken": {
+        "value": 1000,
+        "unit": "JPY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "beef": {
+        "value": 3500,
+        "unit": "JPY/kg",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "oil": {
+        "value": 420,
+        "unit": "JPY/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "petrol": {
+        "value": 160,
+        "unit": "JPY/L",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate"
+      },
+      "electricity": {
+        "value": 33,
+        "unit": "JPY/kWh",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Average household rate including taxes."
+      }
+    }
   }
 }

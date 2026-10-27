@@ -98,6 +98,8 @@ export interface Region {
 export interface RegionsFile extends DatasetMeta {
   year: number;
   regions: Region[];
+  /** National average food prices used to price the same basket against every region's wage. itemId -> Datum. */
+  nationalPrices: Record<string, Datum>;
 }
 
 export interface SeriesPoint extends Datum {

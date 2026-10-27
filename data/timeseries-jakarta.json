@@ -235,11 +235,275 @@
     {
       "id": "rice",
       "label": {
-        "id": "Harga beras medium (rata-rata nasional)",
-        "en": "Medium rice, national average retail"
+        "id": "Beras medium I, Jakarta",
+        "en": "Medium rice, Jakarta"
       },
       "unit": "IDR/kg",
-      "points": []
+      "points": [
+        {
+          "year": 2018,
+          "value": 14050,
+          "unit": "IDR/kg",
+          "asOf": "2018-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2019,
+          "value": 13300,
+          "unit": "IDR/kg",
+          "asOf": "2019-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2020,
+          "value": 13400,
+          "unit": "IDR/kg",
+          "asOf": "2020-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2021,
+          "value": 13950,
+          "unit": "IDR/kg",
+          "asOf": "2021-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2022,
+          "value": 14050,
+          "unit": "IDR/kg",
+          "asOf": "2022-01-17",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2023,
+          "value": 14550,
+          "unit": "IDR/kg",
+          "asOf": "2023-01-13",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2024,
+          "value": 15600,
+          "unit": "IDR/kg",
+          "asOf": "2024-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2025,
+          "value": 15800,
+          "unit": "IDR/kg",
+          "asOf": "2025-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2026,
+          "value": 16600,
+          "unit": "IDR/kg",
+          "asOf": "2026-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        }
+      ]
+    },
+    {
+      "id": "eggs",
+      "label": {
+        "id": "Telur ayam ras, Jakarta",
+        "en": "Eggs, Jakarta"
+      },
+      "unit": "IDR/kg",
+      "points": [
+        {
+          "year": 2018,
+          "value": 24000,
+          "unit": "IDR/kg",
+          "asOf": "2018-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2019,
+          "value": 25500,
+          "unit": "IDR/kg",
+          "asOf": "2019-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2020,
+          "value": 24650,
+          "unit": "IDR/kg",
+          "asOf": "2020-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2021,
+          "value": 24150,
+          "unit": "IDR/kg",
+          "asOf": "2021-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2022,
+          "value": 24000,
+          "unit": "IDR/kg",
+          "asOf": "2022-01-17",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2023,
+          "value": 28350,
+          "unit": "IDR/kg",
+          "asOf": "2023-01-13",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2024,
+          "value": 26050,
+          "unit": "IDR/kg",
+          "asOf": "2024-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2025,
+          "value": 28450,
+          "unit": "IDR/kg",
+          "asOf": "2025-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2026,
+          "value": 29950,
+          "unit": "IDR/kg",
+          "asOf": "2026-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "label": {
+        "id": "Daging ayam ras, Jakarta",
+        "en": "Chicken, Jakarta"
+      },
+      "unit": "IDR/kg",
+      "points": [
+        {
+          "year": 2018,
+          "value": 37500,
+          "unit": "IDR/kg",
+          "asOf": "2018-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2019,
+          "value": 35850,
+          "unit": "IDR/kg",
+          "asOf": "2019-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2020,
+          "value": 34750,
+          "unit": "IDR/kg",
+          "asOf": "2020-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2021,
+          "value": 38600,
+          "unit": "IDR/kg",
+          "asOf": "2021-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2022,
+          "value": 41900,
+          "unit": "IDR/kg",
+          "asOf": "2022-01-17",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2023,
+          "value": 36250,
+          "unit": "IDR/kg",
+          "asOf": "2023-01-13",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2024,
+          "value": 34600,
+          "unit": "IDR/kg",
+          "asOf": "2024-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2025,
+          "value": 36500,
+          "unit": "IDR/kg",
+          "asOf": "2025-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        },
+        {
+          "year": 2026,
+          "value": 39550,
+          "unit": "IDR/kg",
+          "asOf": "2026-01-15",
+          "sourceId": "bi-pihps",
+          "status": "snapshot",
+          "note": "DKI Jakarta traditional-market average, mid-January."
+        }
+      ]
     }
   ]
 }

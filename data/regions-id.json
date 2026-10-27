@@ -5,7 +5,138 @@
   "year": 2026,
   "regions": [
     {
-      "id": "dki-jakarta",
+      "id": "ump-aceh",
+      "name": "Aceh",
+      "province": "Aceh",
+      "level": "UMP",
+      "wage": {
+        "value": 3932552,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "kemnaker-ump-2026",
+        "status": "official",
+        "note": "Set late (after flooding delayed the decision); figure from the Kemnaker list."
+      }
+    },
+    {
+      "id": "ump-sumatera-utara",
+      "name": "Sumatera Utara",
+      "province": "Sumatera Utara",
+      "level": "UMP",
+      "wage": {
+        "value": 3228949,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sumatera-barat",
+      "name": "Sumatera Barat",
+      "province": "Sumatera Barat",
+      "level": "UMP",
+      "wage": {
+        "value": 3182955,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-riau",
+      "name": "Riau",
+      "province": "Riau",
+      "level": "UMP",
+      "wage": {
+        "value": 3780495,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-jambi",
+      "name": "Jambi",
+      "province": "Jambi",
+      "level": "UMP",
+      "wage": {
+        "value": 3471497,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sumatera-selatan",
+      "name": "Sumatera Selatan",
+      "province": "Sumatera Selatan",
+      "level": "UMP",
+      "wage": {
+        "value": 3942963,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-bengkulu",
+      "name": "Bengkulu",
+      "province": "Bengkulu",
+      "level": "UMP",
+      "wage": {
+        "value": 2827250,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-lampung",
+      "name": "Lampung",
+      "province": "Lampung",
+      "level": "UMP",
+      "wage": {
+        "value": 3047734,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kepulauan-bangka-belitung",
+      "name": "Kepulauan Bangka Belitung",
+      "province": "Kepulauan Bangka Belitung",
+      "level": "UMP",
+      "wage": {
+        "value": 4035000,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kepulauan-riau",
+      "name": "Kepulauan Riau",
+      "province": "Kepulauan Riau",
+      "level": "UMP",
+      "wage": {
+        "value": 3879520,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-dki-jakarta",
       "name": "DKI Jakarta",
       "province": "DKI Jakarta",
       "level": "UMP",
@@ -14,6 +145,357 @@
         "unit": "IDR/month",
         "asOf": "2026-01-01",
         "sourceId": "kemnaker-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-jawa-barat",
+      "name": "Jawa Barat",
+      "province": "Jawa Barat",
+      "level": "UMP",
+      "wage": {
+        "value": 2317601,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-jawa-tengah",
+      "name": "Jawa Tengah",
+      "province": "Jawa Tengah",
+      "level": "UMP",
+      "wage": {
+        "value": 2327386,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-di-yogyakarta",
+      "name": "DI Yogyakarta",
+      "province": "DI Yogyakarta",
+      "level": "UMP",
+      "wage": {
+        "value": 2417495,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-jawa-timur",
+      "name": "Jawa Timur",
+      "province": "Jawa Timur",
+      "level": "UMP",
+      "wage": {
+        "value": 2446880,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-banten",
+      "name": "Banten",
+      "province": "Banten",
+      "level": "UMP",
+      "wage": {
+        "value": 3100881,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-bali",
+      "name": "Bali",
+      "province": "Bali",
+      "level": "UMP",
+      "wage": {
+        "value": 3207459,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-nusa-tenggara-barat",
+      "name": "Nusa Tenggara Barat",
+      "province": "Nusa Tenggara Barat",
+      "level": "UMP",
+      "wage": {
+        "value": 2673861,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-nusa-tenggara-timur",
+      "name": "Nusa Tenggara Timur",
+      "province": "Nusa Tenggara Timur",
+      "level": "UMP",
+      "wage": {
+        "value": 2455898,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kalimantan-barat",
+      "name": "Kalimantan Barat",
+      "province": "Kalimantan Barat",
+      "level": "UMP",
+      "wage": {
+        "value": 3054552,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kalimantan-tengah",
+      "name": "Kalimantan Tengah",
+      "province": "Kalimantan Tengah",
+      "level": "UMP",
+      "wage": {
+        "value": 3686138,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kalimantan-selatan",
+      "name": "Kalimantan Selatan",
+      "province": "Kalimantan Selatan",
+      "level": "UMP",
+      "wage": {
+        "value": 3725000,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kalimantan-timur",
+      "name": "Kalimantan Timur",
+      "province": "Kalimantan Timur",
+      "level": "UMP",
+      "wage": {
+        "value": 3762431,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-kalimantan-utara",
+      "name": "Kalimantan Utara",
+      "province": "Kalimantan Utara",
+      "level": "UMP",
+      "wage": {
+        "value": 3775243,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sulawesi-utara",
+      "name": "Sulawesi Utara",
+      "province": "Sulawesi Utara",
+      "level": "UMP",
+      "wage": {
+        "value": 4002630,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sulawesi-tengah",
+      "name": "Sulawesi Tengah",
+      "province": "Sulawesi Tengah",
+      "level": "UMP",
+      "wage": {
+        "value": 3179565,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sulawesi-selatan",
+      "name": "Sulawesi Selatan",
+      "province": "Sulawesi Selatan",
+      "level": "UMP",
+      "wage": {
+        "value": 3921088,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sulawesi-tenggara",
+      "name": "Sulawesi Tenggara",
+      "province": "Sulawesi Tenggara",
+      "level": "UMP",
+      "wage": {
+        "value": 3306496,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-gorontalo",
+      "name": "Gorontalo",
+      "province": "Gorontalo",
+      "level": "UMP",
+      "wage": {
+        "value": 3405144,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-sulawesi-barat",
+      "name": "Sulawesi Barat",
+      "province": "Sulawesi Barat",
+      "level": "UMP",
+      "wage": {
+        "value": 3315934,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-maluku",
+      "name": "Maluku",
+      "province": "Maluku",
+      "level": "UMP",
+      "wage": {
+        "value": 3334490,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-maluku-utara",
+      "name": "Maluku Utara",
+      "province": "Maluku Utara",
+      "level": "UMP",
+      "wage": {
+        "value": 3510240,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-papua-barat",
+      "name": "Papua Barat",
+      "province": "Papua Barat",
+      "level": "UMP",
+      "wage": {
+        "value": 3841000,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-papua",
+      "name": "Papua",
+      "province": "Papua",
+      "level": "UMP",
+      "wage": {
+        "value": 4436283,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-papua-tengah",
+      "name": "Papua Tengah",
+      "province": "Papua Tengah",
+      "level": "UMP",
+      "wage": {
+        "value": 4285848,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-papua-pegunungan",
+      "name": "Papua Pegunungan",
+      "province": "Papua Pegunungan",
+      "level": "UMP",
+      "wage": {
+        "value": 4508714,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-papua-selatan",
+      "name": "Papua Selatan",
+      "province": "Papua Selatan",
+      "level": "UMP",
+      "wage": {
+        "value": 4508100,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
+        "status": "official"
+      }
+    },
+    {
+      "id": "ump-papua-barat-daya",
+      "name": "Papua Barat Daya",
+      "province": "Papua Barat Daya",
+      "level": "UMP",
+      "wage": {
+        "value": 3766000,
+        "unit": "IDR/month",
+        "asOf": "2026-01-01",
+        "sourceId": "pajakku-ump-2026",
         "status": "official"
       }
     },
@@ -148,5 +630,47 @@
         "note": "Lowest UMK in Jawa Barat."
       }
     }
-  ]
+  ],
+  "nationalPrices": {
+    "rice": {
+      "value": 16700,
+      "unit": "IDR/kg",
+      "asOf": "2026-10-26",
+      "sourceId": "bi-pihps",
+      "status": "snapshot",
+      "note": "Beras kualitas medium I, national average, traditional markets."
+    },
+    "eggs": {
+      "value": 29450,
+      "unit": "IDR/kg",
+      "asOf": "2026-10-26",
+      "sourceId": "bi-pihps",
+      "status": "snapshot",
+      "note": "Telur ayam ras segar, national average, traditional markets."
+    },
+    "chicken": {
+      "value": 39800,
+      "unit": "IDR/kg",
+      "asOf": "2026-10-26",
+      "sourceId": "bi-pihps",
+      "status": "snapshot",
+      "note": "Daging ayam ras segar, national average, traditional markets."
+    },
+    "beef": {
+      "value": 153200,
+      "unit": "IDR/kg",
+      "asOf": "2026-10-26",
+      "sourceId": "bi-pihps",
+      "status": "snapshot",
+      "note": "Daging sapi kualitas 1, national average, traditional markets."
+    },
+    "oil": {
+      "value": 23450,
+      "unit": "IDR/L",
+      "asOf": "2026-10-26",
+      "sourceId": "bi-pihps",
+      "status": "snapshot",
+      "note": "Minyak goreng kemasan bermerk 2 (simple packaging), national average, traditional markets."
+    }
+  }
 }

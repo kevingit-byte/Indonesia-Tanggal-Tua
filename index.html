@@ -4,14 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Berapa Jam Kerja</title>
-    <meta name="description" content="Berapa jam kerja upah minimum untuk beras, kos, ongkos dan iPhone, di Indonesia, Asia Tenggara, Korea dan Jepang." />
+    <meta name="description" content="Berapa jam kerja upah minimum untuk beras, kos, ongkos dan iPhone di Indonesia, Asia Tenggara, Korea dan Jepang. Setiap angka bisa ditelusuri ke sumbernya." />
+    <meta name="theme-color" content="#F3F5F3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101614" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Berapa Jam Kerja" />
+    <meta property="og:description" content="Harga diukur dengan waktu kerja upah minimum: Indonesia, Asia Tenggara, Korea, Jepang." />
+    <meta property="og:image" content="https://kevingit-byte.github.io/Indonesia-Tanggal-Tua/og/home.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='17' r='12' fill='%23C2303A'/%3E%3Cpath d='M16 10v7l5 3' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
   </head>
   <body>
-    <main id="app">
-      <h1>Berapa Jam Kerja</h1>
-      <p>Situs sedang dibangun. Lapisan data sudah siap; bagian-bagian grafik menyusul.</p>
-      <table id="datasets"></table>
+    <a id="skip" class="skip" href="#main">Lewati ke isi</a>
+    <header id="topbar" class="topbar"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">⏱</span>Berapa Jam Kerja</a></header>
+    <main id="main" class="wrap">
+      <section id="hero" class="hero" aria-label="Berapa Jam Kerja"></section>
+      <section id="map" aria-labelledby="map-h"></section>
+      <section id="item" aria-labelledby="item-h"></section>
+      <section id="wishlist" aria-labelledby="wishlist-h"></section>
+      <section id="basket" aria-labelledby="basket-h"></section>
+      <section id="regions" aria-labelledby="regions-h"></section>
+      <section id="history" aria-labelledby="history-h"></section>
+      <section id="calc" aria-labelledby="calc-h"></section>
+      <section id="context" aria-labelledby="context-h"></section>
+      <section id="data" aria-labelledby="data-h"></section>
     </main>
+    <footer id="foot" class="wrap foot-page"></footer>
+    <dialog id="prov" class="prov"></dialog>
+    <noscript><p class="wrap">Situs ini butuh JavaScript untuk menghitung. Data mentah ada di folder /data di GitHub.</p></noscript>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

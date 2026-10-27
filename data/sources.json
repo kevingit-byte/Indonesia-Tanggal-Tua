@@ -92,8 +92,8 @@
       "title": "Pusat Informasi Harga Pangan Strategis Nasional (PIHPS)",
       "publisher": "Bank Indonesia",
       "url": "https://www.bi.go.id/hargapangan",
-      "accessed": null,
-      "note": "Prototype used national averages for 6 and 21 October 2026. Re-read before using new values."
+      "accessed": "2026-10-27",
+      "note": "Traditional-market prices (harga pasar tradisional), read via the PIHPS grid for 26 October 2026 and for mid-January 2018–2026. National average plus DKI Jakarta and Jawa Barat provincial averages."
     },
     {
       "id": "wcol-bigmac-2026",
@@ -158,6 +158,100 @@
       "url": "https://www.apple.com/jp/shop/buy-iphone/iphone-17",
       "accessed": "2026-10-27",
       "note": "Current list price for iPhone 17 256GB read from the store page; may differ from the September 2025 launch price."
+    },
+    {
+      "id": "bjk-estimate-2026-10",
+      "title": "Editorial estimate: typical October 2026 retail price",
+      "publisher": "Berapa Jam Kerja",
+      "url": null,
+      "accessed": null,
+      "note": "No official or single published series was found for these values. They are typical prices a local shopper would pay, based on supermarket, market and operator prices known to the editors. Shown on the site with an estimate tag. Replace with a sourced figure when one turns up."
+    },
+    {
+      "id": "pajakku-ump-2026",
+      "title": "Daftar UMP 2026 Terlengkap di 38 Provinsi Indonesia",
+      "publisher": "Pajakku",
+      "url": "https://pajakku.com/artikel/daftar-ump-2026-terlengkap-di-38-provinsi-indonesia",
+      "accessed": "2026-10-27",
+      "note": "Table of 2026 UMP by province. Aceh was not yet set when it was written."
+    },
+    {
+      "id": "metrotv-tarif-listrik-2026-10",
+      "title": "Simak! Daftar Tarif Listrik 19-25 Oktober 2026",
+      "publisher": "Metro TV News",
+      "url": "https://www.metrotvnews.com/read/NP6CPmBJ-simak-daftar-tarif-listrik-19-25-oktober-2026",
+      "accessed": "2026-10-27",
+      "note": "PLN tariff for Q4 2026 unchanged from Q3: R-1/TR 1.300 VA Rp1.444,70 per kWh."
+    },
+    {
+      "id": "netflix-help-id",
+      "title": "How much does Netflix cost? (Indonesia)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/id",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-my",
+      "title": "How much does Netflix cost? (Malaysia)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/my",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-sg",
+      "title": "How much does Netflix cost? (Singapore)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/sg",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-th",
+      "title": "How much does Netflix cost? (Thailand)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/th",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-vn",
+      "title": "How much does Netflix cost? (Vietnam)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/vn",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-ph",
+      "title": "How much does Netflix cost? (Philippines)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/ph",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-kh",
+      "title": "How much does Netflix cost? (Cambodia)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/kh",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-la",
+      "title": "How much does Netflix cost? (Laos)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/la",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-kr",
+      "title": "How much does Netflix cost? (South Korea)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/kr",
+      "accessed": "2026-10-27"
+    },
+    {
+      "id": "netflix-help-jp",
+      "title": "How much does Netflix cost? (Japan)",
+      "publisher": "Netflix Help Center",
+      "url": "https://help.netflix.com/en/node/24926/jp",
+      "accessed": "2026-10-27"
     }
   ]
 }
