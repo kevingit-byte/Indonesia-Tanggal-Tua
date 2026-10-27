@@ -79,8 +79,12 @@ export interface PricesFile extends DatasetMeta {
 }
 
 export interface WishItem extends ItemDef {
-  /** Country ISO2 -> price. Unit is local currency or USD per `per`. */
+  /** Country ISO2 -> price. Unit is local currency or USD per `per`. Empty for bundles. */
   prices: Record<string, Datum>;
+  /** A bundle has no prices of its own; it costs the sum of these items (e.g. flight + visa). */
+  bundle?: string[];
+  /** Parts of a bundle: kept in the data table and source panels, not offered as their own chip. */
+  hidden?: boolean;
 }
 
 export interface WishlistFile extends DatasetMeta {

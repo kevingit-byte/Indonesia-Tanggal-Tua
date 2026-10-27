@@ -2,7 +2,7 @@
 //   pay per minute = monthly wage ÷ (monthly hours × 60)
 //   work time      = price ÷ pay per minute
 // Every result carries the weakest status of its inputs, so an estimate anywhere shows up as an estimate on screen.
-import type { BasketLine, Datum, MethodFile, Place, PricesFile, SeriesPoint, Status } from '../data/types';
+import type { BasketLine, Datum, MethodFile, Place, PricesFile, SeriesPoint, Status, WishItem } from '../data/types';
 import { parseUnit } from '../data/units';
 
 /** A computed number plus the inputs it came from, for the one-click "where is this from" panel. */
@@ -61,6 +61,34 @@ export function toUsd(localAmount: number, place: Place): Derived {
 export function workMinutes(price: Datum | undefined, place: Place, workdayHours: number): Derived {
   if (!price) return derive(null, [undefined]);
   const local = toLocal(price, place);
+  const ppm = payPerMinute(place, workdayHours);
+  if (local.value === null || ppm.value === null) return derive(null, [...local.inputs, ...ppm.inputs]);
+  return derive(local.value / ppm.value, uniq([...local.inputs, ...ppm.inputs]));
+}
+
+/**
+ * Local-currency cost of a wishlist item in a place. Bundles add up their parts, so a trip is
+ * flight + visa with both sources kept. undefined = no data yet; value null = not sold.
+ */
+export function wishLocal(item: WishItem, all: WishItem[], place: Place): Derived | undefined {
+  if (item.bundle) {
+    const parts = item.bundle.map((id) => {
+      const part = all.find((i) => i.id === id);
+      return part ? wishLocal(part, all, place) : undefined;
+    });
+    if (parts.some((x) => x === undefined)) return undefined;
+    const ok = parts as Derived[];
+    const inputs = ok.flatMap((x) => x.inputs);
+    const value = ok.every((x) => x.value !== null) ? ok.reduce((sum, x) => sum + x.value!, 0) : null;
+    return { value, status: weakest(inputs.map((d) => d.status)), inputs };
+  }
+  const d = item.prices[place.iso2];
+  return d ? toLocal(d, place) : undefined;
+}
+
+/** Minutes of work for an amount already in local currency. */
+export function workMinutesLocal(local: Derived | undefined, place: Place, workdayHours: number): Derived {
+  if (!local) return derive(null, [undefined]);
   const ppm = payPerMinute(place, workdayHours);
   if (local.value === null || ppm.value === null) return derive(null, [...local.inputs, ...ppm.inputs]);
   return derive(local.value / ppm.value, uniq([...local.inputs, ...ppm.inputs]));

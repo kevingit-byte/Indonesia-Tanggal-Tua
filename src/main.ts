@@ -1,6 +1,7 @@
 import './style.css';
 import { esc, money, num } from './format';
 import { setLang, t, type Lang } from './i18n';
+import { compareSection } from './compare';
 import { loadGeo, mapSection } from './map';
 import {
   basketSection,
@@ -18,6 +19,7 @@ import { getProv, resetProv } from './ui';
 
 const SECTIONS: [string, () => string][] = [
   ['hero', hero],
+  ['compare', compareSection],
   ['map', mapSection],
   ['item', itemsSection],
   ['wishlist', wishSection],
@@ -104,7 +106,7 @@ function renderSections(ids: string[]) {
 }
 
 /** Sections render once they come near the screen, so the first paint only builds what is visible. */
-const shown = new Set(['hero', 'map', 'item']);
+const shown = new Set(['hero', 'compare', 'map']);
 const observer = new IntersectionObserver(
   (entries) => {
     const added: string[] = [];
@@ -145,6 +147,10 @@ document.addEventListener('click', (e) => {
   const share = target.closest<HTMLElement>('[data-share]');
   if (share) return doShare(share);
   if (target.closest('[data-action="reset"]')) resetEdits();
+  if (target.closest('[data-action="swap"]')) {
+    setUi({ cmpA: ui.cmpB, cmpB: ui.cmpA });
+    writeHash('compare', `${ui.cmpA}_vs_${ui.cmpB}`);
+  }
 });
 
 document.addEventListener('change', (e) => {
@@ -154,6 +160,10 @@ document.addEventListener('change', (e) => {
     setEdit(el.dataset.edit, v !== null && Number.isFinite(v) && v >= 0 ? v : null);
   }
   if (el.dataset.calc === 'calcPlace') setUi({ calcPlace: el.value });
+  if (el.dataset.cmp === 'cmpA' || el.dataset.cmp === 'cmpB') {
+    setUi({ [el.dataset.cmp]: el.value } as Partial<UiState>);
+    writeHash('compare', `${ui.cmpA}_vs_${ui.cmpB}`);
+  }
 });
 
 document.addEventListener('input', (e) => {
@@ -239,4 +249,12 @@ if (og) {
   render();
   if (section) document.getElementById(section)?.scrollIntoView();
   loadGeo().then(() => renderSections(['map']));
+  // A pasted link or the Back button changes only the hash: apply it without a reload.
+  addEventListener('hashchange', () => {
+    const s = readHash();
+    if (!s) return;
+    shown.add(s);
+    render();
+    document.getElementById(s)?.scrollIntoView();
+  });
 }

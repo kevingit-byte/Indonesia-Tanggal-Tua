@@ -634,6 +634,315 @@
           "note": "Not sold: Netflix is not available in mainland China."
         }
       }
+    },
+    {
+      "id": "bts",
+      "label": {
+        "id": "Konser BTS (tiket termurah)",
+        "en": "BTS concert (cheapest ticket)"
+      },
+      "per": "item",
+      "prices": {
+        "ID": {
+          "value": 1800000,
+          "unit": "IDR/item",
+          "asOf": "2026-06-11",
+          "sourceId": "metrotv-bts-jakarta",
+          "status": "official",
+          "note": "CAT 3 (upper tribune), Jakarta, before tax and fees."
+        },
+        "MY": {
+          "value": 338,
+          "unit": "MYR/item",
+          "asOf": "2026-05-25",
+          "sourceId": "philstar-bts-prices",
+          "status": "official",
+          "note": "CAT 7, Kuala Lumpur."
+        },
+        "SG": {
+          "value": 148,
+          "unit": "SGD/item",
+          "asOf": "2026-05-25",
+          "sourceId": "philstar-bts-prices",
+          "status": "official",
+          "note": "CAT 6, Singapore, before booking fee."
+        },
+        "TH": {
+          "value": 3300,
+          "unit": "THB/item",
+          "asOf": "2026-05-25",
+          "sourceId": "philstar-bts-prices",
+          "status": "official",
+          "note": "Cheapest zone, Bangkok."
+        },
+        "PH": {
+          "value": 7500,
+          "unit": "PHP/item",
+          "asOf": "2026-05-25",
+          "sourceId": "gma-bts-manila",
+          "status": "official",
+          "note": "Bleachers 2, Bulacan (Metro Manila area), including ticketing charges."
+        },
+        "KR": {
+          "value": 198000,
+          "unit": "KRW/item",
+          "asOf": "2026-01-22",
+          "sourceId": "etoday-bts-goyang",
+          "status": "official",
+          "note": "General S seat, Goyang (Seoul area)."
+        },
+        "JP": {
+          "value": 25000,
+          "unit": "JPY/item",
+          "asOf": "2026-04-01",
+          "sourceId": "metropolis-bts-tokyo",
+          "status": "official",
+          "note": "S seat, Tokyo Dome, including tax."
+        },
+        "VN": {
+          "value": null,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "philstar-bts-prices",
+          "status": "snapshot",
+          "note": "No show on this tour."
+        },
+        "KH": {
+          "value": null,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "philstar-bts-prices",
+          "status": "snapshot",
+          "note": "No show on this tour."
+        },
+        "LA": {
+          "value": null,
+          "unit": "LAK/item",
+          "asOf": "2026-10-27",
+          "sourceId": "philstar-bts-prices",
+          "status": "snapshot",
+          "note": "No show on this tour."
+        },
+        "CN": {
+          "value": null,
+          "unit": "CNY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "philstar-bts-prices",
+          "status": "snapshot",
+          "note": "No show on this tour."
+        }
+      }
+    },
+    {
+      "id": "europe",
+      "label": {
+        "id": "Ke Eropa: tiket PP ke Paris + visa",
+        "en": "To Europe: return flight to Paris + visa"
+      },
+      "per": "item",
+      "bundle": [
+        "flight-paris",
+        "schengen-visa"
+      ],
+      "prices": {}
+    },
+    {
+      "id": "flight-paris",
+      "label": {
+        "id": "Tiket pesawat PP ke Paris",
+        "en": "Return flight to Paris"
+      },
+      "per": "item",
+      "prices": {
+        "ID": {
+          "value": 13212500,
+          "unit": "IDR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "etihad-fares-paris",
+          "status": "snapshot",
+          "note": "Jakarta–Paris, Etihad, late September–October 2026 travel."
+        },
+        "MY": {
+          "value": 2372,
+          "unit": "MYR/item",
+          "asOf": "2026-03-31",
+          "sourceId": "cheapflights-kul-paris",
+          "status": "snapshot",
+          "note": "Kuala Lumpur–Paris, lowest return found by Cheapflights."
+        },
+        "SG": {
+          "value": 872,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "etihad-fares-paris",
+          "status": "snapshot",
+          "note": "Singapore–Paris, Etihad, September 2026 travel."
+        },
+        "TH": {
+          "value": 30010,
+          "unit": "THB/item",
+          "asOf": "2026-10-27",
+          "sourceId": "etihad-fares-paris",
+          "status": "snapshot",
+          "note": "Bangkok–Paris, Etihad, late September–early October 2026 travel."
+        },
+        "VN": {
+          "value": 32846000,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "vna-sgn-paris",
+          "status": "snapshot",
+          "note": "Ho Chi Minh City–Paris, Vietnam Airlines, 19–23 October 2026."
+        },
+        "PH": {
+          "value": 801,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "etihad-fares-paris",
+          "status": "snapshot",
+          "note": "Manila–Paris, Etihad, 24–29 September 2026; quoted in US dollars."
+        },
+        "KH": {
+          "value": 831,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "etihad-fares-paris",
+          "status": "snapshot",
+          "note": "Phnom Penh–Paris, Etihad, 17 September – 28 October 2026."
+        },
+        "LA": {
+          "value": 1324,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "thai-vte-paris",
+          "status": "snapshot",
+          "note": "Vientiane–Paris, Thai Airways via Bangkok; quoted in US dollars."
+        },
+        "KR": {
+          "value": 1363200,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "koreanair-paris",
+          "status": "snapshot",
+          "note": "Seoul–Paris, Korean Air, November 2026."
+        },
+        "JP": {
+          "value": 287550,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "jal-tokyo-france",
+          "status": "snapshot",
+          "note": "Tokyo–Paris, JAL, 14–26 July 2026."
+        },
+        "CN": {
+          "value": 5957,
+          "unit": "CNY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "cathay-pvg-paris",
+          "status": "snapshot",
+          "note": "Shanghai–Paris, Cathay Pacific via Hong Kong."
+        }
+      },
+      "hidden": true
+    },
+    {
+      "id": "schengen-visa",
+      "label": {
+        "id": "Visa Schengen",
+        "en": "Schengen visa"
+      },
+      "per": "item",
+      "prices": {
+        "ID": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        },
+        "MY": {
+          "value": 0,
+          "unit": "MYR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "No visa needed for stays of up to 90 days."
+        },
+        "SG": {
+          "value": 0,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "No visa needed for stays of up to 90 days."
+        },
+        "TH": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        },
+        "VN": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        },
+        "PH": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        },
+        "KH": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        },
+        "LA": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        },
+        "KR": {
+          "value": 0,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "No visa needed for stays of up to 90 days."
+        },
+        "JP": {
+          "value": 0,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "No visa needed for stays of up to 90 days."
+        },
+        "CN": {
+          "value": 105,
+          "unit": "USD/item",
+          "asOf": "2026-07-01",
+          "sourceId": "schengen-visa-fee",
+          "status": "official",
+          "note": "€90 consular fee (US$105 in the embassy's official table); service-centre fees extra."
+        }
+      },
+      "hidden": true
     }
   ]
 }
