@@ -93,20 +93,30 @@ function render() {
   }
 }
 
+/** Render only the given sections, leaving the rest of the page (and its source buttons) untouched. */
+function renderSections(ids: string[]) {
+  for (const [id, fn] of SECTIONS) {
+    if (!ids.includes(id)) continue;
+    const el = document.getElementById(id)!;
+    el.innerHTML = fn();
+    el.classList.remove('pending');
+  }
+}
+
 /** Sections render once they come near the screen, so the first paint only builds what is visible. */
 const shown = new Set(['hero', 'map', 'item']);
 const observer = new IntersectionObserver(
   (entries) => {
-    let added = false;
+    const added: string[] = [];
     for (const e of entries)
       if (e.isIntersecting && !shown.has(e.target.id)) {
         shown.add(e.target.id);
         observer.unobserve(e.target);
-        added = true;
+        added.push(e.target.id);
       }
-    if (added) render();
+    if (added.length) renderSections(added);
   },
-  { rootMargin: '800px 0px' },
+  { rootMargin: '400px 0px' },
 );
 
 subscribe(render);
@@ -211,5 +221,5 @@ if (og) {
   }
   render();
   if (section) document.getElementById(section)?.scrollIntoView();
-  loadGeo().then(render);
+  loadGeo().then(() => renderSections(['map']));
 }
