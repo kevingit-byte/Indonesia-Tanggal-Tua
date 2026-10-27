@@ -67,6 +67,22 @@
           "asOf": "2026-10-27",
           "sourceId": "apple-store-jp",
           "status": "official"
+        },
+        "KH": {
+          "value": 999,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "No Apple online store; typical Apple Authorised Reseller price, quoted in US dollars."
+        },
+        "LA": {
+          "value": 25000000,
+          "unit": "LAK/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "No Apple online store; typical reseller price in Vientiane."
         }
       }
     },
@@ -77,7 +93,83 @@
         "en": "Nintendo Switch 2"
       },
       "per": "item",
-      "prices": {}
+      "prices": {
+        "ID": {
+          "value": 8499000,
+          "unit": "IDR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "No official Nintendo distribution; typical price at large retailers (parallel import)."
+        },
+        "MY": {
+          "value": 1949,
+          "unit": "MYR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate"
+        },
+        "SG": {
+          "value": 649,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate"
+        },
+        "TH": {
+          "value": 15900,
+          "unit": "THB/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate"
+        },
+        "VN": {
+          "value": 13500000,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate"
+        },
+        "PH": {
+          "value": 27995,
+          "unit": "PHP/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate"
+        },
+        "KH": {
+          "value": 499,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Imported; usually priced in US dollars."
+        },
+        "LA": {
+          "value": null,
+          "unit": "LAK/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Not sold through any official or major retail channel in Laos."
+        },
+        "KR": {
+          "value": 648000,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Nintendo Korea announced price."
+        },
+        "JP": {
+          "value": 49980,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Japanese-language edition at Nintendo's announced price."
+        }
+      }
     },
     {
       "id": "stanley",
@@ -86,7 +178,88 @@
         "en": "Stanley Quencher 40 oz"
       },
       "per": "item",
-      "prices": {}
+      "prices": {
+        "ID": {
+          "value": 849000,
+          "unit": "IDR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "MY": {
+          "value": 199,
+          "unit": "MYR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "SG": {
+          "value": 65,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "TH": {
+          "value": 1690,
+          "unit": "THB/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "VN": {
+          "value": 1190000,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "PH": {
+          "value": 2950,
+          "unit": "PHP/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "KH": {
+          "value": 55,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "LA": {
+          "value": 1200000,
+          "unit": "LAK/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "KR": {
+          "value": 69000,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        },
+        "JP": {
+          "value": 7700,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Stanley Quencher H2.0 FlowState 40 oz (1.18 L), typical authorised-retailer price."
+        }
+      }
     },
     {
       "id": "latte",
@@ -95,7 +268,88 @@
         "en": "Starbucks grande latte"
       },
       "per": "item",
-      "prices": {}
+      "prices": {
+        "ID": {
+          "value": 57000,
+          "unit": "IDR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "MY": {
+          "value": 17.5,
+          "unit": "MYR/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "SG": {
+          "value": 7.9,
+          "unit": "SGD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "TH": {
+          "value": 140,
+          "unit": "THB/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "VN": {
+          "value": 85000,
+          "unit": "VND/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "PH": {
+          "value": 210,
+          "unit": "PHP/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "KH": {
+          "value": 4.75,
+          "unit": "USD/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "LA": {
+          "value": null,
+          "unit": "LAK/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Not sold: there are no Starbucks stores in Laos."
+        },
+        "KR": {
+          "value": 5500,
+          "unit": "KRW/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        },
+        "JP": {
+          "value": 540,
+          "unit": "JPY/item",
+          "asOf": "2026-10-27",
+          "sourceId": "bjk-estimate-2026-10",
+          "status": "estimate",
+          "note": "Hot caffè latte, grande, menu-board price."
+        }
+      }
     },
     {
       "id": "bigmac",
@@ -186,7 +440,80 @@
         "en": "Netflix Standard"
       },
       "per": "month",
-      "prices": {}
+      "prices": {
+        "ID": {
+          "value": 120000,
+          "unit": "IDR/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-id",
+          "status": "official"
+        },
+        "MY": {
+          "value": 55.9,
+          "unit": "MYR/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-my",
+          "status": "official"
+        },
+        "SG": {
+          "value": 22.98,
+          "unit": "SGD/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-sg",
+          "status": "official"
+        },
+        "TH": {
+          "value": 349,
+          "unit": "THB/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-th",
+          "status": "official"
+        },
+        "VN": {
+          "value": 231000,
+          "unit": "VND/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-vn",
+          "status": "official"
+        },
+        "PH": {
+          "value": 449,
+          "unit": "PHP/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-ph",
+          "status": "official"
+        },
+        "KH": {
+          "value": 7.99,
+          "unit": "USD/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-kh",
+          "status": "official",
+          "note": "Listed in US dollars."
+        },
+        "LA": {
+          "value": 7.99,
+          "unit": "USD/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-la",
+          "status": "official",
+          "note": "Listed in US dollars."
+        },
+        "KR": {
+          "value": 13500,
+          "unit": "KRW/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-kr",
+          "status": "official"
+        },
+        "JP": {
+          "value": 1590,
+          "unit": "JPY/month",
+          "asOf": "2026-10-27",
+          "sourceId": "netflix-help-jp",
+          "status": "official"
+        }
+      }
     }
   ]
 }

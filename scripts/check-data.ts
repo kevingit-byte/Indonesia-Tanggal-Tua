@@ -15,6 +15,8 @@ import type {
 import { STATUSES } from '../src/data/types';
 import { WAGE_PERIODS, isCurrencyCode, parseUnit } from '../src/data/units';
 
+/** Items that make up the food part of the basket (section "Inside Indonesia"). */
+const FOOD = ['rice', 'eggs', 'chicken', 'beef', 'oil'];
 const strict = process.argv.includes('--strict');
 const verbose = process.argv.includes('--verbose');
 const dataDir = join(process.env.DATA_DIR ?? join(import.meta.dirname, '..', 'data'));
@@ -50,7 +52,7 @@ for (const s of sourcesFile.sources) {
   else if (s.url === null) gaps.push(`${at}: no public URL`);
   else if (!/^https:\/\//.test(s.url)) errors.push(`${at}: url must be https`);
   if (s.accessed === undefined) errors.push(`${at}: accessed must be a date or null`);
-  else if (s.accessed === null) gaps.push(`${at}: not re-opened since the prototype (accessed: null)`);
+  else if (s.accessed === null) gaps.push(`${at}: no access date (carried over or editorial; accessed: null)`);
   else if (!isDate(s.accessed)) errors.push(`${at}: accessed must be YYYY-MM-DD`);
 }
 
@@ -183,6 +185,9 @@ for (const r of regions.regions) {
   if (r.wage?.asOf && !r.wage.asOf.startsWith(String(regions.year)))
     errors.push(`regions-id.json: ${r.id}: asOf ${r.wage.asOf} is not in ${regions.year}`);
 }
+
+for (const item of pricesFile.items.filter((i) => FOOD.includes(i.id)))
+  checkDatum(`regions-id.json: nationalPrices.${item.id}`, regions.nationalPrices?.[item.id], `IDR/${item.per}`, regions.updated);
 
 // ---- timeseries-jakarta.json
 const ts = load<TimeseriesFile>('timeseries-jakarta.json');

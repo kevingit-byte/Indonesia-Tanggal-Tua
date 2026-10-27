@@ -47,6 +47,22 @@
         "sourceId": "bjk-prototype-2026-10",
         "status": "official",
         "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173 (40 h/week × 52 ÷ 12)."
+      },
+      "rent": {
+        "value": 1800000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room with fan or AC in a central-south Jakarta neighbourhood."
+      },
+      "transitFare": {
+        "value": 3500,
+        "unit": "IDR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "TransJakarta flat fare."
       }
     },
     {
@@ -92,6 +108,22 @@
         "sourceId": "bjk-prototype-2026-10",
         "status": "official",
         "note": "Indonesian divisor for hourly wage: monthly wage ÷ 173."
+      },
+      "rent": {
+        "value": 1200000,
+        "unit": "IDR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A basic kos room."
+      },
+      "transitFare": {
+        "value": 3500,
+        "unit": "IDR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "TransJakarta / Trans Patriot flat fare."
       }
     },
     {
@@ -135,8 +167,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 45 h/week (Employment Act 1955, as amended 2022), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 700,
+        "unit": "MYR/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "45 h/week × 52 ÷ 12 (Employment Act normal week)."
+        "note": "A room in a shared flat, outside the city centre."
+      },
+      "transitFare": {
+        "value": 2.0,
+        "unit": "MYR/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Typical RapidKL rail or bus ride."
       }
     },
     {
@@ -180,8 +228,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 44 h/week (Employment Act), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 1100,
+        "unit": "SGD/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "44 h/week × 52 ÷ 12 (Employment Act normal week)."
+        "note": "A common room in an HDB flat."
+      },
+      "transitFare": {
+        "value": 1.4,
+        "unit": "SGD/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Typical adult card fare on MRT/bus."
       }
     },
     {
@@ -225,8 +289,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 48 h/week (Labour Protection Act), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 5000,
+        "unit": "THB/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+        "note": "A small studio or room outside the centre."
+      },
+      "transitFare": {
+        "value": 20,
+        "unit": "THB/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Mix of BMTA bus and BTS/MRT fares."
       }
     },
     {
@@ -270,8 +350,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 48 h/week (Labour Code 2019), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 3500000,
+        "unit": "VND/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+        "note": "A phòng trọ (rented room)."
+      },
+      "transitFare": {
+        "value": 7000,
+        "unit": "VND/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "City bus fare."
       }
     },
     {
@@ -315,8 +411,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 48 h/week: 8 h × 6 days (Labor Code), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 6000,
+        "unit": "PHP/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+        "note": "A small room or bedspace in Metro Manila."
+      },
+      "transitFare": {
+        "value": 13,
+        "unit": "PHP/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Jeepney minimum fare."
       }
     },
     {
@@ -353,8 +465,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 48 h/week (Labour Law), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 120,
+        "unit": "USD/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+        "note": "A basic rented room."
+      },
+      "transitFare": {
+        "value": 0.37,
+        "unit": "USD/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "City bus, 1.500 riel."
       }
     },
     {
@@ -398,8 +526,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 48 h/week (Labour Law 2013), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 1500000,
+        "unit": "LAK/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "48 h/week × 52 ÷ 12 (statutory maximum normal week)"
+        "note": "A basic rented room."
+      },
+      "transitFare": {
+        "value": 8000,
+        "unit": "LAK/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "City bus fare."
       }
     },
     {
@@ -444,6 +588,22 @@
         "sourceId": "kr-minimum-wage-commission",
         "status": "official",
         "note": "Korea's official monthly conversion: 40 h/week plus paid weekly holiday (주휴수당)."
+      },
+      "rent": {
+        "value": 450000,
+        "unit": "KRW/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "A goshiwon room."
+      },
+      "transitFare": {
+        "value": 1550,
+        "unit": "KRW/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Basic subway fare with a transit card."
       }
     },
     {
@@ -487,8 +647,24 @@
         "unit": "h/month",
         "asOf": "2026-10-01",
         "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Statutory normal week, 40 h/week (Labour Standards Act), × 52 ÷ 12."
+      },
+      "rent": {
+        "value": 55000,
+        "unit": "JPY/month",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
         "status": "estimate",
-        "note": "40 h/week × 52 ÷ 12."
+        "note": "A room in a share house, inside the 23 wards."
+      },
+      "transitFare": {
+        "value": 180,
+        "unit": "JPY/ride",
+        "asOf": "2026-10-27",
+        "sourceId": "bjk-estimate-2026-10",
+        "status": "estimate",
+        "note": "Shortest Tokyo Metro fare."
       }
     }
   ]

@@ -2,7 +2,7 @@
 
 How many hours of minimum-wage work do rice, a room, a bus ride or an iPhone cost in Indonesia, compared with Southeast Asia, Korea and Japan? Every price on the site is converted into work time.
 
-Status: **data layer in place**; the page sections are being built next.
+Status: **all nine sections built**: map, one item across cities, wishlist, monthly basket, regions inside Indonesia, Jakarta since 2018, salary calculator, context, editable data table. Bahasa Indonesia by default, English toggle, light/dark theme. Lighthouse mobile (local build): performance 92–93, accessibility 100, best practices 100, SEO 100.
 
 ## Run it
 
@@ -16,6 +16,14 @@ npm run build          # check-data + typecheck + static build into dist/
 
 `BASE=/ npm run build` builds for a root domain (Vercel). The default base is `/Indonesia-Tanggal-Tua/` for GitHub Pages.
 
+### Deploy
+
+`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`. One-time setup: repository **Settings → Pages → Source: GitHub Actions**. The site is then at https://kevingit-byte.github.io/Indonesia-Tanggal-Tua/. `check.yml` runs tests and the build (including `check-data`) on pull requests.
+
+### Share images
+
+`npm run og` screenshots each shareable view into `public/og/*.png` and writes `public/s/<view>.html` (Open Graph tags + redirect to `#<view>`). It needs Playwright (`npm i -D playwright && npx playwright install chromium`). Re-run after data changes that the share cards show, and commit the output.
+
 ## Project layout
 
 ```
@@ -28,6 +36,13 @@ data/                     all numbers, versioned; nothing numeric lives in code
   sources.json            every source: title, publisher, URL, access date
   method.json             basket quantities, workday length, index base year
 scripts/check-data.ts     validator (npm run check-data)
+scripts/og.ts             share images and share pages (npm run og)
+src/main.ts               page shell, events, source dialog, URL hash
+src/sections.ts           one renderer per section (HTML strings)
+src/map.ts                bubble map (d3-geo + world-atlas 110m, loaded on demand)
+src/art/                  hand-drawn SVG flags and city landmarks
+src/i18n.ts               Indonesian / English strings
+src/store.ts              data + reader's edits (localStorage) + UI state
 src/data/types.ts         TypeScript shapes of the data files
 src/data/units.ts         unit parsing shared by the model and the validator
 src/lib/model.ts          the method: pay per minute, work time, basket, interpolation
@@ -61,11 +76,21 @@ Every number is a **Datum**:
 ## Method
 
 - Pay per minute = monthly wage ÷ (monthly hours × 60). Work time = price ÷ pay per minute.
-- Monthly hours: 173 (ID, JP), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR); stored per place with the derivation in `note`.
+- Monthly hours: 173 (ID, JP), 191 (SG), 195 (MY), 208 (TH, VN, PH, KH, LA), 209 (KR): each country's statutory normal week × 52 ÷ 12 (Korea's official 209), stored per place with the law in `note`.
 - Daily wages count monthly hours ÷ 8 days (e.g. Bangkok ฿400 × 26).
 - Monthly basics basket for one person (`method.json`): one room, 8 kg rice, 3 kg eggs, 4 kg chicken, 1 kg beef, 2 L oil, 90 kWh electricity, 44 transit rides. Leftover = wage − basket.
 - Every computed figure carries the weakest status of its inputs, so anything built on an estimate is shown as an estimate.
+- Jakarta history uses Bank Indonesia PIHPS (mid-January, DKI Jakarta traditional markets), which starts in 2018. Earlier years are not guessed; published pre-2018 rice anchors can be added to `timeseries-jakarta.json` and the chart will draw them, with years in between marked interpolated.
 - Myanmar is left out: its exchange rate and price data are unreliable.
+
+## Design notes
+
+- Indonesia in rupiah red, every other city in slate. Hatched bars, dashed bubbles and a ≈ mark mean the number includes an estimate; the legend says so under every chart.
+- Every number on screen is a button: one click opens where it comes from (value, unit, date, status, source link, note), including all inputs of a computed figure.
+- Each city carries its flag and a line-drawn landmark (Monas, Petronas Towers, Marina Bay Sands, Wat Arun, Bitexco, a jeepney, Independence Monument, Patuxai, N Seoul Tower, Tokyo Tower, a KRL train for Bekasi).
+- Basket colours (room, food, transit, electricity) are validated for colour-blind separation and 3:1 contrast in both themes.
+- Sections render as they near the screen; the map and world atlas load after first paint.
+- URL hash keeps the view: `#wishlist-iphone`, `#item-beef`, `#map-bigmac`, `#history-eggs`, `#regions-umk`.
 
 ## Updating data
 
