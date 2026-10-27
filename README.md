@@ -14,11 +14,11 @@ npm test               # unit tests for the method
 npm run build          # check-data + typecheck + static build into dist/
 ```
 
-`BASE=/ npm run build` builds for a root domain (Vercel). The default base is `/Indonesia-Tanggal-Tua/` for GitHub Pages.
+The site builds for the domain root. `BASE=/<path>/ npm run build` builds for a sub-path instead (e.g. GitHub Pages).
 
 ### Deploy
 
-`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`. One-time setup: repository **Settings → Pages → Source: GitHub Actions**. The site is then at https://kevingit-byte.github.io/Indonesia-Tanggal-Tua/. `check.yml` runs tests and the build (including `check-data`) on pull requests.
+Live at https://indonesia-tanggal-tua.vercel.app/. Vercel builds and publishes every push to `main` (and gives each pull request a preview link); its build runs `npm run build`, so a data error stops the deploy. `.github/workflows/check.yml` runs tests and the build on pull requests.
 
 ### Share images
 
