@@ -1,0 +1,34 @@
+Berapa Jam Kerja
+Copyright (c) 2026 kevingit-byte (https://github.com/kevingit-byte). All rights reserved.
+
+This licence covers the source code, the design and illustrations, the text, and the
+compiled dataset (the selection, arrangement, conversions and notes in /data) of the
+website at https://indonesia-tanggal-tua.vercel.app.
+
+YOU MAY
+- Read and use the website.
+- Quote individual figures, charts or short passages, and share screenshots or links,
+  provided you credit "Berapa Jam Kerja" and link to the website. Quoting for news,
+  research, teaching and commentary is welcome.
+
+YOU MAY NOT, without written permission
+- Copy, reproduce, republish or redistribute the source code, the dataset, or substantial
+  parts of the website.
+- Download, scrape or extract the dataset, including by automated means, or use it to
+  train or feed machine-learning systems.
+- Create modified or derivative versions of the code or the dataset.
+- Use any part of it for commercial purposes.
+
+SOURCES
+The underlying statistics (minimum wages, prices, fares, tariffs, exchange rates) are
+published by the governments, statistics offices, central banks and companies named in
+the website's source panels and in data/sources.json. Those figures belong to their
+publishers and are public; this licence does not restrict anyone from obtaining them from
+the original sources. What is protected here is this website's own work: its compilation,
+calculations, code, text and design.
+
+THE SOFTWARE AND DATA ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. Figures marked
+as estimates are approximations and may be wrong; check the original source before
+relying on any number.
+
+For permissions, contact the copyright holder at https://github.com/kevingit-byte.

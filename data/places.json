@@ -240,12 +240,12 @@
         "note": "A common room in an HDB flat."
       },
       "transitFare": {
-        "value": 1.4,
+        "value": 1.28,
         "unit": "SGD/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Typical adult card fare on MRT/bus."
+        "asOf": "2025-12-27",
+        "sourceId": "ptc-fares-2025",
+        "status": "official",
+        "note": "Adult card fare, basic bus or MRT, up to 3.2 km."
       }
     },
     {
@@ -722,10 +722,10 @@
       "transitFare": {
         "value": 3,
         "unit": "CNY/ride",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Shanghai Metro starting fare."
+        "asOf": "2026-08-20",
+        "sourceId": "shanghai-metro-fare-2026",
+        "status": "official",
+        "note": "Shanghai Metro starting fare (up to 6 km), unchanged since 2005; a fare revision was under public hearing in September 2026."
       }
     },
     {

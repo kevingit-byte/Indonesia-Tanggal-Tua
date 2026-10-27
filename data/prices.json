@@ -227,12 +227,12 @@
         "note": "RON95 for eligible citizens under BUDI95 (unsubsidised RM4,67)."
       },
       "electricity": {
-        "value": 0.4,
+        "value": 0.1943,
         "unit": "MYR/kWh",
-        "asOf": "2026-10-27",
-        "sourceId": "bjk-estimate-2026-10",
-        "status": "estimate",
-        "note": "Average household rate including taxes."
+        "asOf": "2025-07-01",
+        "sourceId": "tnb-tariff-2025",
+        "status": "official",
+        "note": "TNB domestic tariff for a home using under 200 kWh: generation 27.03 + capacity 4.55 + network 12.85 sen, less the 25 sen efficiency rebate. Homes using 600 kWh or less pay no AFA, service tax or retail charge."
       }
     },
     "singapore": {

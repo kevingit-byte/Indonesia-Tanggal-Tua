@@ -1,6 +1,7 @@
 {
   "name": "berapa-jam-kerja",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "version": "0.1.0",
   "type": "module",
   "description": "Cost of living in Indonesia, Southeast Asia, Korea and Japan, measured in minutes of minimum-wage work.",
