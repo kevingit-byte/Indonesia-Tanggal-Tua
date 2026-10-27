@@ -10,6 +10,26 @@ const L: Record<string, { name: { id: string; en: string }; d: string }> = {
     name: { id: 'KRL Commuter Line', en: 'KRL commuter train' },
     d: 'M8 60h48M14 54h36M18 54V22q0-6 6-6h16q6 0 6 6v32M18 30h28M23 36h6M35 36h6M24 46h0M40 46h0M22 54l-4 6M42 54l4 6M32 16v-6M26 10h12',
   },
+  denpasar: {
+    name: { id: 'Candi bentar', en: 'Balinese split gate (candi bentar)' },
+    d: 'M6 60h52M10 60V44h16v16M38 60V44h16v16M12 44l2-8h10l2 8M40 44l2-8h10l2 8M14 36l2-8h6l2 8M42 36l2-8h6l2 8M16 28l3-10 3 10M44 28l3-10 3 10M26 60V50M38 60V50',
+  },
+  surabaya: {
+    name: { id: 'Jembatan Suramadu', en: 'Suramadu Bridge' },
+    d: 'M2 46h60M2 52h60M20 52V14M44 52V14M20 16L4 46M20 16L12 46M20 16l8 30M20 16l16 30M44 16L28 46M44 16l-8 30M44 16l8 30M44 16l16 30M6 60c8-4 16-4 24 0s16 4 28 0',
+  },
+  medan: {
+    name: { id: 'Masjid Raya Al Mashun', en: 'Grand Mosque of Medan' },
+    d: 'M6 60h52M14 60V40h36v20M18 40a14 12 0 0 1 28 0M32 28v-4M28 60V50a4 4 0 0 1 8 0v10M8 60V30h4v30M52 60V30h4v30M8 30l2-6 2 6M52 30l2-6 2 6M18 46h4M42 46h4',
+  },
+  bandung: {
+    name: { id: 'Gedung Sate', en: 'Gedung Sate' },
+    d: 'M4 60h56M8 60V40h48v20M8 40h48M26 40V28h12v12M24 28h16M32 28V10M29 14h6M29 18h6M29 22h6M14 46v8M20 46v8M44 46v8M50 46v8M30 60v-8h4v8',
+  },
+  makassar: {
+    name: { id: 'Kapal pinisi', en: 'Pinisi schooner' },
+    d: 'M4 48h56l-6 8H12zM20 48V8M38 48V12M20 10l-12 30h12M20 12l14 26H20M38 14l-10 26h10M38 16l14 24H38M4 60c8-3 16-3 24 0s16 3 32 0',
+  },
   'kuala-lumpur': {
     name: { id: 'Menara Petronas', en: 'Petronas Towers' },
     d: 'M6 60h52M16 60V22l4-6 4 6v38M40 60V22l4-6 4 6v38M20 16V6M44 16V6M24 34h16M18 28h4M18 40h4M18 50h4M42 28h4M42 40h4M42 50h4',

@@ -748,6 +748,296 @@
         "status": "official",
         "note": "First tier, daytime (06:00–22:00)."
       }
+    },
+    "denpasar": {
+      "rice": {
+        "value": 15750,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, Bali provincial average, traditional markets."
+      },
+      "eggs": {
+        "value": 28800,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, Bali provincial average, traditional markets."
+      },
+      "chicken": {
+        "value": 42700,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, Bali provincial average, traditional markets."
+      },
+      "beef": {
+        "value": 145450,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, Bali provincial average, traditional markets."
+      },
+      "oil": {
+        "value": 24350,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), Bali provincial average, traditional markets."
+      },
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
+      }
+    },
+    "surabaya": {
+      "rice": {
+        "value": 15250,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, Jawa Timur provincial average, traditional markets."
+      },
+      "eggs": {
+        "value": 23900,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, Jawa Timur provincial average, traditional markets."
+      },
+      "chicken": {
+        "value": 36000,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, Jawa Timur provincial average, traditional markets."
+      },
+      "beef": {
+        "value": 147050,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, Jawa Timur provincial average, traditional markets."
+      },
+      "oil": {
+        "value": 22350,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), Jawa Timur provincial average, traditional markets."
+      },
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
+      }
+    },
+    "medan": {
+      "rice": {
+        "value": 15550,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, Sumatera Utara provincial average, traditional markets."
+      },
+      "eggs": {
+        "value": 30450,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, Sumatera Utara provincial average, traditional markets."
+      },
+      "chicken": {
+        "value": 41900,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, Sumatera Utara provincial average, traditional markets."
+      },
+      "beef": {
+        "value": 150950,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, Sumatera Utara provincial average, traditional markets."
+      },
+      "oil": {
+        "value": 23250,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), Sumatera Utara provincial average, traditional markets."
+      },
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
+      }
+    },
+    "bandung": {
+      "rice": {
+        "value": 15850,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, Jawa Barat provincial average, traditional markets."
+      },
+      "eggs": {
+        "value": 25500,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, Jawa Barat provincial average, traditional markets."
+      },
+      "chicken": {
+        "value": 37750,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, Jawa Barat provincial average, traditional markets."
+      },
+      "beef": {
+        "value": 157650,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, Jawa Barat provincial average, traditional markets."
+      },
+      "oil": {
+        "value": 22600,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), Jawa Barat provincial average, traditional markets."
+      },
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
+      }
+    },
+    "makassar": {
+      "rice": {
+        "value": 15000,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Beras kualitas medium I, Sulawesi Selatan provincial average, traditional markets."
+      },
+      "eggs": {
+        "value": 24500,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Telur ayam ras segar, Sulawesi Selatan provincial average, traditional markets."
+      },
+      "chicken": {
+        "value": 31650,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging ayam ras segar, Sulawesi Selatan provincial average, traditional markets."
+      },
+      "beef": {
+        "value": 137250,
+        "unit": "IDR/kg",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Daging sapi kualitas 1, Sulawesi Selatan provincial average, traditional markets."
+      },
+      "oil": {
+        "value": 22900,
+        "unit": "IDR/L",
+        "asOf": "2026-10-26",
+        "sourceId": "bi-pihps",
+        "status": "snapshot",
+        "note": "Minyak goreng kemasan bermerk 2 (simple packaging), Sulawesi Selatan provincial average, traditional markets."
+      },
+      "petrol": {
+        "value": 10000,
+        "unit": "IDR/L",
+        "asOf": "2026-10-01",
+        "sourceId": "bjk-prototype-2026-10",
+        "status": "official",
+        "note": "Pertamina Pertalite (subsidised RON 90)."
+      },
+      "electricity": {
+        "value": 1444.7,
+        "unit": "IDR/kWh",
+        "asOf": "2026-10-19",
+        "sourceId": "metrotv-tarif-listrik-2026-10",
+        "status": "official",
+        "note": "PLN R-1/TR 1.300 VA, Q4 2026."
+      }
     }
   }
 }
