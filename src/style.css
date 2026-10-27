@@ -312,26 +312,39 @@ td .tag { margin-left: 3px; padding: 0 4px; }
 .cmp-month b.cmp-b-t { border-left-color: var(--transit); }
 .cmp-month b span { font-family: var(--body); font-size: 0.8rem; font-weight: 500; color: var(--muted); }
 .cmp-group { display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px 8px; }
-.cmp-row { display: grid; grid-template-columns: minmax(0, 10rem) minmax(0, 1fr) 9.5rem; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.cmp-row { display: grid; grid-template-columns: minmax(0, 1fr) 8.5rem minmax(0, 1fr); gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
 .cmp-row:last-child { border-bottom: 0; }
-.cmp-lab { display: grid; line-height: 1.25; min-width: 0; }
-.cmp-lab b { font-weight: 600; font-size: 0.88rem; }
-.cmp-lab small { color: var(--muted); font-family: var(--mono); font-size: 0.7rem; }
-.cmp-bars { display: grid; gap: 4px; min-width: 0; }
-.cmp-bar { position: relative; height: 22px; display: flex; align-items: center; }
-.cmp-bar i { position: absolute; inset: 2px auto 2px 0; border-radius: 0 4px 4px 0; background: var(--rent); opacity: 0.85; }
-.cmp-bar.cmp-b i { background: var(--transit); }
-.cmp-bar i.weak { background: repeating-linear-gradient(135deg, var(--rent) 0 3px, transparent 3px 6px); box-shadow: inset 0 0 0 1.5px var(--rent); }
-.cmp-bar.cmp-b i.weak { background: repeating-linear-gradient(135deg, var(--transit) 0 3px, transparent 3px 6px); box-shadow: inset 0 0 0 1.5px var(--transit); }
-.cmp-bar span { position: relative; margin-left: 6px; font-family: var(--mono); font-size: 0.8rem; background: color-mix(in srgb, var(--surface) 82%, transparent); padding: 0 4px; border-radius: 3px; white-space: nowrap; }
-.cmp-ratio { font-size: 0.8rem; text-align: right; }
-.cmp-r { font-weight: 600; }
-.cmp-r-a { color: var(--rent); } .cmp-r-b { color: var(--transit); }
+.cmp-hrow { padding: 0 0 6px; align-items: end; }
+.cmp-h { display: flex; flex-wrap: wrap; gap: 2px 6px; align-items: center; min-width: 0; font-family: var(--display); font-stretch: 110%; font-size: 0.95rem; }
+.cmp-h small { flex-basis: 100%; font-family: var(--body); font-stretch: normal; font-size: 0.74rem; font-weight: 600; }
+.cmp-h.cmp-a { justify-content: flex-end; text-align: right; color: var(--rent); }
+.cmp-h.cmp-b { color: var(--transit); }
+.cmp-h b { color: var(--ink); }
+.cmp-mid { display: grid; justify-items: center; text-align: center; gap: 1px; line-height: 1.2; min-width: 0; }
+.cmp-mid .ic { width: 22px; height: 22px; color: var(--muted); margin-bottom: 2px; }
+.cmp-mid b { font-weight: 600; font-size: 0.84rem; }
+.cmp-mid small { color: var(--muted); font-family: var(--mono); font-size: 0.68rem; }
+.cmp-mid small.cmp-same { font-family: var(--body); font-size: 0.72rem; margin-top: 2px; }
+.cmp-side { display: grid; gap: 3px; min-width: 0; }
+.cmp-side.cmp-a { justify-items: end; text-align: right; }
+.cmp-side.cmp-b { justify-items: start; }
+.cmp-v { font-family: var(--mono); font-size: 0.8rem; white-space: nowrap; }
+.cmp-track { display: flex; width: 100%; height: 12px; }
+.cmp-a .cmp-track { justify-content: flex-end; }
+.cmp-track i { display: block; height: 100%; background: var(--rent); opacity: 0.85; border-radius: 4px 0 0 4px; }
+.cmp-b .cmp-track i { background: var(--transit); border-radius: 0 4px 4px 0; }
+.cmp-track i.weak { background: repeating-linear-gradient(135deg, var(--rent) 0 3px, transparent 3px 6px); box-shadow: inset 0 0 0 1.5px var(--rent); }
+.cmp-b .cmp-track i.weak { background: repeating-linear-gradient(135deg, var(--transit) 0 3px, transparent 3px 6px); box-shadow: inset 0 0 0 1.5px var(--transit); }
+.cmp-r { font-size: 0.74rem; font-weight: 600; line-height: 1.2; }
+.cmp-a .cmp-r { color: var(--rent); } .cmp-b .cmp-r { color: var(--transit); }
 .cmp-same { color: var(--muted); }
+.cmp-tri { font-size: 0.7rem; margin-right: 4px; }
 .cmp-a-sw { background: var(--rent); } .cmp-b-sw { background: var(--transit); }
 @media (max-width: 560px) {
   .cmp-cards { grid-template-columns: 1fr; }
-  .cmp-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "lab ratio" "bars bars"; gap: 4px 8px; }
-  .cmp-lab { grid-area: lab; } .cmp-ratio { grid-area: ratio; } .cmp-bars { grid-area: bars; }
+  .cmp-row { grid-template-columns: minmax(0, 1fr) 5.6rem minmax(0, 1fr); gap: 8px; }
+  .cmp-mid b { font-size: 0.76rem; }
+  .cmp-v { font-size: 0.72rem; }
+  .cmp-r { font-size: 0.68rem; }
   .cmp-group { padding: 10px 12px 6px; }
 }

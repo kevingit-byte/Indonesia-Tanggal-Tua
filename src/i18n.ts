@@ -39,7 +39,9 @@ const dict = {
   'cmp.basics': { id: 'Kebutuhan pokok', en: 'Basics' },
   'cmp.wish': { id: 'Barang idaman & pengalaman', en: 'Wants & experiences' },
   'cmp.basket': { id: 'Kebutuhan sebulan, % dari upah', en: 'Monthly basics, % of wage' },
-  'cmp.longer': { id: '{x}× lebih lama di {city}', en: '{x}× longer in {city}' },
+  'cmp.longer': { id: '{x}× lebih lama', en: '{x}× longer' },
+  'cmp.legendLonger': { id: '= kerja lebih lama di kota ini', en: '= more work in this city' },
+  'cmp.longerN': { id: '{n} lebih lama', en: '{n} longer' },
   'cmp.same': { id: 'hampir sama', en: 'about the same' },
   'cmp.summary': {
     id: 'Pekerja upah minimum di {a} harus bekerja lebih lama untuk {n} dari {m} hal yang bisa dibandingkan.',

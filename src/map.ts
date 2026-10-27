@@ -66,9 +66,9 @@ function mapList(): string {
 }
 
 /** On phones these sit too close to label legibly; their values are in the list under the map. */
-const CROWDED = new Set(['kota-bekasi', 'phnom-penh', 'kuala-lumpur', 'vientiane', 'bangkok', 'bandung', 'surabaya', 'denpasar', 'medan', 'makassar']);
+const CROWDED = new Set(['kota-bekasi', 'phnom-penh', 'kuala-lumpur', 'vientiane', 'bangkok', 'bandung', 'surabaya', 'denpasar', 'medan', 'makassar', 'yogyakarta']);
 /** Java is too dense to label every Indonesian city even on desktop; these keep their circle and list entry. */
-const CROWDED_WIDE = new Set(['bandung', 'kota-bekasi', 'surabaya']);
+const CROWDED_WIDE = new Set(['bandung', 'kota-bekasi', 'surabaya', 'yogyakarta']);
 
 function mapSvg(): string {
   const { d3, countries } = geo!;
