@@ -373,6 +373,7 @@ td .tag { margin-left: 3px; padding: 0 4px; }
 .rk-in span { padding: 0 4px 0 10px; font: 500 1rem var(--mono); color: var(--muted); }
 .field .rk-in input { border: 0; background: transparent; font-size: 1.15rem; padding-left: 4px; }
 .rk-in:focus-within { outline: 2px solid var(--id); outline-offset: 1px; }
+.rk-in input:focus, .rk-in input:focus-visible { outline: none; }
 .rk-help summary, .rk-more summary, .rk-adj summary, .rk-method summary { cursor: pointer; font-size: 0.86rem; min-height: 24px; }
 .rk-help p { font-size: 0.84rem; color: var(--muted); max-width: 60ch; margin: 6px 0 0; }
 .rk-adults { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: center; }
@@ -414,13 +415,15 @@ td .tag { margin-left: 3px; padding: 0 4px; }
 .rk-strip svg { width: 100%; height: 48px; display: block; touch-action: pan-y; cursor: crosshair; }
 .rk-strip svg:focus-visible { outline: 2px solid var(--id); outline-offset: 2px; }
 .rk-strip rect.lo { fill: var(--below); } .rk-strip rect.hi { fill: var(--above); } .rk-strip rect.me { fill: var(--id); } .rk-strip rect.q { fill: var(--below); }
-.rk-strip rect.cur { fill: var(--ink); }
+.rk-strip rect.cur { fill: var(--muted); }
 .rk-strip-b { position: relative; padding-top: 18px; }
 .rk-pin { position: absolute; top: 0; transform: translateX(-50%); font: 700 0.72rem var(--body); color: var(--id-ink); white-space: nowrap; line-height: 1; }
 .rk-pin i { position: absolute; left: 50%; top: 11px; transform: translateX(-50%); border: 5px solid transparent; border-top: 6px solid var(--id); }
 .rk-pin.l { transform: translateX(-6px); } .rk-pin.l i { left: 6px; }
 .rk-pin.r { transform: translateX(calc(-100% + 6px)); } .rk-pin.r i { left: calc(100% - 6px); }
-.rk-pin.q { top: 34px; font: 800 1.4rem var(--display); color: var(--ink); }
+.rk-pin.q { color: var(--ink); font-size: 0.9rem; top: -4px; }
+.rk-pin.q i { top: 13px; border-top-color: var(--ink); }
+.rk-empty-card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; }
 .rk-brackets { display: flex; font-size: 0.7rem; color: var(--muted); }
 .rk-brackets span { border-top: 1px solid var(--muted); padding-top: 2px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: clip; }
 .rk-brackets span + span { border-left: 1px solid var(--muted); }

@@ -167,7 +167,7 @@ function widResult(): string {
       st.friendTop !== null
         ? `<p class="rk-friend">${st.friendTop <= 50 ? t('rk.friend', { x: num(st.friendTop) }) : t('rk.friendPct', { p: num(100 - st.friendTop) })}</p>`
         : '';
-    return `${friend}<p class="rk-empty">${t('rk.empty')}</p>${strip(null, 'id')}${creditHtml()}`;
+    return `${friend}<p class="rk-empty">${t('rk.empty')}</p><div class="rk-empty-card">${strip(null, 'id')}</div>${creditHtml()}`;
   }
   const c = compute();
   const { posId, monthly, f } = c;
@@ -215,16 +215,18 @@ function strip(pos: Position | null, where: 'id' | 'wo'): string {
   }).join('');
   const pin = (left: number, text: string, cls: string) =>
     `<span class="rk-pin ${cls}" style="left:${left.toFixed(2)}%" aria-hidden="true">${text}</span>`;
-  const marker = at >= 0 ? pin(at + 0.5, `${t('rk.you')}<i></i>`, at < 6 ? 'l' : at > 93 ? 'r' : '') : pin(50, '?', 'q');
+  const marker = at >= 0 ? pin(at + 0.5, `${t('rk.you')}<i></i>`, at < 6 ? 'l' : at > 93 ? 'r' : '') : pin(50, '?<i></i>', 'q');
+  // Before any income is entered, the tooltip starts at the median.
+  const tipAt = at >= 0 ? at : 50;
   const label = where === 'id' ? t('rk.indonesia') : t('rk.world');
   const sub = pos
     ? `<span class="rk-at">${pos.aboveTop ? t('rk.top', { x: '0,001' }) : t('rk.youAt', { p: fmtP(pos.p), x: fmtTop(pos.p) })}</span>`
     : '';
   return `<div class="rk-strip" data-where="${where}" data-at="${at}">
     <div class="rk-strip-h"><b>${label}</b>${sub}</div>
-    <div class="rk-strip-b">${marker}<svg viewBox="0 0 400 50" role="slider" tabindex="0" aria-label="${esc(t('rk.stripAria', { where: label }))}" aria-valuemin="0" aria-valuemax="99" aria-valuenow="${Math.max(0, at)}" aria-valuetext="${esc(tipText(Math.max(0, at), where))}" preserveAspectRatio="none">${bars}</svg></div>
+    <div class="rk-strip-b">${marker}<svg viewBox="0 0 400 50" role="slider" tabindex="0" aria-label="${esc(t('rk.stripAria', { where: label }))}" aria-valuemin="0" aria-valuemax="99" aria-valuenow="${tipAt}" aria-valuetext="${esc(tipText(tipAt, where))}" preserveAspectRatio="none">${bars}</svg></div>
     <div class="rk-brackets" aria-hidden="true"><span style="width:50%">${t('rk.b50')}</span><span style="width:40%">${t('rk.m40')}</span><span style="width:10%"><em>${t('rk.t10')}</em></span></div>
-    <p class="rk-tip">${esc(tipText(Math.max(0, at), where))}</p>
+    <p class="rk-tip">${esc(tipText(tipAt, where))}</p>
   </div>`;
 }
 
