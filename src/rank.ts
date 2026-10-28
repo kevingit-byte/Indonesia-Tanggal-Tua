@@ -99,7 +99,7 @@ export function rankSection(): string {
     { value: 'wid', label: t('rk.lens.wid') },
     { value: 'bps', label: t('rk.lens.bps') },
   ], st.lens);
-  return `<div class="sec-head"><div class="eyebrow">${t('rk.eyebrow')}</div><h2 id="rank-h">${t('rk.title')}</h2><p class="lede">${t('rk.lede')}</p></div>
+  return `<div class="feat-tag f2">${t('feat.2.tag')}</div><div class="sec-head"><div class="eyebrow">${t('rk.eyebrow')}</div><h2 id="rank-h">${t('rk.title')}</h2><p class="lede">${t('rk.lede')}</p></div>
   <p class="rk-privacy"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>${t('rk.privacy')}</p>
   <div class="toolbar">${lens}</div>
   ${st.lens === 'wid' ? widForm() : bpsForm()}
@@ -750,4 +750,11 @@ export function afterRankRender() {
   const track = document.getElementById('rk-track');
   if (track) track.scrollLeft = st.slide * track.clientWidth;
   drawCard();
+}
+
+/** "42" for the hero's worked example: Rp10 juta a month, 2 adults. */
+export function exampleTop(amount = 10_000_000, adults = 2): string {
+  const f = F();
+  const pos = percentileOf(toWid(perAdultMonthly({ amount, period: 'month', adults }, f), f), data().widId.groups);
+  return fmtTop(pos.p);
 }

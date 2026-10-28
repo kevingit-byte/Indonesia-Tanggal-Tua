@@ -129,7 +129,7 @@ export function compareSection(): string {
     d.places.places.map((p) => `<option value="${p.id}"${p.id === sel ? ' selected' : ''}>${esc(L(p.city))}, ${esc(L(p.country))}</option>`).join('');
   const shareCell = (s: number | null, x: ReturnType<typeof basket>, p: Place) =>
     s === null ? '–' : `${statusTag(x.total)}${provBtn(pct(s * 100), `${t('cmp.basket')}, ${L(p.city)}`, [...x.total.inputs, ...x.wage.inputs])}`;
-  return `<div class="sec-head"><div class="eyebrow">${t('cmp.eyebrow')}</div><h2 id="compare-h">${t('cmp.title')}</h2><p class="lede">${t('cmp.lede')}</p></div>
+  return `<div class="feat-tag f1">${t('feat.1.tag')}</div><div class="sec-head"><div class="eyebrow">${t('cmp.eyebrow')}</div><h2 id="compare-h">${t('cmp.title')}</h2><p class="lede">${t('cmp.lede')}</p></div>
   <div class="cmp-pick">
     <div class="field"><label for="cmpA">${t('cmp.a')}</label><select id="cmpA" data-cmp="cmpA">${opt(a.id)}</select></div>
     <button type="button" class="btn cmp-swap" data-action="swap" aria-label="${t('cmp.swap')}">⇄</button>

@@ -1,7 +1,7 @@
 // Every section renders to an HTML string from the current data and UI state.
 // main.ts re-renders on any change; the page is small enough that this stays instant.
 import type { Datum, Place, SeriesPoint } from './data/types';
-import { rankCalcCard } from './rank';
+import { exampleTop, rankCalcCard } from './rank';
 import { landmark, landmarkName } from './art/landmarks';
 import { flag } from './art/flags';
 import { esc, money, narrow, num, pct, rpShort, smart, workTime } from './format';
@@ -55,6 +55,10 @@ export function hero(): string {
   const days = (d: Derived) => (d.value === null ? '–' : smart(d.value / (wd() * 60)));
   const mins = (d: Derived) => (d.value === null ? '–' : smart(d.value));
   const ij = iphone(jkt);
+  const share = (p: Place) => {
+    const b = basket(p, data().prices, data().method);
+    return b.total.value !== null && b.wage.value ? pct((b.total.value / b.wage.value) * 100) : '–';
+  };
   const rj = rice(jkt);
   const updated = [data().places, data().prices, data().wishlist, data().regions, data().timeseries]
     .map((f) => f.updated)
@@ -70,8 +74,25 @@ export function hero(): string {
   </div>
   <h1>${t('hero.title.a')} <em>${t('hero.title.b')}</em>${t('hero.title.c')}</h1>
   <p class="lede">${t('hero.lede')}</p>
+  <nav class="features" aria-label="${t('feat.nav')}">
+    <a class="feat f1" href="#compare">
+      <span class="feat-tag f1">${t('feat.1.tag')}</span>
+      <span class="feat-ic" aria-hidden="true"><svg viewBox="0 0 32 32" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="17" r="11"/><path d="M16 10v7l5 3M13 3h6"/></svg></span>
+      <b class="feat-t">${t('feat.1.title')}</b>
+      <span class="feat-d">${t('feat.1.desc', { n: String(data().places.places.length) })}</span>
+      <span class="feat-p">${t('feat.1.proof', { x: share(jkt), y: share(byId('tokyo')) })}</span>
+      <span class="feat-go">${t('feat.1.go')}</span>
+    </a>
+    <a class="feat f2" href="#rank">
+      <span class="feat-tag f2">${t('feat.2.tag')}</span>
+      <span class="feat-ic" aria-hidden="true"><svg viewBox="0 0 118 30" width="118" height="30">${Array.from({ length: 20 }, (_, i) => `<rect class="${i === 11 ? 'me' : i < 11 ? 'lo' : 'hi'}" x="${i * 6}" y="${i === 11 ? 0 : 6}" width="4" height="${i === 11 ? 30 : 24}" rx="1"/>`).join('')}</svg></span>
+      <b class="feat-t">${t('feat.2.title')}</b>
+      <span class="feat-d">${t('feat.2.desc')}</span>
+      <span class="feat-p">${t('feat.2.proof', { x: exampleTop() })}</span>
+      <span class="feat-go">${t('feat.2.go')}</span>
+    </a>
+  </nav>
   <div class="skyline" aria-hidden="true">${strip}</div>
-  <div class="ctas"><a class="btn cta" href="#compare">${t('hero.cta')}</a><a class="btn cta cta-2" href="#rank">${t('rk.hero.cta')}</a></div>
   <div class="verdict">
     <div class="id"><small>${t('hero.v.iphone')}</small><span class="big">${provBtn(days(ij), t('hero.v.iphone'), ij.inputs, 'pv pv-big')}</span><small>${t(
       'hero.v.iphoneVs',
