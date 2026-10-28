@@ -121,7 +121,8 @@ export function tier(p: number): Tier {
 /** "Top X%": the share of adults with a higher income, rounded the way a reader would say it. */
 export function topShare(p: number): number {
   const s = 100 - p;
-  return s >= 10 ? Math.round(s) : s >= 1 ? Math.round(s * 10) / 10 : Math.max(0.001, Math.round(s * 1000) / 1000);
+  // Below 1%, two significant figures (0.94, 0.05): more would be false precision.
+  return s >= 10 ? Math.round(s) : s >= 1 ? Math.round(s * 10) / 10 : Math.max(0.001, Number(s.toPrecision(2)));
 }
 
 /** Income growth of each percentile between the two years of `w.growth`, as a fraction (1.57 = +157%). */

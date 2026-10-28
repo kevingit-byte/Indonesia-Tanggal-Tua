@@ -76,7 +76,7 @@ Source: BPS press release of 5 August 2026 (Sakernas May 2026), read through CNB
 
 - Inputs live in memory in `src/rank.ts`. They are not written to localStorage, cookies or the URL, and nothing is sent anywhere (checked in a browser run that logged every request: none carried the input).
 - A shared link carries only the top share (`#rank-t42`). The income goes into the link (`#rank-i10000000-a2`) only if the reader ticks "Sertakan angka pendapatanku di tautan", which is off by default and says what it does.
-- The share image is drawn on a canvas in the browser and contains only the percentile.
+- The share card (Post 4:5 or Story 9:16) is drawn on a canvas in the browser. It shows only the percentile, the world percentile, a tier line and, for the top tiers, the public top-1% threshold, never the reader's income. The prefilled share text likewise carries only the percentile.
 
 ## Data status (freshness)
 

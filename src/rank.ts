@@ -39,6 +39,8 @@ interface RankState {
   sex: '' | 'male' | 'female';
   slide: number;
   includeIncome: boolean;
+  /** Share card shape: Instagram/WhatsApp post (4:5) or story/status (9:16). */
+  format: 'post' | 'story';
   /** Top share from a shared link (#rank-t42), shown until the reader enters their own income. */
   friendTop: number | null;
 }
@@ -57,6 +59,7 @@ const st: RankState = {
   sex: '',
   slide: 0,
   includeIncome: false,
+  format: 'post',
   friendTop: null,
 };
 
@@ -65,7 +68,7 @@ const wd = () => data().method.workdayHours;
 const F = (): Factors => factorsFrom(data().widId);
 const rp = (v: number) => `Rp${num(Math.round(v))}`;
 /** Top share and its complement, rounded together so "top 42%" always sits next to "higher than 58%". */
-const dec = (p: number) => (topShare(p) < 1 ? 3 : topShare(p) < 10 ? 1 : 0);
+const dec = (p: number) => (topShare(p) < 0.1 ? 3 : topShare(p) < 1 ? 2 : topShare(p) < 10 ? 1 : 0);
 const trim = (s: string) => s.replace(/([,.]\d*?)0+$/, '$1').replace(/[,.]$/, '');
 const fmtTop = (p: number) => trim(num(topShare(p), dec(p)));
 const fmtP = (p: number) => trim(num(100 - topShare(p), dec(p)));
@@ -375,17 +378,27 @@ function slideGrowth(c: C) {
   };
 }
 
-function cardText(p: number, aboveTop: boolean): string {
-  return aboveTop ? t('rk.card.top', { x: '0,001' }) : p >= 50 ? t('rk.card.top', { x: fmtTop(p) }) : t('rk.card.pct', { p: fmtP(p) });
+/** The prefilled message that goes with a share: percentile only. */
+function shareText(p: number, aboveTop: boolean): string {
+  return aboveTop
+    ? t('rk.share.text', { x: '0,001' })
+    : p >= 50
+      ? t('rk.share.text', { x: fmtTop(p) })
+      : t('rk.share.textPct', { p: fmtP(p) });
 }
 
 function slideShare(c: C) {
-  const text = `${cardText(c.posId.p, c.posId.aboveTop)} ${t('rk.card.ask')}`;
+  const text = shareText(c.posId.p, c.posId.aboveTop);
+  const [w, h] = st.format === 'story' ? [1080, 1920] : [1080, 1350];
   return {
     title: t('rk.sl.share'),
     body: `<p>${t('rk.share.lede')}</p>
-      <canvas id="rk-card" width="1200" height="630" class="rk-card" role="img" aria-label="${esc(t('rk.card.alt', { text }))}"></canvas>
-      <div class="rk-share-btns"><button type="button" class="btn" data-rk-share="image">${t('rk.share.img')}</button><button type="button" class="btn" data-rk-share="download">${t('rk.share.dl')}</button><button type="button" class="btn" data-rk-share="link">${t('rk.share.link')}</button></div>
+      ${seg('rkFormat', t('rk.share.format'), [
+        { value: 'post', label: t('rk.share.post') },
+        { value: 'story', label: t('rk.share.story') },
+      ], st.format)}
+      <div class="rk-card-wrap rk-${st.format}"><canvas id="rk-card" width="${w}" height="${h}" class="rk-card" role="img" aria-label="${esc(t('rk.card.alt', { text }))}"></canvas></div>
+      <div class="rk-share-btns"><button type="button" class="btn rk-share-main" data-rk-share="image">${t('rk.share.img')}</button><button type="button" class="btn" data-rk-share="download">${t('rk.share.dl')}</button><button type="button" class="btn" data-rk-share="link">${t('rk.share.link')}</button></div>
       <label class="rk-check"><input type="checkbox" data-rk="includeIncome"${st.includeIncome ? ' checked' : ''}> ${t('rk.share.opt')}</label>
       <p class="note">${t('rk.share.optNote')}</p>`,
   };
@@ -483,6 +496,40 @@ function shareUrl(): string {
 }
 
 // ---------------------------------------------------------------- share card
+const INK = '#16201e', RED = '#c2303a', GOLD = '#b8860b', GREY = '#b9c2bf', MUTED = '#56635f', PAPER = '#f3f5f3';
+const DISPLAY = 'Archivo, "Archivo Fallback", system-ui, sans-serif';
+const BODY = '"IBM Plex Sans", system-ui, sans-serif';
+const MONO = '"IBM Plex Mono", ui-monospace, monospace';
+
+/** A person pictogram in a w×w cell: head and shoulders. */
+function person(g: CanvasRenderingContext2D, x: number, y: number, w: number, color: string) {
+  g.fillStyle = color;
+  g.beginPath();
+  g.arc(x + w / 2, y + w * 0.27, w * 0.2, 0, Math.PI * 2);
+  g.fill();
+  g.beginPath();
+  g.moveTo(x + w * 0.14, y + w);
+  g.quadraticCurveTo(x + w * 0.14, y + w * 0.52, x + w / 2, y + w * 0.52);
+  g.quadraticCurveTo(x + w * 0.86, y + w * 0.52, x + w * 0.86, y + w);
+  g.closePath();
+  g.fill();
+}
+
+function clockMark(g: CanvasRenderingContext2D, cx: number, cy: number, r: number) {
+  g.strokeStyle = RED;
+  g.lineWidth = r * 0.22;
+  g.lineCap = 'round';
+  g.beginPath();
+  g.arc(cx, cy, r, 0, Math.PI * 2);
+  g.stroke();
+  g.beginPath();
+  g.moveTo(cx, cy - r * 0.55);
+  g.lineTo(cx, cy);
+  g.lineTo(cx + r * 0.45, cy + r * 0.28);
+  g.stroke();
+}
+
+/** The share card: percentile only, never the income. Fixed light palette so it reads the same everywhere. */
 async function drawCard(): Promise<HTMLCanvasElement | null> {
   const cv = document.getElementById('rk-card') as HTMLCanvasElement | null;
   if (!cv || !st.amount) return cv;
@@ -494,40 +541,114 @@ async function drawCard(): Promise<HTMLCanvasElement | null> {
   } catch {
     /* fonts unavailable: system fallback is fine */
   }
-  const W = 1200, H = 630;
-  g.fillStyle = '#f3f5f3';
-  g.fillRect(0, 0, W, H);
-  g.fillStyle = '#c2303a';
-  g.fillRect(0, 0, W, 14);
-  g.fillStyle = '#16201e';
-  g.font = '800 34px Archivo, system-ui, sans-serif';
-  g.fillText('⏱ Berapa Jam Kerja', 70, 92);
-  g.font = '800 76px Archivo, system-ui, sans-serif';
-  const line = cardText(c.posId.p, c.posId.aboveTop);
-  wrap(g, line, 70, 210, W - 140, 86);
-  g.fillStyle = '#c2303a';
-  g.font = '800 60px Archivo, system-ui, sans-serif';
-  g.fillText(t('rk.card.ask'), 70, 400);
-  // the strip
-  const at = Math.min(99, Math.round(c.posId.p));
-  const x0 = 70, bw = (W - 140) / 100;
-  for (let i = 0; i < 100; i++) {
-    g.fillStyle = i === at ? '#c2303a' : i < at ? '#b9c2bf' : '#b8860b';
-    g.fillRect(x0 + i * bw + 1, i === at ? 440 : 452, bw - 2, i === at ? 80 : 56);
-  }
-  g.fillStyle = '#56635f';
-  g.font = '400 24px "IBM Plex Sans", system-ui, sans-serif';
-  g.fillText(`${t('rk.b50')}`, x0, 556);
-  g.fillText(`${t('rk.m40')}`, x0 + bw * 50, 556);
-  g.textAlign = 'right';
-  g.fillText(`${t('rk.t10')}`, W - 70, 556);
+  const story = st.format === 'story';
+  const W = 1080, H = story ? 1920 : 1350, P = 72, inner = W - 2 * P;
+  const p = c.posId.p, top = c.posId.aboveTop;
+  const me = top ? 99 : Math.min(99, Math.round(p));
+  g.textBaseline = 'alphabetic';
   g.textAlign = 'left';
-  g.font = '400 22px "IBM Plex Sans", system-ui, sans-serif';
-  g.fillText(`indonesia-tanggal-tua.vercel.app · data: WID.world ${c.id.year}`, 70, 604);
+  g.fillStyle = PAPER;
+  g.fillRect(0, 0, W, H);
+  g.fillStyle = RED;
+  g.fillRect(0, 0, W, 18);
+
+  // brand row
+  let y = story ? 150 : 120;
+  clockMark(g, P + 20, y - 14, 20);
+  g.fillStyle = INK;
+  g.font = `800 38px ${DISPLAY}`;
+  g.fillText('Berapa Jam Kerja', P + 56, y);
+  g.fillStyle = MUTED;
+  g.font = `500 24px ${MONO}`;
+  g.textAlign = 'right';
+  g.fillText(t('rk.card.kicker'), W - P, y - 4);
+  g.textAlign = 'left';
+
+  // headline
+  y += story ? 230 : 230;
+  const big = top ? t('rk.card.big', { x: '0,001' }) : p >= 50 ? t('rk.card.big', { x: fmtTop(p) }) : t('rk.card.bigPct', { p: fmtP(p) });
+  let size = story ? 220 : 190;
+  g.font = `800 ${size}px ${DISPLAY}`;
+  while (g.measureText(big).width > inner && size > 80) g.font = `800 ${(size -= 8)}px ${DISPLAY}`;
+  g.fillStyle = RED;
+  g.fillText(big, P - 6, y);
+  y += story ? 78 : 66;
+  g.fillStyle = INK;
+  g.font = `700 ${story ? 58 : 52}px ${DISPLAY}`;
+  g.fillText(t(top || p >= 50 ? 'rk.card.sub' : 'rk.card.subPct'), P, y);
+
+  // tier line
+  const top1 = rpShort(fromWid(thresholdAt(99, c.id.groups), c.f));
+  const tierKey = top ? 'top1' : tier(p);
+  y += story ? 80 : 66;
+  g.fillStyle = MUTED;
+  g.font = `400 ${story ? 38 : 34}px ${BODY}`;
+  y = wrap(g, t(`rk.card.${tierKey}`, { x: top1 }), P, y, inner, story ? 52 : 46);
+
+  // the crowd: 100 adults, lowest income first
+  const cols = story ? 10 : 20;
+  const rows = 100 / cols;
+  const cell = inner / cols;
+  const icon = cell * (story ? 0.72 : 0.82);
+  const rowH = story ? cell * 0.82 : cell * 1.3;
+  y += story ? 60 : 50;
+  for (let i = 0; i < 100; i++) {
+    const cx = P + (i % cols) * cell + (cell - icon) / 2;
+    const cy = y + Math.floor(i / cols) * rowH;
+    if (i === me) {
+      g.strokeStyle = RED;
+      g.lineWidth = story ? 6 : 4;
+      g.beginPath();
+      g.arc(cx + icon / 2, cy + icon / 2, icon * 0.66, 0, Math.PI * 2);
+      g.stroke();
+    }
+    person(g, cx, cy, icon, i === me ? RED : i < me ? GREY : GOLD);
+  }
+  y += rows * rowH + (story ? 34 : 22);
+  g.fillStyle = INK;
+  g.font = `600 ${story ? 32 : 28}px ${BODY}`;
+  y = wrap(g, t('rk.card.beat', { p: String(me) }), P, y, inner, 40);
+  y += story ? 40 : 34;
+  g.fillStyle = MUTED;
+  g.font = `400 ${story ? 26 : 23}px ${BODY}`;
+  g.fillText(t('rk.card.crowd'), P, y);
+  y += story ? 44 : 38;
+  let lx = P;
+  for (const [label, col] of [[t('rk.card.me'), RED], [t('rk.card.higher'), GOLD], [t('rk.card.lower'), GREY]] as const) {
+    g.fillStyle = col;
+    g.beginPath();
+    g.arc(lx + 10, y - 9, 10, 0, Math.PI * 2);
+    g.fill();
+    g.fillStyle = MUTED;
+    g.fillText(label, lx + 28, y);
+    lx += 28 + g.measureText(label).width + 36;
+  }
+
+  // world
+  const wp = c.posWo;
+  y += story ? 90 : 70;
+  g.fillStyle = INK;
+  g.font = `800 ${story ? 50 : 42}px ${DISPLAY}`;
+  g.fillText(wp.aboveTop ? t('rk.card.world', { x: '0,001' }) : wp.p >= 50 ? t('rk.card.world', { x: fmtTop(wp.p) }) : t('rk.card.worldPct', { p: fmtP(wp.p) }), P, y);
+
+  // footer band
+  const fh = story ? 250 : 210;
+  g.fillStyle = INK;
+  g.fillRect(0, H - fh, W, fh);
+  g.fillStyle = '#ffffff';
+  g.font = `800 ${story ? 58 : 50}px ${DISPLAY}`;
+  g.fillText(t('rk.card.ask'), P, H - fh + (story ? 92 : 78));
+  g.fillStyle = '#e0b040';
+  g.font = `600 ${story ? 34 : 30}px ${MONO}`;
+  g.fillText('indonesia-tanggal-tua.vercel.app', P, H - fh + (story ? 150 : 128));
+  g.fillStyle = '#9eaca9';
+  g.font = `400 ${story ? 22 : 20}px ${BODY}`;
+  wrap(g, t('rk.card.credit', { y: String(c.id.year) }), P, H - fh + (story ? 200 : 170), inner, 28);
   return cv;
 }
 
-function wrap(g: CanvasRenderingContext2D, text: string, x: number, y: number, max: number, lh: number) {
+/** Draws text wrapped to `max` width; returns the baseline of the last line. */
+function wrap(g: CanvasRenderingContext2D, text: string, x: number, y: number, max: number, lh: number): number {
   const words = text.split(' ');
   let line = '';
   for (const w of words) {
@@ -539,13 +660,15 @@ function wrap(g: CanvasRenderingContext2D, text: string, x: number, y: number, m
     } else line = test;
   }
   g.fillText(line, x, y);
+  return y;
 }
 
 async function share(kind: string, btn: HTMLElement) {
   if (kind === 'link') {
+    const c = compute();
     const url = shareUrl();
     try {
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(`${shareText(c.posId.p, c.posId.aboveTop)} ${url}`);
       btn.textContent = t('rk.share.copied');
     } catch {
       prompt(t('rk.share.link'), url);
@@ -556,10 +679,11 @@ async function share(kind: string, btn: HTMLElement) {
   if (!cv) return;
   const blob = await new Promise<Blob | null>((r) => cv.toBlob(r, 'image/png'));
   if (!blob) return;
-  const file = new File([blob], 'posisi-pendapatan.png', { type: 'image/png' });
+  const file = new File([blob], `posisi-pendapatan-${st.format}.png`, { type: 'image/png' });
   if (kind === 'image' && navigator.canShare?.({ files: [file] })) {
     try {
-      await navigator.share({ files: [file], text: `${cardText(compute().posId.p, compute().posId.aboveTop)} ${t('rk.card.ask')}`, url: shareUrl() });
+      const c = compute();
+      await navigator.share({ files: [file], text: `${shareText(c.posId.p, c.posId.aboveTop)} ${shareUrl()}` });
       return;
     } catch {
       /* dismissed */
@@ -678,6 +802,9 @@ export function bindRank() {
       } else if (set.dataset.set === 'rkPeriod') {
         st.period = v as RankState['period'];
         set.parentElement?.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === set)));
+        refresh();
+      } else if (set.dataset.set === 'rkFormat') {
+        st.format = v as RankState['format'];
         refresh();
       } else if (set.dataset.set === 'rkSex') {
         st.sex = v as RankState['sex'];

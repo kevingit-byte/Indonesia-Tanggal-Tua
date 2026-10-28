@@ -454,7 +454,11 @@ td .tag { margin-left: 3px; padding: 0 4px; }
 .rk-wi-c > span { display: grid; gap: 1px; font-family: var(--mono); font-size: 0.86rem; min-width: 0; }
 .rk-wi-c small { font-family: var(--body); font-size: 0.7rem; color: var(--muted); line-height: 1.2; }
 .rk-wi-c .me, .rk-wi-c .me small { color: var(--id-ink); font-weight: 600; }
-.rk-card { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.rk-card-wrap { display: grid; justify-items: center; }
+.rk-card { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 20px rgb(0 0 0 / 0.12); }
+.rk-post .rk-card { max-width: 340px; }
+.rk-story .rk-card { max-width: 250px; }
+.rk-share-main { background: var(--id); color: #fff; border-color: var(--id); font-weight: 700; }
 .rk-share-btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .rk-credit { display: grid; gap: 6px; }
 .rk-credit p { margin: 0; }
